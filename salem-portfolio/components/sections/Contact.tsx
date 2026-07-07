@@ -85,31 +85,59 @@ export default function Contact() {
                   <p className="text-gray-400">{t.contact.successSub}</p>
                 </motion.div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} className="space-y-5" aria-label={t.contact.formTitle}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-gray-300">{t.contact.nameLabel} *</label>
-                      <input type="text" required placeholder={t.contact.namePlaceholder} value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-violet-500/50 focus:bg-white/8 transition-all duration-200 text-sm" />
+                      <label htmlFor="contact-name" className="text-sm font-medium text-gray-300">{t.contact.nameLabel} *</label>
+                      <input
+                        id="contact-name"
+                        type="text"
+                        required
+                        autoComplete="name"
+                        placeholder={t.contact.namePlaceholder}
+                        value={formState.name}
+                        onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-violet-500/50 focus:bg-white/8 transition-all duration-200 text-sm"
+                      />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-gray-300">{t.contact.emailLabel} *</label>
-                      <input type="email" required placeholder={t.contact.emailPlaceholder} value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-violet-500/50 focus:bg-white/8 transition-all duration-200 text-sm" />
+                      <label htmlFor="contact-email" className="text-sm font-medium text-gray-300">{t.contact.emailLabel} *</label>
+                      <input
+                        id="contact-email"
+                        type="email"
+                        required
+                        autoComplete="email"
+                        placeholder={t.contact.emailPlaceholder}
+                        value={formState.email}
+                        onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-violet-500/50 focus:bg-white/8 transition-all duration-200 text-sm"
+                      />
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-300">{t.contact.serviceLabel}</label>
-                    <select value={formState.service} onChange={(e) => setFormState({ ...formState, service: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-violet-500/50 transition-all duration-200 text-sm appearance-none">
+                    <label htmlFor="contact-service" className="text-sm font-medium text-gray-300">{t.contact.serviceLabel}</label>
+                    <select
+                      id="contact-service"
+                      value={formState.service}
+                      onChange={(e) => setFormState({ ...formState, service: e.target.value })}
+                      aria-label={t.contact.serviceLabel}
+                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-violet-500/50 transition-all duration-200 text-sm appearance-none"
+                    >
                       <option value="" className="bg-gray-900">{t.contact.servicePlaceholder}</option>
                       {t.contact.services.map((s) => <option key={s} value={s} className="bg-gray-900">{s}</option>)}
                     </select>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-300">{t.contact.messageLabel} *</label>
-                    <textarea required rows={5} placeholder={t.contact.messagePlaceholder} value={formState.message} onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-violet-500/50 focus:bg-white/8 transition-all duration-200 text-sm resize-none" />
+                    <label htmlFor="contact-message" className="text-sm font-medium text-gray-300">{t.contact.messageLabel} *</label>
+                    <textarea
+                      id="contact-message"
+                      required
+                      rows={5}
+                      placeholder={t.contact.messagePlaceholder}
+                      value={formState.message}
+                      onChange={(e) => setFormState({ ...formState, message: e.target.value })}
+                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-violet-500/50 focus:bg-white/8 transition-all duration-200 text-sm resize-none"
+                    />
                   </div>
                   <button type="submit" className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 text-white font-semibold text-lg hover:shadow-xl hover:shadow-violet-500/30 transition-all duration-300 hover:-translate-y-0.5 group">
                     {t.contact.submitBtn}
