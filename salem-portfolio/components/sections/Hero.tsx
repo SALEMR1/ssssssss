@@ -22,14 +22,15 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black"
     >
-      <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-violet-600/15 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-pink-600/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-violet-950/20 rounded-full blur-3xl pointer-events-none" />
+      {/* Decorative glows — hidden on mobile to save GPU */}
+      <div className="hidden md:block absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-violet-600/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="hidden md:block absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-pink-600/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-violet-950/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:72px_72px] pointer-events-none" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 text-center pt-24 md:pt-0">
         {/* Headline */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.15] tracking-tight mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-black leading-[1.2] sm:leading-[1.15] tracking-tight mb-6">
           <span className="text-white">{t.hero.line1}</span>
           <br />
           <span className="text-white">{t.hero.line2}</span>

@@ -47,7 +47,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="group flex items-center gap-3">
               <div className="w-10 h-10 rounded-full overflow-hidden shadow-lg shadow-violet-500/25 group-hover:shadow-violet-500/50 transition-shadow duration-300">
-                <img src="https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755" alt="Salem Rizk" className="w-full h-full object-cover rounded-full" />
+                <img src="https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755" alt="Salem Rizk" className="w-full h-full object-cover rounded-full" fetchPriority="high" />
               </div>
               <div>
                 <span className="font-bold text-white text-lg leading-none">Salem Rizk</span>

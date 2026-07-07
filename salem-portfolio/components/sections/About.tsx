@@ -52,7 +52,7 @@ export default function About() {
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-violet-950/60 to-pink-950/40 border border-white/10 p-1">
               <div className="rounded-2xl bg-gradient-to-br from-gray-900 to-black p-8 space-y-6">
                 <div className="w-32 h-32 rounded-full overflow-hidden shadow-2xl shadow-violet-500/30 mx-auto">
-                  <img src="https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755" alt="Salem Rizk" className="w-full h-full object-cover rounded-full" />
+                  <img src="https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755" alt="Salem Rizk" className="w-full h-full object-cover rounded-full" fetchPriority="high" />
                 </div>
                 <div className="text-center">
                   <h3 className="text-2xl font-black text-white">Salem Rizk</h3>
@@ -77,7 +77,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Floating stat cards */}
+            {/* Floating stat cards — desktop only to avoid CLS on mobile */}
             {t.about.stats.map((stat, i) => {
               const Icon = statIcons[i];
               return (
@@ -87,7 +87,7 @@ export default function About() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + i * 0.15 }}
-                  className={`absolute ${i === 0 ? '-top-6 -right-6' : i === 1 ? '-bottom-6 -left-6' : '-bottom-4 right-10'} bg-black border border-white/10 rounded-2xl px-5 py-4 shadow-xl shadow-black/50 backdrop-blur-xl`}
+                  className={`hidden md:flex absolute ${i === 0 ? '-top-6 -right-6' : i === 1 ? '-bottom-6 -left-6' : '-bottom-4 right-10'} bg-black border border-white/10 rounded-2xl px-5 py-4 shadow-xl shadow-black/50`}
                 >
                   <div className="flex items-center gap-3">
                     <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${gradientMap[statColors[i]]} flex items-center justify-center`}>

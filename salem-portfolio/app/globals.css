@@ -9,8 +9,9 @@
   --color-accent-pink: #db2777;
   --color-accent-amber: #f59e0b;
 
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-heading: var(--font-syne), system-ui, sans-serif;
+  /* Single font stack — Cairo covers Arabic + Latin, system-ui as instant fallback */
+  --font-sans: var(--font-cairo), system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-cairo), system-ui, -apple-system, sans-serif;
 
   --animate-gradient-x: gradient-x 6s ease infinite;
   --animate-float: float 6s ease-in-out infinite;
@@ -30,47 +31,60 @@
 
 @keyframes glow {
   from { box-shadow: 0 0 20px rgba(124, 58, 237, 0.3); }
-  to { box-shadow: 0 0 60px rgba(124, 58, 237, 0.6); }
+  to   { box-shadow: 0 0 60px rgba(124, 58, 237, 0.6); }
+}
+
+/* Loading screen progress bar */
+@keyframes loading {
+  from { width: 0%; }
+  to   { width: 100%; }
 }
 
 /* ─── Base Styles ─────────────────────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
-  cursor: auto;
 }
 
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Prevent horizontal overflow CLS */
+  overflow-x: hidden;
 }
 
 body {
   background-color: #080808;
   color: #ffffff;
-  font-family: var(--font-sans, system-ui, sans-serif);
+  font-family: var(--font-sans);
   overflow-x: hidden;
-  cursor: default;
+  /* Reserve space so no layout jump when scrollbar appears */
+  scrollbar-gutter: stable;
 }
 
-/* Arabic RTL font override */
-:root[lang="ar"] body,
+/* ─── Reduce heavy blur on mobile — main CLS & paint cost culprit ─────────── */
+@media (max-width: 768px) {
+  /* Replace expensive blur-[120px] divs with lighter alternatives */
+  [class*="blur-[120px]"],
+  [class*="blur-[100px]"],
+  [class*="blur-3xl"] {
+    opacity: 0 !important;
+  }
+}
+
+/* ─── RTL font ───────────────────────────────────────────────────────────── */
 [dir="rtl"] body {
-  font-family: var(--font-cairo, 'Cairo', system-ui, sans-serif);
+  font-family: var(--font-cairo), system-ui, sans-serif;
 }
 
-/* RTL directional helpers */
+/* ─── RTL flip helper ────────────────────────────────────────────────────── */
 [dir="rtl"] .rtl-flip {
   transform: scaleX(-1);
 }
 
-/* ─── Scrollbar ───────────────────────────────────────────────────────────── */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #080808;
-}
+/* ─── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #080808; }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #7c3aed, #db2777);
   border-radius: 999px;
@@ -79,20 +93,20 @@ body {
   background: linear-gradient(to bottom, #8b5cf6, #ec4899);
 }
 
-/* ─── Selection ───────────────────────────────────────────────────────────── */
+/* ─── Selection ──────────────────────────────────────────────────────────── */
 ::selection {
   background: rgba(124, 58, 237, 0.4);
   color: #fff;
 }
 
-/* ─── Focus Visible ───────────────────────────────────────────────────────── */
+/* ─── Focus ──────────────────────────────────────────────────────────────── */
 :focus-visible {
   outline: 2px solid rgba(124, 58, 237, 0.6);
   outline-offset: 2px;
   border-radius: 4px;
 }
 
-/* ─── Gradient Text Utility ───────────────────────────────────────────────── */
+/* ─── Utilities ──────────────────────────────────────────────────────────── */
 .gradient-text {
   background: linear-gradient(135deg, #a78bfa, #f472b6);
   -webkit-background-clip: text;
@@ -100,7 +114,6 @@ body {
   background-clip: text;
 }
 
-/* ─── Glass Card ──────────────────────────────────────────────────────────── */
 .glass {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -108,27 +121,36 @@ body {
   -webkit-backdrop-filter: blur(12px);
 }
 
-/* ─── Hero Glow Background ────────────────────────────────────────────────── */
-.hero-glow {
-  background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(124, 58, 237, 0.3), transparent);
+/* Disable backdrop-filter on mobile — very expensive on low-end GPUs */
+@media (max-width: 768px) {
+  .glass {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(8, 8, 8, 0.92);
+  }
 }
 
-/* ─── Animate Gradient X ──────────────────────────────────────────────────── */
 .animate-gradient-x {
   background-size: 200% 200%;
   animation: gradient-x 6s ease infinite;
 }
 
-/* ─── Animate Float ───────────────────────────────────────────────────────── */
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
+.animate-float  { animation: float 6s ease-in-out infinite; }
+.animate-glow   { animation: glow 2s ease-in-out infinite alternate; }
 
-/* ─── Animate Glow ────────────────────────────────────────────────────────── */
-.animate-glow {
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-/* ─── No scrollbar (utility) ─────────────────────────────────────────────── */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ─── content-visibility — skip rendering off-screen sections ────────────── */
+section:not(#home):not(#about) {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+/* ─── Reduce motion ──────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

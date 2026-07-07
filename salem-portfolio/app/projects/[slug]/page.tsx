@@ -14,6 +14,8 @@ import ProjectTimeline from '@/components/project/ProjectTimeline';
 import ProjectRelated from '@/components/project/ProjectRelated';
 import ProjectTools from '@/components/project/ProjectTools';
 
+const SITE_URL = 'https://salemrizk.com';
+
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
@@ -26,12 +28,34 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const project = projectsData.find((p) => p.slug === slug);
   if (!project) return {};
+
+  const title = `${project.title} — دراسة حالة | سالم رزق`;
+  const description = project.overview_ar
+    ? project.overview_ar.slice(0, 160)
+    : project.overview.slice(0, 160);
+  const url = `${SITE_URL}/projects/${slug}`;
+  const image = project.coverImage || project.heroImage || '';
+
   return {
-    title: `${project.title} Case Study | Salem Rizk`,
-    description: project.overview.slice(0, 160),
+    title,
+    description,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title: `${project.title} — ${project.subtitle}`,
-      description: project.overview.slice(0, 160),
+      title,
+      description,
+      url,
+      type: 'article',
+      images: image
+        ? [{ url: image, width: 1200, height: 630, alt: project.title }]
+        : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: image ? [image] : [],
     },
   };
 }
@@ -46,8 +70,35 @@ export default async function ProjectPage({ params }: PageProps) {
     project.relatedProjects.includes(p.slug)
   );
 
+  // Schema.org — CaseStudy / Article
+  const caseStudySchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `${project.title} — Case Study`,
+    description: project.overview.slice(0, 200),
+    url: `${SITE_URL}/projects/${slug}`,
+    image: project.coverImage || project.heroImage,
+    author: {
+      '@type': 'Person',
+      name: 'Salem Rizk',
+      url: SITE_URL,
+    },
+    publisher: {
+      '@type': 'Person',
+      name: 'Salem Rizk',
+      url: SITE_URL,
+    },
+    datePublished: `${project.year}-01-01`,
+    dateModified: `${project.year}-12-31`,
+    inLanguage: 'ar',
+  };
+
   return (
     <div className="bg-[#080808] min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudySchema) }}
+      />
       <ProjectHero project={project} />
       <ProjectOverview project={project} />
       <ProjectChallenge project={project} />
