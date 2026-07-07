@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+/* ─── Custom Theme Variables ──────────────────────────────────────────────── */
+@theme {
+  --color-background: #080808;
+  --color-foreground: #ffffff;
+  --color-card: #0d0d0d;
+  --color-accent-violet: #7c3aed;
+  --color-accent-pink: #db2777;
+  --color-accent-amber: #f59e0b;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-heading: var(--font-syne), system-ui, sans-serif;
+
+  --animate-gradient-x: gradient-x 6s ease infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+}
+
+/* ─── Keyframes ───────────────────────────────────────────────────────────── */
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px rgba(124, 58, 237, 0.3); }
+  to { box-shadow: 0 0 60px rgba(124, 58, 237, 0.6); }
+}
+
+/* ─── Base Styles ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  cursor: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #080808;
+  color: #ffffff;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* Arabic RTL font override */
+:root[lang="ar"] body,
+[dir="rtl"] body {
+  font-family: var(--font-cairo, 'Cairo', system-ui, sans-serif);
+}
+
+/* RTL directional helpers */
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* ─── Scrollbar ───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #7c3aed, #db2777);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #8b5cf6, #ec4899);
+}
+
+/* ─── Selection ───────────────────────────────────────────────────────────── */
+::selection {
+  background: rgba(124, 58, 237, 0.4);
+  color: #fff;
+}
+
+/* ─── Focus Visible ───────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid rgba(124, 58, 237, 0.6);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ─── Gradient Text Utility ───────────────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Glass Card ──────────────────────────────────────────────────────────── */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ─── Hero Glow Background ────────────────────────────────────────────────── */
+.hero-glow {
+  background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(124, 58, 237, 0.3), transparent);
+}
+
+/* ─── Animate Gradient X ──────────────────────────────────────────────────── */
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 6s ease infinite;
+}
+
+/* ─── Animate Float ───────────────────────────────────────────────────────── */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ─── Animate Glow ────────────────────────────────────────────────────────── */
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* ─── No scrollbar (utility) ─────────────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

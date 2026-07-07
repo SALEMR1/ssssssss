@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "question": "What services do you offer?",
+    "question_ar": "ما الخدمات التي تقدمها؟",
+    "answer": "I offer a comprehensive range of digital marketing services including Social Media Management, Meta Ads (Facebook & Instagram), Graphic Design, Video Editing & Reels, Content Strategy, Performance Marketing, and Website Development.",
+    "answer_ar": "أقدم مجموعة شاملة من خدمات التسويق الرقمي تشمل إدارة وسائل التواصل الاجتماعي، إعلانات ميتا (فيسبوك وإنستجرام)، تصميم جرافيك، مونتاج فيديو وريلز، استراتيجية المحتوى، التسويق بالأداء، وتطوير المواقع."
+  },
+  {
+    "id": 2,
+    "question": "How long does it take to see results from Meta Ads?",
+    "question_ar": "كم يستغرق الأمر لرؤية نتائج من إعلانات ميتا؟",
+    "answer": "Most clients start seeing meaningful results within the first 2-4 weeks of campaigns launching. However, optimal performance typically happens after 4-6 weeks of data collection and optimization.",
+    "answer_ar": "يبدأ معظم العملاء برؤية نتائج ملموسة خلال الأسبوعين إلى الأربعة الأولى من إطلاق الحملات. غير أن الأداء الأمثل يتحقق عادةً بعد 4 إلى 6 أسابيع من جمع البيانات والتحسين."
+  },
+  {
+    "id": 3,
+    "question": "What is your minimum advertising budget?",
+    "question_ar": "ما هو الحد الأدنى لميزانية الإعلانات؟",
+    "answer": "For Meta Ads campaigns, I recommend a minimum monthly ad spend of $200-300 USD to gather enough data for meaningful optimization. The management fee is separate from the ad spend.",
+    "answer_ar": "لحملات إعلانات ميتا، أوصي بحد أدنى لإنفاق إعلاني شهري يتراوح بين 200 و300 دولار لجمع بيانات كافية للتحسين الفعّال. رسوم الإدارة منفصلة عن ميزانية الإعلانات."
+  },
+  {
+    "id": 4,
+    "question": "Do you work with businesses outside of Egypt?",
+    "question_ar": "هل تعمل مع شركات خارج مصر؟",
+    "answer": "Absolutely. While I'm based in Damanhour, Egypt, I work with clients across the MENA region and internationally. Digital marketing knows no borders.",
+    "answer_ar": "بالتأكيد. رغم إقامتي في دمنهور، مصر، أعمل مع عملاء في منطقة الشرق الأوسط وشمال أفريقيا وعلى المستوى الدولي. التسويق الرقمي لا حدود له."
+  },
+  {
+    "id": 5,
+    "question": "How do you measure success?",
+    "question_ar": "كيف تقيس النجاح؟",
+    "answer": "Success is measured through clear, data-driven KPIs that we define together before starting. These typically include reach, engagement rate, follower growth, click-through rate, cost per result, ROAS, and ultimately — real business outcomes.",
+    "answer_ar": "يُقاس النجاح من خلال مؤشرات أداء رئيسية واضحة ومدفوعة بالبيانات نحددها معًا قبل البدء. تشمل عادةً الوصول ومعدل التفاعل ونمو المتابعين ونسبة النقر وتكلفة النتيجة وعائد الإنفاق الإعلاني، وفي نهاية المطاف — نتائج الأعمال الحقيقية."
+  },
+  {
+    "id": 6,
+    "question": "What do you need from me to get started?",
+    "question_ar": "ماذا تحتاج مني للبدء؟",
+    "answer": "To get started, I need access to your Facebook Page and Business Manager, your brand guidelines if you have them, a description of your products/services and target audience, and your budget and goals.",
+    "answer_ar": "للبدء، أحتاج إلى وصول لصفحتك على فيسبوك ومدير الأعمال، إرشادات علامتك التجارية إن وجدت، وصفًا لمنتجاتك وخدماتك وجمهورك المستهدف، وميزانيتك وأهدافك."
+  },
+  {
+    "id": 7,
+    "question": "Do you offer one-time projects or ongoing contracts?",
+    "question_ar": "هل تقدم مشاريع لمرة واحدة أم عقودًا مستمرة؟",
+    "answer": "I offer both! For design work and websites, I can work on a one-time project basis. For social media management and advertising, I recommend an ongoing monthly engagement.",
+    "answer_ar": "أقدم كليهما! لأعمال التصميم والمواقع، يمكنني العمل على أساس مشروع لمرة واحدة. لإدارة وسائل التواصل والإعلانات، أوصي بتعاون شهري مستمر."
+  },
+  {
+    "id": 8,
+    "question": "Can I see examples of your previous work?",
+    "question_ar": "هل يمكنني رؤية أمثلة على أعمالك السابقة؟",
+    "answer": "Yes! You can explore my featured projects on this website — ESCO Motor Oils, VAKO Fashion, and TTC Educational Center. Each case study includes detailed strategy breakdowns, creative samples, and measurable results.",
+    "answer_ar": "نعم! يمكنك استعراض مشاريعي المميزة على هذا الموقع — ESCO لزيوت المحركات، فاكو للأزياء، ومركز TTC التعليمي. كل دراسة حالة تتضمن تفصيلًا للاستراتيجية ونماذج إبداعية ونتائج قابلة للقياس."
+  }
+]

@@ -1,0 +1,545 @@
+{
+  "meta": {
+    "title": "Salem Rizk | Social Media Manager & Performance Marketer",
+    "description": "Premium social media management, Meta Ads, graphic design, video editing, and website development. Based in Edko, Beheira, Egypt."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "devProjects": "Dev Work",
+    "results": "Results",
+    "skills": "Skills",
+    "contact": "Contact",
+    "cta": "Let's Work Together"
+  },
+  "hero": {
+    "line1": "I Don't Just",
+    "line2": "Manage Pages...",
+    "line3": "I Build",
+    "words": [
+      "Brands.",
+      "Results.",
+      "Growth.",
+      "Impact."
+    ],
+    "sub": "I help businesses grow through professional social media management, creative content, high-performance Meta Ads campaigns, and data-driven marketing optimization.",
+    "stats": [
+      {
+        "value": "3.2M+",
+        "label": "Total Reach"
+      },
+      {
+        "value": "39+",
+        "label": "Campaigns"
+      },
+      {
+        "value": "4.2x",
+        "label": "Avg. ROAS"
+      }
+    ],
+    "cta_primary": "View Portfolio",
+    "cta_secondary": "Let's Work Together",
+    "scroll": "SCROLL"
+  },
+  "about": {
+    "badge": "About Me",
+    "title": "Turning Digital Presence Into",
+    "highlight": "Business Growth",
+    "role": "Developer & Creative Designer",
+    "location": "Beheira Governorate, Edko City",
+    "p1": "I'm Salem Rizk — a performance-focused Social Media Manager, Meta Ads specialist, and Creative Designer based in Edko, Beheira, Egypt. I don't just manage pages; I architect complete digital marketing systems that deliver measurable business results.",
+    "p2": "With 3+ years of hands-on experience across diverse industries — from automotive lubricants to fashion retail and education — I've developed a deep understanding of what moves people to act. Every campaign I run is designed with one goal in mind:",
+    "p2_highlight": "your return on investment",
+    "p3": "Currently working as a freelancer managing multiple projects simultaneously — page management, content design, ad campaigns, and web development. I believe real work in this field is measured by results, not just aesthetics.",
+    "p4": "My goal is to keep growing in digital marketing and development to deliver stronger and more professional services in the future.",
+    "badges": [
+      "Meta Ads Certified",
+      "Creative Designer",
+      "Video Editor",
+      "Web Developer"
+    ],
+    "expertise": [
+      "Social Media Management",
+      "Meta Ads & PPC",
+      "Graphic Design",
+      "Video Editing",
+      "Content Strategy",
+      "Marketing Analytics",
+      "Website Development",
+      "Digital Marketing"
+    ],
+    "stats": [
+      {
+        "value": "3+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "20+",
+        "label": "Happy Clients"
+      },
+      {
+        "value": "39+",
+        "label": "Campaigns Launched"
+      }
+    ],
+    "cta_work": "Work With Me",
+    "cta_portfolio": "See My Work"
+  },
+  "services": {
+    "badge": "What I Offer",
+    "title": "Services That ",
+    "highlight": "Deliver Results",
+    "subtitle": "A comprehensive suite of digital marketing services designed to grow your brand, engage your audience, and maximize your return on investment.",
+    "cta": "Start a Project",
+    "learnMore": "Learn More"
+  },
+  "projects": {
+    "badge": "Case Studies",
+    "title": "Featured ",
+    "highlight": "Projects",
+    "subtitle": "Real campaigns. Real results. Each project is a deep-dive into strategy, creative, and measurable business impact.",
+    "cta_label": "View Project",
+    "cta_more": "Want to see more work? Contact me to view the full portfolio",
+    "cta_discuss": "Click here to view more",
+    "labels": {
+      "reach": "Total Reach",
+      "roas": "ROAS",
+      "followers": "Followers Growth",
+      "enrollment": "Enrollment Growth"
+    },
+    "items": [
+      {
+        "id": "esco",
+        "title": "ESCO Motor Oils",
+        "subtitle": "From Zero to Industry Leader",
+        "industry": "Automotive Lubricants",
+        "tags": [
+          "Social Media Management",
+          "Meta Ads",
+          "Graphic Design",
+          "Video Editing"
+        ],
+        "metric1": {
+          "value": "3.2M+",
+          "label": "Total Reach"
+        },
+        "metric2": {
+          "value": "4.2x",
+          "label": "ROAS"
+        },
+        "metric3": {
+          "value": "+1,393%",
+          "label": "Followers Growth"
+        }
+      },
+      {
+        "id": "vako",
+        "title": "VAKO Damanhour",
+        "subtitle": "Transforming a Local Store into a Successful Digital Brand",
+        "industry": "Fashion & Retail",
+        "tags": [
+          "Branding",
+          "Social Media Management",
+          "Graphic Design",
+          "Advertising"
+        ],
+        "description": "I started working with VAKO some time ago, where I created a Google Maps store location and developed a professional website for the store. When I took over the page, it had only 180 followers with limited reach (400-300). In a short period, I worked on developing content and implementing an integrated marketing strategy, which led to growing followers to 1,900 and achieving a total reach of 2.5 million. I executed advertising campaigns that achieved the best results at the lowest possible cost, and we started achieving organic reach of 60,000 to 70,000 per post. As a result of these efforts, messages and customers began flowing in significantly through digital marketing.",
+        "metric1": {
+          "value": "180 → 1,900",
+          "label": "Followers Growth"
+        },
+        "metric2": {
+          "value": "20K → 2.5M",
+          "label": "Total Reach"
+        },
+        "metric3": {
+          "value": "+956%",
+          "label": "Growth Rate"
+        }
+      },
+      {
+        "id": "ttc",
+        "title": "TTC Educational Center",
+        "subtitle": "Driving Student Enrollment",
+        "industry": "Education & Training",
+        "tags": [
+          "Page Management",
+          "Lead Generation",
+          "Graphic Design",
+          "Reels Editing"
+        ],
+        "metric1": {
+          "value": "940K+",
+          "label": "Total Reach"
+        },
+        "metric2": {
+          "value": "6.1x",
+          "label": "ROAS"
+        },
+        "metric3": {
+          "value": "+52%",
+          "label": "Enrollment Growth"
+        }
+      }
+    ]
+  },
+  "results": {
+    "badge": "Proven Results",
+    "title": "Campaign ",
+    "highlight": "Achievements",
+    "subtitle": "Numbers don't lie. Here's what I've delivered across all client campaigns combined.",
+    "context": "These results were achieved across",
+    "clients": "3 major clients",
+    "context2": "in the automotive, fashion, and education industries — proving that the right strategy works across any sector.",
+    "stats": [
+      {
+        "label": "Total Reach"
+      },
+      {
+        "label": "Total Engagements"
+      },
+      {
+        "label": "Total Link Clicks"
+      },
+      {
+        "label": "Campaigns Launched"
+      },
+      {
+        "label": "Followers Gained"
+      },
+      {
+        "label": "Average ROAS"
+      }
+    ]
+  },
+  "why": {
+    "badge": "Why Choose Me",
+    "title": "Why Work ",
+    "highlight": "With Me?",
+    "subtitle": "The qualities that make every client engagement a success and every campaign a step closer to your goals.",
+    "cta_work": "Let's Work Together",
+    "cta_portfolio": "View Portfolio",
+    "cta_title": "Ready to",
+    "cta_highlight": "Grow Your Business?",
+    "cta_sub": "Let's build something remarkable together. Your brand deserves a digital presence that converts.",
+    "reasons": [
+      {
+        "title": "Creative Thinking",
+        "description": "I approach every brand challenge with fresh, innovative ideas that stand out in crowded feeds and capture genuine attention."
+      },
+      {
+        "title": "Performance Driven",
+        "description": "Every decision is backed by data. I optimize relentlessly until your campaigns deliver the best possible ROI."
+      },
+      {
+        "title": "Fast Delivery",
+        "description": "I respect your time and deadlines. Projects are delivered on time, every time — without compromising quality."
+      },
+      {
+        "title": "Attention to Detail",
+        "description": "From typography kerning to ad copy optimization — every pixel and every word is carefully crafted for maximum impact."
+      },
+      {
+        "title": "Data Analysis",
+        "description": "I turn complex analytics into clear, actionable insights that guide strategy and continuously improve performance."
+      },
+      {
+        "title": "Marketing Experience",
+        "description": "3+ years managing real client accounts across automotive, fashion, and education — I know what actually works."
+      }
+    ]
+  },
+  "process": {
+    "badge": "How I Work",
+    "title": "My Work ",
+    "highlight": "Process",
+    "subtitle": "A proven, structured approach that transforms your goals into measurable results — every single time.",
+    "steps": [
+      {
+        "title": "Research",
+        "desc": "Deep-dive into your brand, audience, competitors, and market landscape to uncover opportunities."
+      },
+      {
+        "title": "Planning",
+        "desc": "Define goals, KPIs, content pillars, and a detailed campaign roadmap aligned with your budget."
+      },
+      {
+        "title": "Content Creation",
+        "desc": "Write compelling copy, craft engaging scripts, and plan creative direction for all content."
+      },
+      {
+        "title": "Design & Editing",
+        "desc": "Create premium visuals, Reels, and ad creatives that stop the scroll and drive action."
+      },
+      {
+        "title": "Publishing",
+        "desc": "Schedule and publish content at optimal times for maximum reach and engagement."
+      },
+      {
+        "title": "Advertising",
+        "desc": "Launch targeted Meta campaigns with strategic audience segmentation and creative testing."
+      },
+      {
+        "title": "Optimization",
+        "desc": "Analyze performance data daily, scale winning campaigns, and eliminate underperformers."
+      },
+      {
+        "title": "Reports",
+        "desc": "Deliver comprehensive monthly reports with insights, learnings, and next-month recommendations."
+      }
+    ]
+  },
+  "skills": {
+    "badge": "Expertise",
+    "title": "Tools & ",
+    "highlight": "Skills",
+    "subtitle": "A curated toolkit built over years of real client work across marketing, design, video, and web development.",
+    "toolsLabel": "Tools I Use Daily",
+    "categories": [
+      {
+        "category": "Marketing & Advertising"
+      },
+      {
+        "category": "Graphic Design"
+      },
+      {
+        "category": "Video Production"
+      },
+      {
+        "category": "Web Development"
+      }
+    ]
+  },
+  "gallery": {
+    "badge": "Design Work",
+    "title": "Graphic Design ",
+    "highlight": "Gallery",
+    "subtitle": "A curated selection of social media designs, brand identities, and advertising creatives crafted for real client campaigns.",
+    "categories": [
+      "All",
+      "Posts",
+      "Carousels",
+      "Ads",
+      "Stories",
+      "Branding"
+    ]
+  },
+  "videos": {
+    "badge": "Video Work",
+    "title": "Video ",
+    "highlight": "Portfolio",
+    "subtitle": "High-quality Reels, ads, and promotional videos that capture attention and drive engagement.",
+    "categories": [
+      "All",
+      "Reels",
+      "Ads",
+      "Promotional",
+      "Educational"
+    ]
+  },
+  "testimonials": {
+    "badge": "Client Stories",
+    "title": "What Clients ",
+    "highlight": "Say",
+    "subtitle": "Real feedback from real businesses who trusted me with their digital growth.",
+    "projectLabel": "Project"
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked ",
+    "highlight": "Questions",
+    "subtitle": "Everything you need to know before we start working together.",
+    "stillQuestion": "Still have questions?",
+    "stillSub": "I'm happy to answer anything. Let's have a conversation.",
+    "contactBtn": "Contact Me"
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "Let's Build Something ",
+    "highlight": "Remarkable",
+    "subtitle": "Ready to elevate your brand? Let's discuss your project and create a strategy that delivers real results.",
+    "readyTitle": "Ready to start?",
+    "readySub": "Whether you need a complete digital marketing strategy or a specific service, I'm here to help. Let's talk about your goals.",
+    "links": [
+      {
+        "label": "WhatsApp",
+        "value": "Chat on WhatsApp"
+      },
+      {
+        "label": "Facebook",
+        "value": "Salem Rizk"
+      },
+      {
+        "label": "Instagram",
+        "value": "@salemrizk"
+      },
+      {
+        "label": "Threads",
+        "value": "@salem_rizk22"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "Salem Rizk"
+      },
+      {
+        "label": "Location",
+        "value": "Beheira Governorate, Edko City"
+      }
+    ],
+    "formTitle": "Send a Message",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "serviceLabel": "Service Needed",
+    "servicePlaceholder": "Select a service...",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "Tell me about your project, goals, and any details that will help me understand your needs...",
+    "submitBtn": "Send Message",
+    "successTitle": "Message Sent!",
+    "successSub": "I'll get back to you within 24 hours.",
+    "privacy": "I respond within 24 hours · No spam, ever",
+    "services": [
+      "Social Media Management",
+      "Meta Ads & Advertising",
+      "Graphic Design",
+      "Video Editing & Reels",
+      "Content Strategy",
+      "Website Development",
+      "Other"
+    ]
+  },
+  "footer": {
+    "tagline": "Social Media Manager, Performance Marketer & Creative Designer based in Beheira Governorate, Edko City. Building brands that convert.",
+    "location": "Beheira Governorate, Edko City",
+    "copyright": "All rights reserved.",
+    "madeIn": "Designed & Built with precision in Egypt 🇪🇬",
+    "sections": {
+      "Services": "Services",
+      "Projects": "Projects",
+      "Quick": "Quick Links"
+    },
+    "links": {
+      "services": [
+        "Social Media Management",
+        "Meta Ads & Advertising",
+        "Graphic Design",
+        "Video Editing & Reels",
+        "Website Development"
+      ],
+      "projects": [
+        "ESCO Motor Oils",
+        "VAKO Damanhour",
+        "TTC Educational Center"
+      ],
+      "quick": [
+        "About Me",
+        "Campaign Results",
+        "Skills",
+        "Work Process",
+        "FAQ"
+      ]
+    }
+  },
+  "devProjects": {
+    "badge": "Web Development",
+    "title": "Development ",
+    "highlight": "Projects",
+    "subtitle": "8 real-world web and mobile applications — from e-commerce platforms to automation bots. Built with modern tech stacks and production-ready code.",
+    "filterAll": "All",
+    "filters": [
+      "All",
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Mobile"
+    ],
+    "liveBtn": "Live Demo",
+    "codeBtn": "Source Code",
+    "featuresTitle": "Key Features",
+    "statusLive": "Live",
+    "statusProgress": "In Progress",
+    "ctaTitle": "Need a Custom Web Solution?",
+    "ctaSubtitle": "From landing pages to full-stack platforms — I build fast, modern, and scalable web applications.",
+    "ctaBtn": "Start a Project"
+  },
+  "project": {
+    "backToProjects": "Back to Projects",
+    "labels": {
+      "industry": "Industry",
+      "duration": "Duration",
+      "year": "Year"
+    },
+    "resultMetrics": {
+      "reach": "Total Reach",
+      "impressions": "Impressions",
+      "roas": "ROAS",
+      "followers": "Followers Gained"
+    },
+    "overview": {
+      "badge": "Project Overview",
+      "title": "The Full Picture",
+      "servicesTitle": "Services Delivered"
+    },
+    "challenge": {
+      "badge": "The Challenge",
+      "badgeSub": "What we faced",
+      "objectiveBadge": "The Objectives",
+      "objectiveSub": "What we aimed to achieve"
+    },
+    "strategy": {
+      "badge": "Our Approach",
+      "title": "The Strategy"
+    },
+    "results": {
+      "badge": "Campaign Results",
+      "title": "Numbers That",
+      "highlight": "Speak",
+      "subtitle": "Concrete, measurable results achieved for"
+    },
+    "beforeAfter": {
+      "badge": "Transformation",
+      "title": "Before vs",
+      "highlight": "After",
+      "beforeLabel": "Before",
+      "afterLabel": "After"
+    },
+    "achievements": {
+      "badge": "Highlights",
+      "title": "Key",
+      "highlight": "Achievements"
+    },
+    "gallery": {
+      "badge": "Creative Work",
+      "title": "Design",
+      "highlight": "Gallery",
+      "subtitle": "A selection of the creative assets produced for"
+    },
+    "timeline": {
+      "badge": "How We Got There",
+      "title": "Project",
+      "highlight": "Timeline"
+    },
+    "tools": {
+      "title": "Tools & Platforms Used"
+    },
+    "related": {
+      "title": "More Case Studies",
+      "subtitle": "Explore other projects and results",
+      "viewAll": "View All Projects",
+      "viewCase": "View Case Study",
+      "cta": "Start Your Project"
+    }
+  },
+  "aboutPage": {
+    "title": "About Salem Rezk",
+    "heading": "The Beginning, Evolution, and Ongoing Journey.",
+    "bio1": "Born in Beheira Governorate, Salem Rezk initially pursued a passion for football, playing for several sports clubs until 2020. This year marked a turning point in his career as he stopped playing football to focus on completing his academic studies.",
+    "bio2": "In early 2020, he entered the tech industry and strongly began his journey in content creation, producing over 600 videos and summaries, which helped hone his creative skills.",
+    "bio3": "During his studies, he served as the Administrative Manager at Al-Hilal Alexandrian Club for a season and a half. He was entirely responsible for marketing, club systems, and coordinating all internal administrative affairs. Simultaneously, he worked as a freelancer.",
+    "bio4": "He later took over the marketing management for a major educational center in Alexandria (TTC), and subsequently added the management of ESCO Motor Oils to his portfolio, achieving exceptional success with both.",
+    "bio5": "Since graduating and up to the present day, Salem continues to fully manage the marketing operations for both TTC and ESCO. Concurrently, he maintains his freelance work in web development, social media management, and graphic design, providing comprehensive solutions for major companies and projects."
+  }
+}

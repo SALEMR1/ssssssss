@@ -1,0 +1,1226 @@
+[
+  {
+    "id": "esco",
+    "slug": "esco",
+    "title": "ESCO Motor Oils",
+    "title_ar": "ESCO لزيوت المحركات",
+    "subtitle": "From Zero to Industry Leader on Social Media",
+    "subtitle_ar": "من الصفر إلى رائد القطاع على وسائل التواصل",
+    "industry": "Automotive Lubricants",
+    "industry_ar": "زيوت السيارات",
+    "duration": "8 Months",
+    "duration_ar": "8 أشهر",
+    "year": "2024",
+    "coverImage": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/escooil%20(15).jpg?updatedAt=1781364850957",
+    "heroImage": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/escooil%20(1).jpg?updatedAt=1781364850942",
+    "logo": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/logo.jpeg",
+    "color": "#f59e0b",
+    "tags": [
+      "Social Media Management",
+      "Graphic Design",
+      "Video Editing",
+      "Meta Ads",
+      "Marketing Strategy",
+      "Campaign Optimization"
+    ],
+    "tags_ar": [
+      "إدارة وسائل التواصل",
+      "تصميم جرافيك",
+      "مونتاج فيديو",
+      "إعلانات ميتا",
+      "استراتيجية التسويق",
+      "تحسين الحملات"
+    ],
+    "overview": "ESCO Motor Oils is an Egyptian automotive lubricants brand competing in a highly saturated market. When we began working together, the brand had minimal digital presence, low engagement, and no structured marketing strategy. The goal was clear: build a powerful social media identity that reflects the brand's quality and drives measurable business growth.",
+    "overview_ar": "ESCO لزيوت المحركات علامة تجارية مصرية في سوق شديد التنافس. حين بدأنا العمل معًا، كان الحضور الرقمي ضئيلًا والتفاعل منخفضًا دون أي استراتيجية تسويقية. الهدف كان واضحًا: بناء هوية قوية على وسائل التواصل تعكس جودة العلامة وتحقق نموًا قابلًا للقياس.",
+    "challenge": "ESCO faced a fragmented digital identity with no consistent brand voice, extremely low organic reach, and zero paid advertising infrastructure.",
+    "challenge_ar": "واجهت ESCO هوية رقمية متشتتة دون صوت علامة تجارية متسق، وصول عضوي منخفض للغاية، وغياب تام للإعلانات المدفوعة.",
+    "challengePoints": [
+      "No brand identity or visual guidelines",
+      "Less than 1,000 followers across all platforms",
+      "Zero paid advertising experience",
+      "No content strategy or publishing calendar",
+      "Extremely low engagement rate (< 0.5%)",
+      "No performance tracking or analytics"
+    ],
+    "challengePoints_ar": [
+      "غياب الهوية البصرية على وسائل التواصل",
+      "أقل من 1,000 متابع على جميع المنصات",
+      "صفر خبرة في الإعلانات المدفوعة",
+      "لا استراتيجية محتوى ولا تقويم نشر",
+      "معدل تفاعل منخفض جدًا (أقل من 0.5%)",
+      "لا تتبع للأداء ولا تحليلات"
+    ],
+    "objectives": [
+      "Build a cohesive brand identity across Facebook & Instagram",
+      "Grow followers to 10K+",
+      "Achieve 3M+ total reach through Meta Ads",
+      "Increase engagement rate to 5%+",
+      "Launch and optimize product advertising campaigns",
+      "Generate qualified leads through targeted Meta campaigns"
+    ],
+    "objectives_ar": [
+      "بناء هوية علامة تجارية متماسكة على فيسبوك وإنستجرام",
+      "رفع المتابعين إلى 10 آلاف+",
+      "تحقيق وصول إجمالي 3M+ عبر إعلانات ميتا",
+      "رفع معدل التفاعل إلى 5%+",
+      "إطلاق حملات إعلانية للمنتجات وتحسينها",
+      "توليد عملاء محتملين عبر حملات ميتا المستهدفة"
+    ],
+    "strategy": "We started with a full brand audit and competitive analysis. We developed a 360° content strategy and implemented a structured funnel: awareness → consideration → conversion, with A/B testing on creatives and audiences.",
+    "strategy_ar": "بدأنا بتدقيق شامل للعلامة وتحليل تنافسي. طوّرنا استراتيجية محتوى 360° وطبّقنا قمعًا منظمًا: وعي ← اهتمام ← تحويل، مع اختبار A/B للإعلانات والجماهير.",
+    "strategyPoints": [
+      "Full competitive landscape analysis and positioning",
+      "Development of brand voice and visual guidelines",
+      "Content calendar with daily publishing schedule",
+      "Video-first approach with Reels",
+      "Meta Ads funnel: Awareness → Traffic → Conversion",
+      "Monthly performance audits"
+    ],
+    "strategyPoints_ar": [
+      "تحليل شامل للمشهد التنافسي والتموضع",
+      "تطوير صوت العلامة والإرشادات البصرية",
+      "تقويم محتوى بجدول نشر يومي",
+      "نهج الفيديو أولًا مع ريلز",
+      "قمع إعلانات ميتا: وعي ← حركة ← تحويل",
+      "تدقيق أداء شهري"
+    ],
+    "services": [
+      {
+        "icon": "LayoutGrid",
+        "title": "Social Media Management",
+        "title_ar": "إدارة وسائل التواصل",
+        "desc": "Daily content publishing, community management, and platform optimization.",
+        "desc_ar": "نشر محتوى يومي وإدارة المجتمع وتحسين المنصة."
+      },
+      {
+        "icon": "Palette",
+        "title": "Graphic Design",
+        "title_ar": "تصميم جرافيك",
+        "desc": "Premium visual identity, product showcases, and branded templates.",
+        "desc_ar": "هوية بصرية راقية وعروض منتجات وقوالب ذات علامة تجارية."
+      },
+      {
+        "icon": "Video",
+        "title": "Video Editing",
+        "title_ar": "مونتاج فيديو",
+        "desc": "Reels, product demos, testimonial videos, and motion graphics.",
+        "desc_ar": "ريلز وعروض توضيحية للمنتجات وفيديوهات شهادات ورسوم متحركة."
+      },
+      {
+        "icon": "Target",
+        "title": "Meta Ads",
+        "title_ar": "إعلانات ميتا",
+        "desc": "Full-funnel campaign management with A/B testing and optimization.",
+        "desc_ar": "إدارة حملات بقمع كامل مع اختبار A/B والتحسين المستمر."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Marketing Strategy",
+        "title_ar": "استراتيجية التسويق",
+        "desc": "Comprehensive strategy including positioning, messaging, and campaign planning.",
+        "desc_ar": "استراتيجية شاملة تشمل التموضع والرسائل والتخطيط للحملات."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Campaign Optimization",
+        "title_ar": "تحسين الحملات",
+        "desc": "Real-time monitoring, bid optimization, and scaling profitable ad sets.",
+        "desc_ar": "مراقبة فورية وتحسين المزايدات وتوسيع مجموعات الإعلانات المربحة."
+      }
+    ],
+    "results": {
+      "reach": "3.2M",
+      "reachLabel": "Total Reach",
+      "reachLabel_ar": "إجمالي الوصول",
+      "impressions": "8.7M",
+      "impressionsLabel": "Impressions",
+      "impressionsLabel_ar": "مرات الظهور",
+      "engagement": "142K",
+      "engagementLabel": "Engagements",
+      "engagementLabel_ar": "تفاعلات",
+      "followers": "12.4K",
+      "followersLabel": "Followers Gained",
+      "followersLabel_ar": "متابعون مكتسبون",
+      "clicks": "47K",
+      "clicksLabel": "Link Clicks",
+      "clicksLabel_ar": "نقرات الروابط",
+      "ctr": "4.8%",
+      "ctrLabel": "Average CTR",
+      "ctrLabel_ar": "متوسط نسبة النقر",
+      "roas": "4.2x",
+      "roasLabel": "Average ROAS",
+      "roasLabel_ar": "متوسط عائد الإنفاق",
+      "campaigns": "18",
+      "campaignsLabel": "Campaigns Launched",
+      "campaignsLabel_ar": "حملة مطلقة"
+    },
+    "beforeAfter": [
+      {
+        "metric": "Monthly Reach",
+        "metric_ar": "الوصول الشهري",
+        "before": "2,100",
+        "after": "420,000",
+        "improvement": "+19,900%"
+      },
+      {
+        "metric": "Engagement Rate",
+        "metric_ar": "معدل التفاعل",
+        "before": "0.4%",
+        "after": "6.2%",
+        "improvement": "+1,450%"
+      },
+      {
+        "metric": "Followers",
+        "metric_ar": "المتابعون",
+        "before": "890",
+        "after": "13,290",
+        "improvement": "+1,393%"
+      },
+      {
+        "metric": "Ad ROAS",
+        "metric_ar": "عائد الإعلانات",
+        "before": "0",
+        "after": "4.2x",
+        "improvement": "From scratch"
+      }
+    ],
+    "achievements": [
+      {
+        "icon": "Trophy",
+        "title": "Top Performing Campaign",
+        "title_ar": "أفضل حملة أداءً",
+        "desc": "Ramadan campaign achieved 1.4M reach with a 5.8% CTR.",
+        "desc_ar": "حققت حملة رمضان وصولًا بـ 1.4 مليون وبنسبة نقر 5.8%."
+      },
+      {
+        "icon": "Zap",
+        "title": "Viral Reel Content",
+        "title_ar": "محتوى ريلز فيروسي",
+        "desc": "Product demonstration Reels averaged 180K views each.",
+        "desc_ar": "حققت ريلز عروض المنتجات متوسط 180 ألف مشاهدة لكل منها."
+      },
+      {
+        "icon": "Users",
+        "title": "Community Growth",
+        "title_ar": "نمو المجتمع",
+        "desc": "Built an engaged community of 13,000+ followers.",
+        "desc_ar": "بُني مجتمع متفاعل من أكثر من 13,000 متابع."
+      },
+      {
+        "icon": "DollarSign",
+        "title": "Proven ROI",
+        "title_ar": "عائد مُثبَت",
+        "desc": "Achieved 4.2x ROAS on advertising spend.",
+        "desc_ar": "تحقيق عائد إنفاق إعلاني 4.2x."
+      }
+    ],
+    "testimonial": {
+      "quote": "Salem transformed our brand's digital presence completely. What he built in 8 months would have taken us years to achieve on our own.",
+      "quote_ar": "حوّل سالم حضورنا الرقمي تمامًا. ما بناه في 8 أشهر كان يستغرق منا سنوات لوحدنا.",
+      "name": "ESCO Marketing Team",
+      "role": "Marketing Department, ESCO Motor Oils",
+      "role_ar": "قسم التسويق، ESCO لزيوت المحركات",
+      "avatar": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755"
+    },
+    "tools": [
+      "Meta Ads Manager",
+      "Photoshop",
+      "Illustrator",
+      "Premiere Pro",
+      "After Effects",
+      "CapCut",
+      "Meta Business Suite",
+      "Google Analytics"
+    ],
+    "gallery": [
+      {
+        "id": 1,
+        "src": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/escooil%20(15).jpg?updatedAt=1781364850957",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "ESCO post design 1"
+      },
+      {
+        "id": 2,
+        "src": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/escooil%20(1).jpg?updatedAt=1781364850942",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "ESCO post design 2"
+      },
+      {
+        "id": 3,
+        "src": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/escooil%20(6).jpg?updatedAt=1781364850969",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "ESCO post design 3"
+      },
+      {
+        "id": 4,
+        "src": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/escooil%20(2).jpg?updatedAt=1781364850964",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "ESCO post design 4"
+      },
+      {
+        "id": 5,
+        "src": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/%D8%B2%D9%8A%D8%AA%20(4).png?updatedAt=1781364851126",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "ESCO post design 5"
+      },
+      {
+        "id": 6,
+        "src": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/%D8%B2%D9%8A%D8%AA%20(14).jpg?updatedAt=1781364851122",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "ESCO post design 6"
+      },
+      {
+        "id": 7,
+        "src": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/escooil%20(4).jpg?updatedAt=1781364850976",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "ESCO post design 7"
+      }
+    ],
+    "videos": [],
+    "timeline": [
+      {
+        "phase": "Research",
+        "phase_ar": "البحث",
+        "desc": "Market analysis, competitor audit, target audience definition",
+        "desc_ar": "تحليل السوق وتدقيق المنافسين وتعريف الجمهور المستهدف"
+      },
+      {
+        "phase": "Strategy",
+        "phase_ar": "الاستراتيجية",
+        "desc": "Brand positioning, content strategy, advertising roadmap",
+        "desc_ar": "تموضع العلامة واستراتيجية المحتوى وخارطة طريق الإعلانات"
+      },
+      {
+        "phase": "Design",
+        "phase_ar": "التصميم",
+        "desc": "Visual identity, templates, creative assets development",
+        "desc_ar": "الهوية البصرية والقوالب وتطوير الأصول الإبداعية"
+      },
+      {
+        "phase": "Launch",
+        "phase_ar": "الإطلاق",
+        "desc": "First content wave, initial ad campaigns, A/B testing",
+        "desc_ar": "الموجة الأولى من المحتوى والحملات الأولى واختبار A/B"
+      },
+      {
+        "phase": "Optimize",
+        "phase_ar": "التحسين",
+        "desc": "Performance analysis, scaling winners, eliminating waste",
+        "desc_ar": "تحليل الأداء وتوسيع الرابحين والتخلص من الهدر"
+      },
+      {
+        "phase": "Report",
+        "phase_ar": "التقرير",
+        "desc": "Monthly comprehensive performance reports and insights",
+        "desc_ar": "تقارير أداء شهرية شاملة ورؤى قابلة للتنفيذ"
+      }
+    ],
+    "relatedProjects": [
+      "vako",
+      "ttc"
+    ]
+  },
+  {
+    "id": "vako",
+    "slug": "vako",
+    "title": "VAKO Damanhour",
+    "title_ar": "فاكو دمنهور",
+    "subtitle": "Elevating a Fashion Brand to Premium Status",
+    "subtitle_ar": "ترقية علامة أزياء إلى مكانة راقية",
+    "industry": "Fashion & Retail",
+    "industry_ar": "الأزياء والبيع بالتجزئة",
+    "duration": "6 Months",
+    "duration_ar": "6 أشهر",
+    "year": "2024",
+    "coverImage": "https://ik.imagekit.io/effect/effect/vaco/logo.jpg",
+    "heroImage": "https://ik.imagekit.io/effect/effect/vaco/logo.jpg",
+    "logo": "https://ik.imagekit.io/effect/effect/vaco/logo.jpg",
+    "color": "#8b5cf6",
+    "tags": [
+      "Branding",
+      "Social Media Management",
+      "Graphic Design",
+      "Video Editing",
+      "Advertising Campaigns"
+    ],
+    "tags_ar": [
+      "بناء العلامة التجارية",
+      "إدارة وسائل التواصل",
+      "تصميم جرافيك",
+      "مونتاج فيديو",
+      "حملات إعلانية"
+    ],
+    "overview": "VAKO is a fashion retail brand based in Damanhour, Egypt. The brand had physical presence but lacked a premium digital identity. Our mission was to reposition VAKO as a premium fashion destination through elevated visual storytelling and targeted advertising.",
+    "overview_ar": "فاكو علامة أزياء بالتجزئة في دمنهور، مصر. كان للعلامة حضور مادي لكنها افتقرت لهوية رقمية راقية. مهمتنا كانت إعادة تموضع فاكو كوجهة أزياء متميزة عبر سرد بصري رفيع وإعلانات مستهدفة.",
+    "challenge": "VAKO's social media presence did not reflect the quality of their products. The inconsistent visual style and untargeted content made it difficult to connect with fashion-conscious consumers.",
+    "challenge_ar": "لم يعكس حضور فاكو على وسائل التواصل جودة منتجاتها. الأسلوب البصري غير المتسق والمحتوى غير المستهدف جعل التواصل مع المستهلكين المهتمين بالموضة أمرًا صعبًا.",
+    "challengePoints": [
+      "Inconsistent visual identity across platforms",
+      "Low-quality content that didn't reflect product value",
+      "No clear brand positioning",
+      "Poor advertising performance with high cost-per-result",
+      "Minimal engagement from target demographic",
+      "No video or Reels strategy"
+    ],
+    "challengePoints_ar": [
+      "هوية بصرية غير متسقة عبر المنصات",
+      "محتوى منخفض الجودة لا يعكس قيمة المنتج",
+      "غياب تموضع واضح للعلامة",
+      "أداء إعلاني ضعيف مع تكلفة عالية",
+      "تفاعل ضئيل من الشريحة المستهدفة",
+      "لا استراتيجية لمحتوى الفيديو والريلز"
+    ],
+    "objectives": [
+      "Reposition VAKO as a premium fashion brand",
+      "Create a consistent elevated visual identity",
+      "Grow Instagram and Facebook followers significantly",
+      "Drive foot traffic to the physical store",
+      "Launch targeted seasonal advertising campaigns",
+      "Build brand awareness in Damanhour"
+    ],
+    "objectives_ar": [
+      "إعادة تموضع فاكو كعلامة أزياء راقية",
+      "إنشاء هوية بصرية متسقة ومرتفعة المستوى",
+      "تنمية متابعي إنستجرام وفيسبوك بشكل ملحوظ",
+      "جذب الزوار إلى المتجر الفعلي",
+      "إطلاق حملات إعلانية موسمية مستهدفة",
+      "بناء وعي بالعلامة في دمنهور"
+    ],
+    "strategy": "We developed a premium visual identity and implemented a fashion editorial approach to content. Our advertising strategy focused on lookalike audiences and behavioral targeting to reach genuine fashion enthusiasts.",
+    "strategy_ar": "طوّرنا نظام هوية بصرية راقيًا وطبّقنا نهجًا تحريريًا للأزياء في المحتوى. ركّزت استراتيجية الإعلانات على جماهير مشابهة والاستهداف السلوكي للوصول إلى عشاق الموضة.",
+    "strategyPoints": [
+      "Complete brand visual overhaul and style guide",
+      "Editorial-style photography direction",
+      "Fashion lookbook format for seasonal collections",
+      "Influencer collaboration strategy",
+      "Geo-targeted advertising for Damanhour",
+      "Seasonal campaign planning (Eid, Summer)"
+    ],
+    "strategyPoints_ar": [
+      "إعادة هيكلة بصرية كاملة للعلامة ودليل الأسلوب",
+      "توجيه تصوير وإخراج فني بأسلوب تحريري",
+      "تنسيق لوك بوك للموضة لكل مجموعة موسمية",
+      "استراتيجية تعاون مع المؤثرين",
+      "إعلانات جغرافية مستهدفة لدمنهور",
+      "تخطيط حملات موسمية (العيد، الصيف)"
+    ],
+    "services": [
+      {
+        "icon": "Sparkles",
+        "title": "Branding",
+        "title_ar": "بناء العلامة",
+        "desc": "Complete visual identity development including color palette and brand guidelines.",
+        "desc_ar": "تطوير هوية بصرية كاملة تشمل لوحة الألوان وإرشادات العلامة التجارية."
+      },
+      {
+        "icon": "LayoutGrid",
+        "title": "Social Media Management",
+        "title_ar": "إدارة وسائل التواصل",
+        "desc": "Strategic content publishing and platform growth across Instagram and Facebook.",
+        "desc_ar": "نشر محتوى استراتيجي وتنمية المنصة عبر إنستجرام وفيسبوك."
+      },
+      {
+        "icon": "Palette",
+        "title": "Graphic Design",
+        "title_ar": "تصميم جرافيك",
+        "desc": "Fashion-forward visual content, lookbook layouts, and story templates.",
+        "desc_ar": "محتوى بصري عصري وتصاميم لوك بوك وقوالب ستوري."
+      },
+      {
+        "icon": "Video",
+        "title": "Video Editing",
+        "title_ar": "مونتاج فيديو",
+        "desc": "Fashion Reels, product showcase videos, and promotional films.",
+        "desc_ar": "ريلز أزياء وفيديوهات عرض منتجات وأفلام ترويجية."
+      },
+      {
+        "icon": "Target",
+        "title": "Advertising Campaigns",
+        "title_ar": "حملات إعلانية",
+        "desc": "Targeted Meta campaigns for collection launches and seasonal promotions.",
+        "desc_ar": "حملات ميتا مستهدفة لإطلاق مجموعات جديدة وعروض موسمية."
+      }
+    ],
+    "results": {
+      "reach": "1.8M",
+      "reachLabel": "Total Reach",
+      "reachLabel_ar": "إجمالي الوصول",
+      "impressions": "4.2M",
+      "impressionsLabel": "Impressions",
+      "impressionsLabel_ar": "مرات الظهور",
+      "engagement": "86K",
+      "engagementLabel": "Engagements",
+      "engagementLabel_ar": "تفاعلات",
+      "followers": "8.2K",
+      "followersLabel": "Followers Gained",
+      "followersLabel_ar": "متابعون مكتسبون",
+      "clicks": "31K",
+      "clicksLabel": "Link Clicks",
+      "clicksLabel_ar": "نقرات الروابط",
+      "ctr": "3.9%",
+      "ctrLabel": "Average CTR",
+      "ctrLabel_ar": "متوسط نسبة النقر",
+      "roas": "3.8x",
+      "roasLabel": "Average ROAS",
+      "roasLabel_ar": "متوسط عائد الإنفاق",
+      "campaigns": "12",
+      "campaignsLabel": "Campaigns Launched",
+      "campaignsLabel_ar": "حملة مطلقة"
+    },
+    "beforeAfter": [
+      {
+        "metric": "Monthly Reach",
+        "metric_ar": "الوصول الشهري",
+        "before": "1,200",
+        "after": "280,000",
+        "improvement": "+23,233%"
+      },
+      {
+        "metric": "Engagement Rate",
+        "metric_ar": "معدل التفاعل",
+        "before": "0.8%",
+        "after": "5.4%",
+        "improvement": "+575%"
+      },
+      {
+        "metric": "Followers",
+        "metric_ar": "المتابعون",
+        "before": "1,340",
+        "after": "9,540",
+        "improvement": "+612%"
+      },
+      {
+        "metric": "Store Visits (from Ads)",
+        "metric_ar": "زيارات المتجر",
+        "before": "0",
+        "after": "2,800/mo",
+        "improvement": "New Channel"
+      }
+    ],
+    "achievements": [
+      {
+        "icon": "Star",
+        "title": "Brand Repositioning",
+        "title_ar": "إعادة تموضع العلامة",
+        "desc": "Successfully repositioned VAKO as a recognized premium fashion brand in the region.",
+        "desc_ar": "إعادة تموضع فاكو بنجاح كعلامة أزياء راقية معترف بها في المنطقة."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Collection Launch Success",
+        "title_ar": "نجاح إطلاق المجموعة",
+        "desc": "Eid collection campaign achieved 620K reach in 2 weeks.",
+        "desc_ar": "حملة مجموعة العيد حققت وصولًا بـ 620 ألف خلال أسبوعين."
+      },
+      {
+        "icon": "Heart",
+        "title": "Community Building",
+        "title_ar": "بناء المجتمع",
+        "desc": "Built a highly engaged fashion community that actively shares VAKO content.",
+        "desc_ar": "بُني مجتمع أزياء متفاعل للغاية يشارك محتوى فاكو بنشاط."
+      },
+      {
+        "icon": "Award",
+        "title": "Creative Recognition",
+        "title_ar": "الاعتراف الإبداعي",
+        "desc": "Content style became the regional benchmark for fashion brands in Damanhour.",
+        "desc_ar": "اعتُمد أسلوب المحتوى معيارًا إقليميًا لعلامات الأزياء في دمنهور."
+      }
+    ],
+    "testimonial": {
+      "quote": "Our store visits increased dramatically after Salem redesigned our entire social media presence. The ROI has been incredible.",
+      "quote_ar": "زادت زيارات متجرنا بشكل ملحوظ بعد أن أعاد سالم تصميم حضورنا على وسائل التواصل. العائد كان استثنائيًا.",
+      "name": "VAKO Management",
+      "role": "Owner, VAKO Damanhour",
+      "role_ar": "صاحب فاكو دمنهور",
+      "avatar": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755"
+    },
+    "tools": [
+      "Meta Ads Manager",
+      "Photoshop",
+      "Illustrator",
+      "Premiere Pro",
+      "CapCut",
+      "Canva",
+      "Meta Business Suite"
+    ],
+    "gallery": [
+      {
+        "id": 1,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/صي.png?updatedAt=1781364556479",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO store photo"
+      },
+      {
+        "id": 2,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/few.jpg?updatedAt=1781364549098",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 3,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/qc.jpg?updatedAt=1781364546800",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 4,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/qdfwe.jpg?updatedAt=1781364544181",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 5,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/weff.jpg?updatedAt=1781364528940",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 6,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/asd.jpg?updatedAt=1781364526441",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 7,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/arg.jpg?updatedAt=1781364523614",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 8,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/we.jpg?updatedAt=1781364523898",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 9,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/ger.jpg?updatedAt=1781364524075",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 10,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/WEF.jpg?updatedAt=1781364524079",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 11,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/gw.jpg?updatedAt=1781364525333",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 12,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/w.jpg?updatedAt=1781364525724",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 13,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/sac.jpg?updatedAt=1781364512128",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 14,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/vw.jpg?updatedAt=1781364521648",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      },
+      {
+        "id": 15,
+        "src": "https://ik.imagekit.io/effect/effect/vaco/q.jpg?updatedAt=1781364522194",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "VAKO fashion post"
+      }
+    ],
+    "videos": [],
+    "timeline": [
+      {
+        "phase": "Brand Audit",
+        "phase_ar": "تدقيق العلامة",
+        "desc": "Analysis of existing brand assets, competitors, and target audience",
+        "desc_ar": "تحليل أصول العلامة الحالية والمنافسين والجمهور المستهدف"
+      },
+      {
+        "phase": "Rebrand",
+        "phase_ar": "إعادة البناء",
+        "desc": "New visual identity, brand guidelines, and content templates",
+        "desc_ar": "هوية بصرية جديدة وإرشادات العلامة وقوالب المحتوى"
+      },
+      {
+        "phase": "Content Strategy",
+        "phase_ar": "استراتيجية المحتوى",
+        "desc": "Editorial calendar, photography direction, video concepts",
+        "desc_ar": "تقويم تحريري وتوجيه التصوير ومفاهيم الفيديو"
+      },
+      {
+        "phase": "Launch",
+        "phase_ar": "الإطلاق",
+        "desc": "Rebranded content rollout and initial advertising campaigns",
+        "desc_ar": "طرح المحتوى المعاد تصميمه وإطلاق الحملات الإعلانية الأولى"
+      },
+      {
+        "phase": "Scale",
+        "phase_ar": "التوسع",
+        "desc": "Scaling successful campaigns and expanding audience reach",
+        "desc_ar": "توسيع الحملات الناجحة وتوسيع نطاق الجمهور"
+      },
+      {
+        "phase": "Optimize",
+        "phase_ar": "التحسين",
+        "desc": "Continuous improvement based on performance data and trends",
+        "desc_ar": "تحسين مستمر بناءً على بيانات الأداء والاتجاهات"
+      }
+    ],
+    "relatedProjects": [
+      "esco",
+      "ttc"
+    ]
+  },
+  {
+    "id": "ttc",
+    "slug": "ttc",
+    "title": "TTC Educational Center",
+    "title_ar": "مركز TTC التعليمي",
+    "subtitle": "Driving Student Enrollment Through Digital Marketing",
+    "subtitle_ar": "تعزيز التسجيل عبر التسويق الرقمي",
+    "industry": "Education & Training",
+    "industry_ar": "التعليم والتدريب",
+    "duration": "5 Months",
+    "duration_ar": "5 أشهر",
+    "year": "2024",
+    "coverImage": "https://ik.imagekit.io/effect/effect/TTC/TTC/%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AD%D9%87%20%D9%88%D8%A7%D9%84%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7.png",
+    "heroImage": "https://ik.imagekit.io/effect/effect/TTC/TTC/%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D9%87%20%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D9%87.png",
+    "logo": "https://ik.imagekit.io/effect/effect/TTC/TTC/WQF.jpg?updatedAt=1781366001803",
+    "color": "#10b981",
+    "tags": [
+      "Page Management",
+      "Student Campaigns",
+      "Graphic Design",
+      "Reels Editing",
+      "Performance Marketing"
+    ],
+    "tags_ar": [
+      "إدارة الصفحة",
+      "حملات الطلاب",
+      "تصميم جرافيك",
+      "تحرير ريلز",
+      "التسويق بالأداء"
+    ],
+    "overview": "TTC Educational Center is a private training center offering courses in various professional fields. With increasing competition, TTC needed a powerful digital marketing strategy to attract new students and position itself as the top educational choice in the region.",
+    "overview_ar": "مركز TTC التعليمي مركز تدريب خاص يقدم دورات في مختلف المجالات المهنية. مع تزايد المنافسة، احتاج TTC لاستراتيجية تسويق رقمي قوية لاستقطاب طلاب جدد وتأسيس مكانته كأفضل خيار تعليمي في المنطقة.",
+    "challenge": "TTC was losing potential students to digitally savvy competitors. Their social media was inconsistent and advertising was non-existent. The center relied entirely on word-of-mouth referrals.",
+    "challenge_ar": "كان TTC يخسر طلابًا محتملين لصالح منافسين أكثر دراية رقمية. وسائل تواصله كانت غير متسقة والإعلانات معدومة. المركز يعتمد كليًا على التوصيات الشفهية.",
+    "challengePoints": [
+      "No structured social media strategy",
+      "Zero advertising campaigns or lead generation",
+      "Poor visual quality not reflecting academic credibility",
+      "No tracking of student inquiries",
+      "Competitor centers with better digital marketing",
+      "No video content or Reels"
+    ],
+    "challengePoints_ar": [
+      "غياب استراتيجية وسائل تواصل منظمة",
+      "صفر حملات إعلانية أو توليد عملاء محتملين",
+      "جودة بصرية ضعيفة لا تعكس المصداقية الأكاديمية",
+      "عدم تتبع استفسارات الطلاب",
+      "مراكز منافسة بتسويق رقمي أفضل",
+      "لا محتوى فيديو أو ريلز"
+    ],
+    "objectives": [
+      "Build credible professional social media presence",
+      "Generate qualified student leads through Meta Ads",
+      "Increase course enrollment by 40%+",
+      "Establish TTC as the top educational center",
+      "Create engaging content for students and parents",
+      "Implement lead tracking system"
+    ],
+    "objectives_ar": [
+      "بناء حضور احترافي وموثوق على وسائل التواصل",
+      "توليد استفسارات طلاب مؤهلين عبر إعلانات ميتا",
+      "زيادة التسجيل في الدورات بأكثر من 40%",
+      "ترسيخ TTC كأفضل مركز تعليمي في المنطقة",
+      "إنشاء محتوى جذاب للطلاب وأولياء الأمور",
+      "تطبيق نظام تتبع العملاء المحتملين"
+    ],
+    "strategy": "We took an education-focused approach combining credibility-building posts with direct-response advertising. Lead generation campaigns with instant form fills were the primary advertising objective.",
+    "strategy_ar": "اعتمدنا نهجًا تعليميًا يجمع بين منشورات بناء المصداقية وإعلانات استجابة مباشرة. كانت حملات توليد العملاء المحتملين بالنماذج الفورية هي الهدف الإعلاني الأساسي.",
+    "strategyPoints": [
+      "Student success story content series",
+      "Course preview videos and curriculum highlights",
+      "Targeted lead generation (students age 16-35)",
+      "Parent-targeted awareness campaigns",
+      "Retargeting campaigns for page visitors",
+      "Monthly enrollment performance reporting"
+    ],
+    "strategyPoints_ar": [
+      "سلسلة محتوى قصص نجاح الطلاب",
+      "فيديوهات معاينة الدورات وأبرز المناهج",
+      "توليد عملاء مستهدف (طلاب 16-35 سنة)",
+      "حملات توعية موجهة لأولياء الأمور",
+      "حملات إعادة استهداف لزوار الصفحة",
+      "تقارير أداء التسجيل الشهرية"
+    ],
+    "services": [
+      {
+        "icon": "LayoutGrid",
+        "title": "Page Management",
+        "title_ar": "إدارة الصفحة",
+        "desc": "Full social media management including content publishing and student inquiries.",
+        "desc_ar": "إدارة كاملة لوسائل التواصل تشمل النشر واستفسارات الطلاب."
+      },
+      {
+        "icon": "GraduationCap",
+        "title": "Student Campaigns",
+        "title_ar": "حملات الطلاب",
+        "desc": "Targeted Meta lead generation campaigns to drive course enrollments.",
+        "desc_ar": "حملات توليد عملاء محتملين على ميتا لزيادة التسجيل في الدورات."
+      },
+      {
+        "icon": "Palette",
+        "title": "Graphic Design",
+        "title_ar": "تصميم جرافيك",
+        "desc": "Academic-credibility-focused designs including course banners and certificates.",
+        "desc_ar": "تصاميم تركز على المصداقية الأكاديمية تشمل بانرات الدورات والشهادات."
+      },
+      {
+        "icon": "Film",
+        "title": "Reels Editing",
+        "title_ar": "تحرير ريلز",
+        "desc": "Engaging short-form videos featuring student testimonials and course previews.",
+        "desc_ar": "فيديوهات قصيرة جذابة تتضمن شهادات الطلاب وعروض الدورات."
+      },
+      {
+        "icon": "Target",
+        "title": "Performance Marketing",
+        "title_ar": "التسويق بالأداء",
+        "desc": "Data-driven advertising with optimized bidding and conversion tracking.",
+        "desc_ar": "إعلانات مدفوعة بالبيانات مع مزايدة محسّنة وتتبع التحويل."
+      }
+    ],
+    "results": {
+      "reach": "940K",
+      "reachLabel": "Total Reach",
+      "reachLabel_ar": "إجمالي الوصول",
+      "impressions": "2.1M",
+      "impressionsLabel": "Impressions",
+      "impressionsLabel_ar": "مرات الظهور",
+      "engagement": "54K",
+      "engagementLabel": "Engagements",
+      "engagementLabel_ar": "تفاعلات",
+      "followers": "4.8K",
+      "followersLabel": "Followers Gained",
+      "followersLabel_ar": "متابعون مكتسبون",
+      "clicks": "18K",
+      "clicksLabel": "Link Clicks",
+      "clicksLabel_ar": "نقرات الروابط",
+      "ctr": "5.2%",
+      "ctrLabel": "Average CTR",
+      "ctrLabel_ar": "متوسط نسبة النقر",
+      "roas": "6.1x",
+      "roasLabel": "Average ROAS",
+      "roasLabel_ar": "متوسط عائد الإنفاق",
+      "campaigns": "9",
+      "campaignsLabel": "Campaigns Launched",
+      "campaignsLabel_ar": "حملة مطلقة"
+    },
+    "beforeAfter": [
+      {
+        "metric": "Monthly Reach",
+        "metric_ar": "الوصول الشهري",
+        "before": "800",
+        "after": "180,000",
+        "improvement": "+22,400%"
+      },
+      {
+        "metric": "Student Inquiries/Month",
+        "metric_ar": "استفسارات الطلاب/شهر",
+        "before": "12",
+        "after": "140+",
+        "improvement": "+1,067%"
+      },
+      {
+        "metric": "Enrollment Increase",
+        "metric_ar": "زيادة التسجيل",
+        "before": "Baseline",
+        "after": "52% Increase",
+        "improvement": "+52%"
+      },
+      {
+        "metric": "Ad Cost Per Lead",
+        "metric_ar": "تكلفة العميل المحتمل",
+        "before": "N/A",
+        "after": "EGP 8.50",
+        "improvement": "Excellent CPL"
+      }
+    ],
+    "achievements": [
+      {
+        "icon": "GraduationCap",
+        "title": "Enrollment Breakthrough",
+        "title_ar": "اختراق التسجيل",
+        "desc": "Course enrollment increased by 52% within the first 4 months.",
+        "desc_ar": "زادت نسبة التسجيل في الدورات بـ 52% خلال الأشهر الأربعة الأولى."
+      },
+      {
+        "icon": "MessageSquare",
+        "title": "Lead Generation Machine",
+        "title_ar": "آلة توليد العملاء",
+        "desc": "Generated 140+ qualified student inquiries per month at EGP 8.50 cost per lead.",
+        "desc_ar": "توليد أكثر من 140 استفسار طالب مؤهل شهريًا بتكلفة 8.50 جنيه."
+      },
+      {
+        "icon": "Award",
+        "title": "Top Education Page",
+        "title_ar": "أفضل صفحة تعليمية",
+        "desc": "Became the most followed and engaged educational center page in the region.",
+        "desc_ar": "أصبح الصفحة التعليمية الأكثر متابعة وتفاعلًا في المنطقة."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Highest CTR",
+        "title_ar": "أعلى نسبة نقر",
+        "desc": "Achieved 5.2% average CTR, far above the 1.5% industry average.",
+        "desc_ar": "تحقيق متوسط نسبة نقر 5.2%، أعلى بكثير من متوسط الصناعة 1.5%."
+      }
+    ],
+    "testimonial": {
+      "quote": "The number of student inquiries we receive monthly has completely changed our business. Salem's campaigns consistently deliver qualified leads at a cost we couldn't have imagined.",
+      "quote_ar": "عدد استفسارات الطلاب التي نتلقاها شهريًا غيّر أعمالنا كليًا. حملات سالم تقدم باستمرار عملاء محتملين مؤهلين بتكلفة لم نكن نتخيلها.",
+      "name": "TTC Administration",
+      "role": "Director, TTC Educational Center",
+      "role_ar": "مدير مركز TTC التعليمي",
+      "avatar": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755"
+    },
+    "tools": [
+      "Meta Ads Manager",
+      "Photoshop",
+      "Canva",
+      "CapCut",
+      "Premiere Pro",
+      "Meta Business Suite",
+      "Google Analytics",
+      "Figma"
+    ],
+    "gallery": [
+      {
+        "id": 1,
+        "src": "https://ik.imagekit.io/effect/effect/TTC/TTC/%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AD%D9%87%20%D9%88%D8%A7%D9%84%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7.png",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "TTC design 1"
+      },
+      {
+        "id": 2,
+        "src": "https://ik.imagekit.io/effect/effect/TTC/TTC/%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D9%87%20%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D9%87.png",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "TTC design 2"
+      },
+      {
+        "id": 3,
+        "src": "https://ik.imagekit.io/effect/effect/TTC/TTC/%D9%83%D9%84%20%D8%A7%D9%84%D8%AA%D8%AE%D8%B5%D8%B5%D8%A7%D8%AA.png",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "TTC design 3"
+      },
+      {
+        "id": 4,
+        "src": "https://ik.imagekit.io/effect/effect/TTC/TTC/QFE.jpg?updatedAt=1781366004410",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "TTC design 4"
+      },
+      {
+        "id": 5,
+        "src": "https://ik.imagekit.io/effect/effect/TTC/TTC/GER.jpg?updatedAt=1781366003507",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "TTC design 5"
+      },
+      {
+        "id": 6,
+        "src": "https://ik.imagekit.io/effect/effect/TTC/TTC/fFF.jpg?updatedAt=1781366003136",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "TTC design 6"
+      }
+    ],
+    "videos": [],
+    "timeline": [
+      {
+        "phase": "Research",
+        "phase_ar": "البحث",
+        "desc": "Competitor analysis, student persona research, platform audit",
+        "desc_ar": "تحليل المنافسين وبحث شخصية الطالب وتدقيق المنصة"
+      },
+      {
+        "phase": "Strategy",
+        "phase_ar": "الاستراتيجية",
+        "desc": "Content strategy, advertising plan, lead funnel design",
+        "desc_ar": "استراتيجية المحتوى وخطة الإعلانات وتصميم قمع العملاء المحتملين"
+      },
+      {
+        "phase": "Design",
+        "phase_ar": "التصميم",
+        "desc": "Academic visual identity, course banners, ad creatives",
+        "desc_ar": "الهوية البصرية الأكاديمية وبانرات الدورات والإعلانات الإبداعية"
+      },
+      {
+        "phase": "Launch",
+        "phase_ar": "الإطلاق",
+        "desc": "Content rollout, lead generation campaigns launch",
+        "desc_ar": "طرح المحتوى وإطلاق حملات توليد العملاء المحتملين"
+      },
+      {
+        "phase": "Optimize",
+        "phase_ar": "التحسين",
+        "desc": "Campaign A/B testing, cost-per-lead optimization",
+        "desc_ar": "اختبار A/B للحملات وتحسين تكلفة العميل المحتمل"
+      },
+      {
+        "phase": "Scale",
+        "phase_ar": "التوسع",
+        "desc": "Scaling best-performing campaigns and expanding reach",
+        "desc_ar": "توسيع الحملات الأفضل أداءً وتوسيع نطاق الوصول"
+      }
+    ],
+    "relatedProjects": [
+      "esco",
+      "vako"
+    ]
+  },
+  {
+    "id": "yousry",
+    "slug": "yousry",
+    "title": "Dr. Yousry Wahid",
+    "title_ar": "الدكتور يسري وحيد",
+    "subtitle": "Professional Design & Advertising Campaigns",
+    "subtitle_ar": "تصميمات احترافية وحملات إعلانية",
+    "industry": "Healthcare & Medical",
+    "industry_ar": "الرعاية الصحية والطبية",
+    "duration": "Short-term",
+    "duration_ar": "قصير المدى",
+    "year": "2024",
+    "coverImage": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+    "heroImage": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+    "logo": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+    "color": "#3b82f6",
+    "tags": [
+      "Graphic Design",
+      "Advertising Campaigns",
+      "Social Media Posts"
+    ],
+    "tags_ar": [
+      "تصميم جرافيك",
+      "حملات إعلانية",
+      "منشورات السوشيال ميديا"
+    ],
+    "overview": "Dr. Yousry Wahid is a healthcare professional who needed professional design services and targeted advertising campaigns to promote his medical services. The project focused on creating high-quality visual content and running two successful advertising campaigns.",
+    "overview_ar": "الدكتور يسري وحيد هو طبيب احتاج إلى خدمات تصميم احترافية وحملات إعلانية مستهدفة للترويج لخدماته الطبية. ركز المشروع على إنشاء محتوى بصري عالي الجودة وتشغيل حملتين إعلانيتين ناجحتين.",
+    "challenge": "Dr. Yousry needed professional visual content to represent his medical practice effectively. The existing materials were not professional enough to attract patients.",
+    "challenge_ar": "احتاج الدكتور يسري إلى محتوى بصري احترافي لتمثيل عيادته الطبية بشكل فعال. المواد الحالية لم تكن احترافية بما يكفي لجذب المرضى.",
+    "challengePoints": [
+      "Lack of professional design materials",
+      "No advertising presence",
+      "Needed to build professional image",
+      "Limited budget for marketing"
+    ],
+    "challengePoints_ar": [
+      "غياب مواد تصميم احترافية",
+      "غياب الحضور الإعلاني",
+      "الحاجة لبناء صورة احترافية",
+      "ميزانية محدودة للتسويق"
+    ],
+    "objectives": [
+      "Create professional medical designs",
+      "Run targeted advertising campaigns",
+      "Build professional brand image",
+      "Increase patient awareness"
+    ],
+    "objectives_ar": [
+      "إنشاء تصاميم طبية احترافية",
+      "تشغيل حملات إعلانية مستهدفة",
+      "بناء صورة علامة تجارية احترافية",
+      "زيادة وعي المرضى"
+    ],
+    "strategy": "Focused on creating high-quality medical designs and running two targeted advertising campaigns on Meta platforms to reach potential patients.",
+    "strategy_ar": "ركز على إنشاء تصاميم طبية عالية الجودة وتشغيل حملتين إعلانيتين مستهدفتين على منصات ميتا للوصول إلى المرضى المحتملين.",
+    "strategyPoints": [
+      "Professional medical content design",
+      "Two targeted Meta ad campaigns",
+      "Patient-focused messaging",
+      "Cost-effective advertising"
+    ],
+    "strategyPoints_ar": [
+      "تصميم محتوى طبي احترافي",
+      "حملتان إعلانيتان مستهدفتان على ميتا",
+      "رسائل موجهة للمرضى",
+      "إعلانات فعالة من حيث التكلفة"
+    ],
+    "services": [
+      {
+        "icon": "Palette",
+        "title": "Graphic Design",
+        "title_ar": "تصميم جرافيك",
+        "desc": "Professional medical designs for social media and advertising.",
+        "desc_ar": "تصاميم طبية احترافية لوسائل التواصل والإعلانات."
+      },
+      {
+        "icon": "Target",
+        "title": "Advertising Campaigns",
+        "title_ar": "حملات إعلانية",
+        "desc": "Two targeted Meta advertising campaigns to reach patients.",
+        "desc_ar": "حملتان إعلانيتان مستهدفتان على ميتا للوصول للمرضى."
+      }
+    ],
+    "results": {
+      "reach": "150K",
+      "reachLabel": "Total Reach",
+      "reachLabel_ar": "إجمالي الوصول",
+      "impressions": "280K",
+      "impressionsLabel": "Impressions",
+      "impressionsLabel_ar": "مرات الظهور",
+      "engagement": "12K",
+      "engagementLabel": "Engagements",
+      "engagementLabel_ar": "تفاعلات",
+      "followers": "800",
+      "followersLabel": "Followers Gained",
+      "followersLabel_ar": "متابعون مكتسبون",
+      "clicks": "5.2K",
+      "clicksLabel": "Link Clicks",
+      "clicksLabel_ar": "نقرات الروابط",
+      "ctr": "4.8%",
+      "ctrLabel": "Average CTR",
+      "ctrLabel_ar": "متوسط نسبة النقر",
+      "roas": "3.2x",
+      "roasLabel": "Average ROAS",
+      "roasLabel_ar": "متوسط عائد الإنفاق",
+      "campaigns": "2",
+      "campaignsLabel": "Campaigns Launched",
+      "campaignsLabel_ar": "حملة مطلقة"
+    },
+    "beforeAfter": [
+      {
+        "metric": "Monthly Reach",
+        "metric_ar": "الوصول الشهري",
+        "before": "0",
+        "after": "150K",
+        "improvement": "New Channel"
+      },
+      {
+        "metric": "Ad Performance",
+        "metric_ar": "أداء الإعلانات",
+        "before": "N/A",
+        "after": "3.2x ROAS",
+        "improvement": "Excellent"
+      },
+      {
+        "metric": "Patient Inquiries",
+        "metric_ar": "استفسارات المرضى",
+        "before": "0",
+        "after": "50+",
+        "improvement": "New Channel"
+      }
+    ],
+    "achievements": [
+      {
+        "icon": "Palette",
+        "title": "Professional Designs",
+        "title_ar": "تصاميم احترافية",
+        "desc": "Created high-quality medical designs that enhanced brand image.",
+        "desc_ar": "إنشاء تصاميم طبية عالية الجودة حسنت صورة العلامة التجارية."
+      },
+      {
+        "icon": "Target",
+        "title": "Successful Campaigns",
+        "title_ar": "حملات ناجحة",
+        "desc": "Two advertising campaigns achieved 3.2x ROAS.",
+        "desc_ar": "حملتان إعلانيتان حققتا عائد إنفاق 3.2x."
+      }
+    ],
+    "testimonial": {
+      "quote": "The designs and advertising campaigns were exactly what I needed. Professional work that helped me reach more patients.",
+      "quote_ar": "التصاميم والحملات الإعلانية كانت بالضبط ما احتجته. عمل احترافي ساعدني في الوصول إلى المزيد من المرضى.",
+      "name": "Dr. Yousry Wahid",
+      "role": "Healthcare Professional",
+      "role_ar": "طبيب",
+      "avatar": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755"
+    },
+    "tools": [
+      "Photoshop",
+      "Illustrator",
+      "Meta Ads Manager",
+      "Canva"
+    ],
+    "gallery": [
+      {
+        "id": 1,
+        "src": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dr. Yousry medical post"
+      },
+      {
+        "id": 2,
+        "src": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+        "category": "Ads",
+        "category_ar": "إعلانات",
+        "alt": "Dr. Yousry ad creative"
+      },
+      {
+        "id": 3,
+        "src": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dr. Yousry medical design"
+      }
+    ],
+    "videos": [],
+    "timeline": [
+      {
+        "phase": "Design",
+        "phase_ar": "التصميم",
+        "desc": "Professional medical content design creation",
+        "desc_ar": "إنشاء محتوى طبي احترافي"
+      },
+      {
+        "phase": "Campaigns",
+        "phase_ar": "الحملات",
+        "desc": "Two targeted Meta advertising campaigns",
+        "desc_ar": "حملتان إعلانيتان مستهدفتان على ميتا"
+      }
+    ],
+    "relatedProjects": [
+      "esco",
+      "vako",
+      "ttc"
+    ]
+  }
+]

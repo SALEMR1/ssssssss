@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "icon": "LayoutGrid",
+    "emoji": "📱",
+    "title": "Social Media Management",
+    "description": "Complete management of your Facebook and Instagram pages — from strategy and content creation to daily publishing and community engagement.",
+    "features": ["Content Calendar", "Daily Publishing", "Community Management", "Platform Optimization", "Monthly Analytics"],
+    "color": "violet"
+  },
+  {
+    "id": 2,
+    "icon": "Target",
+    "emoji": "🎯",
+    "title": "Meta Ads & Advertising",
+    "description": "Data-driven paid advertising campaigns on Facebook and Instagram. Full-funnel strategy from awareness to conversion with continuous optimization.",
+    "features": ["Campaign Strategy", "A/B Testing", "Audience Research", "Budget Optimization", "ROAS Tracking"],
+    "color": "rose"
+  },
+  {
+    "id": 3,
+    "icon": "Palette",
+    "emoji": "🎨",
+    "title": "Graphic Design",
+    "description": "Premium visual content including social media posts, carousels, story templates, banners, and complete brand identity systems.",
+    "features": ["Brand Identity", "Social Media Posts", "Carousels & Stories", "Ad Creatives", "Print Materials"],
+    "color": "amber"
+  },
+  {
+    "id": 4,
+    "icon": "Film",
+    "emoji": "🎬",
+    "title": "Video Editing & Reels",
+    "description": "High-quality video production and editing for Reels, promotional videos, product demos, and advertising content that captures attention.",
+    "features": ["Reels Production", "Motion Graphics", "Ad Videos", "Product Demos", "Testimonial Videos"],
+    "color": "emerald"
+  },
+  {
+    "id": 5,
+    "icon": "Calendar",
+    "emoji": "📅",
+    "title": "Content Strategy & Planning",
+    "description": "Strategic content planning aligned with your business goals — seasonal campaigns, content pillars, publishing schedules, and audience growth plans.",
+    "features": ["Content Pillars", "Editorial Calendar", "Campaign Planning", "Competitor Analysis", "Trend Integration"],
+    "color": "sky"
+  },
+  {
+    "id": 6,
+    "icon": "BarChart3",
+    "emoji": "📊",
+    "title": "Performance Reports",
+    "description": "Comprehensive monthly reports with actionable insights — reach, engagement, conversions, ROAS, and data-driven recommendations for growth.",
+    "features": ["Monthly Reports", "KPI Tracking", "ROI Analysis", "Growth Insights", "Strategy Adjustments"],
+    "color": "indigo"
+  },
+  {
+    "id": 7,
+    "icon": "Code",
+    "emoji": "💻",
+    "title": "Website Development",
+    "description": "Modern, fast, responsive websites and landing pages built with React, Next.js, and Tailwind CSS — optimized for SEO and conversions.",
+    "features": ["Next.js Development", "Landing Pages", "SEO Optimization", "Mobile-First Design", "Performance Optimization"],
+    "color": "purple"
+  }
+]

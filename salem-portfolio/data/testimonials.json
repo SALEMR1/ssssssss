@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Ahmed Hassan",
+    "role": "Business Owner",
+    "role_ar": "صاحب عمل",
+    "company": "Hassan Trading Co.",
+    "avatar": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+    "rating": 5,
+    "quote": "Working with Salem completely transformed our social media. Our page went from 500 followers to over 12,000 in just 6 months. The quality of content and the results from Meta Ads have been outstanding.",
+    "quote_ar": "العمل مع سالم حوّل وسائل تواصلنا تمامًا. ارتفع عدد متابعينا من 500 إلى أكثر من 12,000 في 6 أشهر فقط. جودة المحتوى ونتائج إعلانات ميتا كانت استثنائية.",
+    "project": "Social Media Management & Meta Ads",
+    "project_ar": "إدارة وسائل التواصل وإعلانات ميتا"
+  },
+  {
+    "id": 2,
+    "name": "Nour El-Sayed",
+    "role": "Marketing Manager",
+    "role_ar": "مدير تسويق",
+    "company": "Fashion Retail Brand",
+    "avatar": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+    "rating": 5,
+    "quote": "Salem doesn't just create content — he creates results. Our ROAS went from zero to 4.2x within the first campaign cycle. His understanding of Meta Ads and audience psychology is genuinely impressive.",
+    "quote_ar": "سالم لا يكتفي بإنشاء محتوى — بل يصنع نتائج. ارتفع عائد إنفاقنا من صفر إلى 4.2x خلال دورة الحملة الأولى. فهمه لإعلانات ميتا وسيكولوجية الجمهور مثير للإعجاب حقًا.",
+    "project": "Meta Ads & Campaign Optimization",
+    "project_ar": "إعلانات ميتا وتحسين الحملات"
+  },
+  {
+    "id": 3,
+    "name": "Mohamed Adel",
+    "role": "Center Director",
+    "role_ar": "مدير المركز",
+    "company": "Educational Center",
+    "avatar": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+    "rating": 5,
+    "quote": "Our student enrollment increased by 52% thanks to Salem's lead generation campaigns. The cost per lead was incredibly efficient, and the quality of inquiries was exactly what we needed.",
+    "quote_ar": "زادت نسبة تسجيل الطلاب لدينا بـ 52% بفضل حملات توليد العملاء المحتملين التي أطلقها سالم. كانت تكلفة العميل المحتمل فعّالة بشكل لا يصدق، وجودة الاستفسارات كانت بالضبط ما نحتاجه.",
+    "project": "Student Lead Generation Campaigns",
+    "project_ar": "حملات توليد عملاء محتملين للطلاب"
+  },
+  {
+    "id": 4,
+    "name": "Sara Ibrahim",
+    "role": "Brand Owner",
+    "role_ar": "صاحبة العلامة التجارية",
+    "company": "Beauty & Lifestyle Brand",
+    "avatar": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+    "rating": 5,
+    "quote": "The graphic designs Salem delivers are at a completely different level. Our brand identity was rebuilt from scratch and now we consistently get compliments on our visual presence.",
+    "quote_ar": "تصاميم الجرافيك التي يقدمها سالم على مستوى مختلف تمامًا. أُعيد بناء هويتنا التجارية من الصفر وباتت تحصد المجد باستمرار على حضورنا البصري.",
+    "project": "Branding & Graphic Design",
+    "project_ar": "بناء العلامة والتصميم الجرافيكي"
+  },
+  {
+    "id": 5,
+    "name": "Karim Youssef",
+    "role": "Founder",
+    "role_ar": "مؤسس",
+    "company": "Tech Startup",
+    "avatar": "https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755",
+    "rating": 5,
+    "quote": "Salem built our entire digital marketing infrastructure from scratch. From the website to the ad campaigns to the content strategy — everything works together seamlessly.",
+    "quote_ar": "بنى سالم بنيتنا التسويقية الرقمية الكاملة من الصفر. من الموقع إلى حملات الإعلانات واستراتيجية المحتوى — كل شيء يعمل معًا بانسيابية تامة.",
+    "project": "Full Digital Marketing Package",
+    "project_ar": "الباقة التسويقية الرقمية الكاملة"
+  }
+]

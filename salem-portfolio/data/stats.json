@@ -1,0 +1,8 @@
+[
+  { "id": 1, "value": 3200000, "display": "3.2M+", "label": "Total Reach", "suffix": "", "icon": "Radio", "color": "violet" },
+  { "id": 2, "value": 120, "display": "120K+", "label": "Total Engagements", "suffix": "K", "icon": "Heart", "color": "rose" },
+  { "id": 3, "value": 47, "display": "47K+", "label": "Total Link Clicks", "suffix": "K", "icon": "MousePointerClick", "color": "amber" },
+  { "id": 4, "value": 39, "display": "39+", "label": "Campaigns Launched", "suffix": "", "icon": "Megaphone", "color": "emerald" },
+  { "id": 5, "value": 25, "display": "25K+", "label": "Followers Gained", "suffix": "K", "icon": "Users", "color": "sky" },
+  { "id": 6, "value": 4.2, "display": "4.2x", "label": "Average ROAS", "suffix": "x", "icon": "TrendingUp", "color": "indigo" }
+]

@@ -1,0 +1,260 @@
+[
+  {
+    "id": 1,
+    "title": "Casilia",
+    "title_ar": "كاسليا",
+    "description": "Modern website for Casilia brand with responsive design and smooth user experience.",
+    "description_ar": "موقع حديث لعلامة كاسليا التجارية مع تصميم متجاوب وتجربة مستخدم سلسة.",
+    "image": "https://ik.imagekit.io/effect/effect/ESCO/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A9/proj-casilia.jpg",
+    "color": "#6366f1",
+    "tags": ["HTML", "CSS", "JavaScript", "Netlify"],
+    "category": "frontend",
+    "category_ar": "فرونت إند",
+    "liveUrl": "https://casilia.netlify.app/",
+    "year": "2024",
+    "status": "Live",
+    "status_ar": "مباشر",
+    "features": [
+      "Responsive design",
+      "Modern UI/UX",
+      "Fast loading",
+      "Mobile-friendly"
+    ],
+    "features_ar": [
+      "تصميم متجاوب",
+      "واجهة مستخدم حديثة",
+      "تحميل سريع",
+      "متوافق مع الموبايل"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Al Baraka Fried Chicken",
+    "title_ar": "مطعم البركة فرايد تشيكن",
+    "description": "Restaurant website for Al Baraka Fried Chicken with menu display and contact information.",
+    "description_ar": "موقع مطعم البركة فرايد تشيكن مع عرض القائمة ومعلومات الاتصال.",
+    "image": "https://ik.imagekit.io/effect/effect/ESCO/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A9/proj-albarka.jpg",
+    "color": "#f59e0b",
+    "tags": ["HTML", "CSS", "JavaScript", "Netlify"],
+    "category": "frontend",
+    "category_ar": "فرونت إند",
+    "liveUrl": "https://albarakafr.netlify.app/",
+    "githubUrl": "#",
+    "year": "2024",
+    "status": "Live",
+    "status_ar": "مباشر",
+    "features": [
+      "Menu display",
+      "Contact information",
+      "Responsive design",
+      "Location map"
+    ],
+    "features_ar": [
+      "عرض القائمة",
+      "معلومات الاتصال",
+      "تصميم متجاوب",
+      "خريطة الموقع"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Turbo Egypt",
+    "title_ar": "تربو مصر",
+    "description": "E-commerce website for Turbo Egypt youth clothing store with product catalog.",
+    "description_ar": "موقع تجارة إلكترونية لمتجر تربو مصر للملابس الشبابية مع كتالوج المنتجات.",
+    "image": "https://ik.imagekit.io/effect/effect/ESCO/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A9/proj-turbo.jpg",
+    "color": "#ec4899",
+    "tags": ["React", "Vercel", "JavaScript", "CSS"],
+    "category": "frontend",
+    "category_ar": "فرونت إند",
+    "liveUrl": "https://trpo-three.vercel.app/",
+    "githubUrl": "#",
+    "year": "2024",
+    "status": "Live",
+    "status_ar": "مباشر",
+    "features": [
+      "Product catalog",
+      "Youth fashion focus",
+      "Modern design",
+      "Responsive layout"
+    ],
+    "features_ar": [
+      "كتالوج منتجات",
+      "تركيز على أزياء الشباب",
+      "تصميم حديث",
+      "تخطيط متجاوب"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Mega Tools Platform",
+    "title_ar": "منصة الأدوات المتكاملة",
+    "description": "Comprehensive tools platform providing various utilities and services for users.",
+    "description_ar": "منصة أدوات شاملة توفر خدمات وأدوات متنوعة للمستخدمين.",
+    "image": "https://ik.imagekit.io/effect/effect/ESCO/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A9/proj-megatools.jpg",
+    "color": "#0ea5e9",
+    "tags": ["React", "Vercel", "JavaScript", "CSS"],
+    "category": "fullstack",
+    "category_ar": "فول ستاك",
+    "liveUrl": "https://mega-tools-ayrs.vercel.app/",
+    "githubUrl": "#",
+    "year": "2024",
+    "status": "Live",
+    "status_ar": "مباشر",
+    "features": [
+      "Multiple tools",
+      "User-friendly interface",
+      "Fast performance",
+      "Regular updates"
+    ],
+    "features_ar": [
+      "أدوات متعددة",
+      "واجهة سهلة الاستخدام",
+      "أداء سريع",
+      "تحديثات دورية"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Marly Wear",
+    "title_ar": "مارلي ويار",
+    "description": "Online clothing store for Marly brand with product showcase and shopping features.",
+    "description_ar": "متجر ملابس أونلاين لعلامة مارلي التجارية مع عرض المنتجات وميزات التسوق.",
+    "image": "https://ik.imagekit.io/effect/effect/ESCO/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A9/proj-turbo.jpg",
+    "color": "#8b5cf6",
+    "tags": ["HTML", "CSS", "JavaScript", "Netlify"],
+    "category": "frontend",
+    "category_ar": "فرونت إند",
+    "liveUrl": "https://marlywear.netlify.app/",
+    "githubUrl": "#",
+    "year": "2024",
+    "status": "Live",
+    "status_ar": "مباشر",
+    "features": [
+      "Product showcase",
+      "Clothing catalog",
+      "Modern design",
+      "Easy navigation"
+    ],
+    "features_ar": [
+      "عرض المنتجات",
+      "كتالوج الملابس",
+      "تصميم حديث",
+      "تنقل سهل"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "ISTalex Institute",
+    "title_ar": "معهد الدراسات للتكنولوجيا بالإسكندرية",
+    "description": "Educational institute website for ISTalex with courses information and registration details.",
+    "description_ar": "موقع معهد ISTalex التعليمي مع معلومات الدورات وتفاصيل التسجيل.",
+    "image": "https://ik.imagekit.io/effect/effect/ESCO/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A9/proj-istalex.jpg",
+    "color": "#10b981",
+    "tags": ["HTML", "CSS", "JavaScript", "Netlify"],
+    "category": "frontend",
+    "category_ar": "فرونت إند",
+    "liveUrl": "https://istalex.netlify.app/",
+    "githubUrl": "#",
+    "year": "2024",
+    "status": "Live",
+    "status_ar": "مباشر",
+    "features": [
+      "Course information",
+      "Registration details",
+      "Institute overview",
+      "Contact forms"
+    ],
+    "features_ar": [
+      "معلومات الدورات",
+      "تفاصيل التسجيل",
+      "نظرة عامة على المعهد",
+      "نماذج الاتصال"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Vaco Clothing",
+    "title_ar": "فاكو للملابس",
+    "description": "Clothing store website for Vaco specializing in youth and men's fashion.",
+    "description_ar": "موقع متجر ملابس فاكو المتخصص في أزياء الشباب والرجال.",
+    "image": "https://ik.imagekit.io/effect/effect/ESCO/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A9/proj-vaco.jpg",
+    "color": "#ef4444",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "category": "frontend",
+    "category_ar": "فرونت إند",
+    "liveUrl": "https://vacodamanhour.com/",
+    "githubUrl": "#",
+    "year": "2024",
+    "status": "Live",
+    "status_ar": "مباشر",
+    "features": [
+      "Men's fashion",
+      "Youth clothing",
+      "Product gallery",
+      "Store location"
+    ],
+    "features_ar": [
+      "أزياء رجالية",
+      "ملابس شبابية",
+      "معرض المنتجات",
+      "موقع المتجر"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "EgyForex — Student Registration",
+    "title_ar": "إيجي فوركس — تسجيل الطلاب",
+    "description": "Online student registration platform for EgyForex, enabling seamless enrollment management and student data handling.",
+    "description_ar": "منصة تسجيل طلاب أونلاين لإيجي فوركس تتيح إدارة التسجيل وبيانات الطلاب بشكل سلس وفعال.",
+    "image": "https://ik.imagekit.io/effect/effect/ESCO/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A9/proj-istalex.jpg",
+    "color": "#3b82f6",
+    "tags": ["HTML", "CSS", "JavaScript", "Netlify"],
+    "category": "fullstack",
+    "category_ar": "فول ستاك",
+    "liveUrl": "https://egyforex.net",
+    "year": "2024",
+    "status": "Live",
+    "status_ar": "مباشر",
+    "features": [
+      "Student registration",
+      "Data management",
+      "Simple interface",
+      "Enrollment dashboard"
+    ],
+    "features_ar": [
+      "تسجيل الطلاب",
+      "إدارة البيانات",
+      "واجهة بسيطة",
+      "لوحة تحكم التسجيل"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "ESCO Motor Oils Website",
+    "title_ar": "موقع ESCO لزيوت المحركات",
+    "description": "Official company website for ESCO Motor Oils featuring product catalog, brand identity, and company information.",
+    "description_ar": "الموقع الرسمي لشركة ESCO لزيوت المحركات يعرض كتالوج المنتجات والهوية التجارية ومعلومات الشركة.",
+    "image": "https://ik.imagekit.io/effect/effect/ESCO/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A9/proj-casilia.jpg",
+    "color": "#f59e0b",
+    "tags": ["Next.js", "React", "Vercel", "TypeScript"],
+    "category": "frontend",
+    "category_ar": "فرونت إند",
+    "liveUrl": "https://esco-1.vercel.app",
+    "year": "2025",
+    "status": "Live",
+    "status_ar": "مباشر",
+    "features": [
+      "Product catalog",
+      "Brand identity",
+      "Responsive design",
+      "Company profile"
+    ],
+    "features_ar": [
+      "كتالوج المنتجات",
+      "هوية العلامة التجارية",
+      "تصميم متجاوب",
+      "ملف الشركة"
+    ]
+  }
+]

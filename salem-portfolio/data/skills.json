@@ -1,0 +1,27 @@
+[
+  { "id": 1, "category": "Marketing & Advertising", "skills": [
+    { "name": "Meta Ads Manager", "level": 96 },
+    { "name": "Marketing Strategy", "level": 90 },
+    { "name": "Performance Analysis", "level": 88 },
+    { "name": "Google Analytics", "level": 80 }
+  ]},
+  { "id": 2, "category": "Graphic Design", "skills": [
+    { "name": "Adobe Photoshop", "level": 94 },
+    { "name": "Adobe Illustrator", "level": 88 },
+    { "name": "Figma", "level": 85 },
+    { "name": "Canva", "level": 98 }
+  ]},
+  { "id": 3, "category": "Video Production", "skills": [
+    { "name": "Adobe Premiere Pro", "level": 90 },
+    { "name": "After Effects", "level": 82 },
+    { "name": "CapCut", "level": 95 }
+  ]},
+  { "id": 4, "category": "Web Development", "skills": [
+    { "name": "HTML & CSS", "level": 88 },
+    { "name": "JavaScript", "level": 80 },
+    { "name": "React & Next.js", "level": 78 },
+    { "name": "Database", "level": 85 },
+    { "name": "SQL Server", "level": 75 },
+    { "name": "Node.js", "level": 82 }
+  ]}
+]
