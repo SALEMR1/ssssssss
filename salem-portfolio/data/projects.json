@@ -1222,5 +1222,278 @@
       "vako",
       "ttc"
     ]
+  },
+  {
+    "id": "dayes",
+    "slug": "dayes",
+    "title": "Dayes Damanhour",
+    "title_ar": "دايس دمنهور",
+    "subtitle": "Building a Local Fashion Brand & Reviving Sales",
+    "subtitle_ar": "بناء علامة تجارية محلية وإعادة تشغيل طريق المبيعات",
+    "industry": "Fashion & Clothing",
+    "industry_ar": "الأزياء والملابس",
+    "duration": "Ongoing",
+    "duration_ar": "مستمر",
+    "year": "2024",
+    "coverImage": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/w.jpg",
+    "heroImage": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/w.jpg",
+    "logo": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D9%84%D9%88%D8%AC%D9%88%20%D8%AF%D8%A7%D9%8A%D8%B3.jpg",
+    "color": "#e11d48",
+    "tags": ["Social Media Management", "Brand Building", "Graphic Design", "Content Strategy"],
+    "tags_ar": ["إدارة وسائل التواصل", "بناء العلامة التجارية", "تصميم جرافيك", "خطة محتوى"],
+    "overview": "Dayes Damanhour is a local fashion and clothing brand in Damanhour, Egypt. Starting from zero online presence, I built a complete digital identity for the brand — growing the Facebook page to 41,000+ followers, achieving over 1 million total reach, and generating 20,000+ customer messages and inquiries that revived the sales channel entirely.",
+    "overview_ar": "دايس دمنهور محل أزياء وملابس محلي في دمنهور. بدأت من صفر حضور رقمي، فبنيت هوية رقمية متكاملة للمحل — وصلت بيها الصفحة لأكثر من 41 ألف متابع، وحققت وصولًا إجماليًا تجاوز المليون، وتولّدت أكثر من 20 ألف رسالة واستفسار من عملاء حقيقيين أعادوا تشغيل طريق المبيعات بالكامل.",
+    "challenge": "Dayes needed a strong digital identity to compete in the local fashion market. The page had no consistent branding, no content strategy, and sales were heavily dependent on walk-in customers only.",
+    "challenge_ar": "كان دايس بحاجة إلى هوية رقمية قوية للمنافسة في سوق الأزياء المحلي. لم تكن الصفحة تمتلك هوية بصرية متسقة أو خطة محتوى، وكانت المبيعات تعتمد بالكامل على الزبائن العابرين.",
+    "challengePoints": [
+      "No consistent visual brand identity",
+      "No content strategy or publishing calendar",
+      "Sales limited to physical walk-in customers only",
+      "Low online visibility in the local market",
+      "No engagement with target audience on social media"
+    ],
+    "challengePoints_ar": [
+      "غياب هوية بصرية متسقة للعلامة التجارية",
+      "لا خطة محتوى ولا تقويم نشر",
+      "المبيعات مقتصرة على الزبائن العابرين فقط",
+      "ضعف الظهور الرقمي في السوق المحلي",
+      "لا تفاعل مع الجمهور المستهدف على وسائل التواصل"
+    ],
+    "objectives": [
+      "Build a recognizable local brand identity for Dayes",
+      "Grow the Facebook page to 40K+ followers",
+      "Reach 20,000+ potential customers through content and ads",
+      "Establish a consistent content publishing schedule",
+      "Revive and grow the online sales channel"
+    ],
+    "objectives_ar": [
+      "بناء هوية تجارية محلية مميزة لدايس",
+      "تنمية صفحة فيسبوك لأكثر من 40 ألف متابع",
+      "الوصول إلى أكثر من 20 ألف عميل محتمل",
+      "إنشاء جدول نشر محتوى منتظم ومتسق",
+      "إعادة تشغيل وتنمية قناة المبيعات الرقمية"
+    ],
+    "strategy": "We started by developing a strong visual brand identity for Dayes, then built a content strategy focused on showcasing products attractively and consistently. The publishing plan combined organic content with targeted paid campaigns to grow reach and convert followers into buyers.",
+    "strategy_ar": "بدأنا بتطوير هوية بصرية قوية لدايس، ثم بنينا استراتيجية محتوى تركز على عرض المنتجات بشكل جذاب ومنتظم. خطة النشر جمعت بين المحتوى العضوي والحملات المدفوعة المستهدفة لتنمية الوصول وتحويل المتابعين إلى مشترين.",
+    "strategyPoints": [
+      "Visual identity development: logo usage, colors, typography",
+      "Monthly content calendar with product-focused posts",
+      "Promotional campaigns for new collections and offers",
+      "Audience targeting focused on fashion buyers in Damanhour",
+      "Regular engagement to build community and brand loyalty",
+      "Performance tracking and content optimization"
+    ],
+    "strategyPoints_ar": [
+      "تطوير الهوية البصرية: استخدام اللوجو والألوان والخطوط",
+      "تقويم محتوى شهري يركز على المنتجات",
+      "حملات ترويجية للمجموعات الجديدة والعروض",
+      "استهداف جمهور محب للموضة في دمنهور",
+      "تفاعل منتظم لبناء مجتمع ووفاء للعلامة",
+      "متابعة الأداء وتحسين المحتوى باستمرار"
+    ],
+    "services": [
+      {
+        "icon": "LayoutGrid",
+        "title": "Social Media Management",
+        "title_ar": "إدارة وسائل التواصل",
+        "desc": "Full management of the Facebook page including content creation, publishing, and community engagement.",
+        "desc_ar": "إدارة كاملة لصفحة فيسبوك تشمل إنشاء المحتوى والنشر وإدارة التفاعل."
+      },
+      {
+        "icon": "Sparkles",
+        "title": "Brand Building",
+        "title_ar": "بناء العلامة التجارية",
+        "desc": "Developing a consistent and recognizable visual brand identity for Dayes across all channels.",
+        "desc_ar": "تطوير هوية بصرية متسقة ومميزة لدايس عبر جميع المنصات."
+      },
+      {
+        "icon": "Palette",
+        "title": "Graphic Design",
+        "title_ar": "تصميم جرافيك",
+        "desc": "Premium product showcase designs, promotional posts, and branded templates.",
+        "desc_ar": "تصاميم عرض منتجات راقية، منشورات ترويجية، وقوالب ذات هوية بصرية."
+      },
+      {
+        "icon": "Calendar",
+        "title": "Content Strategy",
+        "title_ar": "خطة النشر والمحتوى",
+        "desc": "Structured content plan and publishing calendar aligned with collections and seasonal promotions.",
+        "desc_ar": "خطة محتوى منظمة وتقويم نشر متوافق مع المجموعات والعروض الموسمية."
+      }
+    ],
+    "results": {
+      "reach": "1M+",
+      "reachLabel": "Total Reach",
+      "reachLabel_ar": "إجمالي الوصول",
+      "impressions": "1M+",
+      "impressionsLabel": "Total Impressions",
+      "impressionsLabel_ar": "إجمالي مرات الظهور",
+      "engagement": "20K+",
+      "engagementLabel": "Customer Messages",
+      "engagementLabel_ar": "رسالة عميل",
+      "followers": "41K+",
+      "followersLabel": "Followers Gained",
+      "followersLabel_ar": "متابع مكتسب",
+      "clicks": "20K+",
+      "clicksLabel": "Direct Inquiries",
+      "clicksLabel_ar": "استفسار مباشر",
+      "ctr": "100%",
+      "ctrLabel": "Digital Sales Activated",
+      "ctrLabel_ar": "المبيعات الرقمية مفعّلة",
+      "roas": "41K+",
+      "roasLabel": "Brand Reach",
+      "roasLabel_ar": "وصول العلامة",
+      "campaigns": "4+",
+      "campaignsLabel": "Campaigns Launched",
+      "campaignsLabel_ar": "حملة مطلقة"
+    },
+    "beforeAfter": [
+      {
+        "metric": "Total Reach",
+        "metric_ar": "إجمالي الوصول",
+        "before": "Near zero",
+        "after": "1,000,000+",
+        "improvement": "+1M"
+      },
+      {
+        "metric": "Page Followers",
+        "metric_ar": "متابعو الصفحة",
+        "before": "0",
+        "after": "41,000+",
+        "improvement": "+41K"
+      },
+      {
+        "metric": "Customer Messages",
+        "metric_ar": "رسائل العملاء",
+        "before": "Walk-in only",
+        "after": "20,000+",
+        "improvement": "Sales via DM"
+      }
+    ],
+    "achievements": [
+      {
+        "icon": "Radio",
+        "title": "1M+ Total Reach",
+        "title_ar": "أكثر من مليون وصول",
+        "desc": "Achieved over 1 million total reach through consistent content and targeted campaigns.",
+        "desc_ar": "تحقيق أكثر من مليون وصول إجمالي من خلال المحتوى المنتظم والحملات المستهدفة."
+      },
+      {
+        "icon": "Users",
+        "title": "41K+ Followers",
+        "title_ar": "+41 ألف متابع",
+        "desc": "Grew the Facebook page to over 41,000 engaged local followers from zero.",
+        "desc_ar": "تنمية صفحة فيسبوك من الصفر لأكثر من 41 ألف متابع محلي متفاعل."
+      },
+      {
+        "icon": "MessageSquare",
+        "title": "20K+ Customer Messages",
+        "title_ar": "+20 ألف رسالة عميل",
+        "desc": "Generated 20,000+ direct customer messages and purchase inquiries through social media.",
+        "desc_ar": "توليد أكثر من 20 ألف رسالة مباشرة واستفسار شراء من العملاء عبر السوشيال ميديا."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Sales Channel Revived",
+        "title_ar": "إعادة تشغيل المبيعات",
+        "desc": "Transformed sales from walk-in only to a fully active digital channel with consistent daily orders.",
+        "desc_ar": "تحويل المبيعات من الاعتماد على الزبائن العابرين فقط إلى قناة رقمية نشطة بطلبات يومية منتظمة."
+      }
+    ],
+    "testimonial": {
+      "quote": "The transformation in our brand's digital presence has been remarkable. Our page grew to 41K followers and we started receiving consistent orders through social media.",
+      "quote_ar": "التحول في حضور العلامة التجارية كان مذهلاً. صفحتنا وصلت لـ 41 ألف متابع وبدأنا نستلم طلبات منتظمة عبر السوشيال ميديا.",
+      "name": "Dayes Management",
+      "role": "Owner, Dayes Damanhour",
+      "role_ar": "صاحب محل دايس دمنهور",
+      "avatar": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D9%84%D9%88%D8%AC%D9%88%20%D8%AF%D8%A7%D9%8A%D8%B3.jpg"
+    },
+    "tools": [
+      "Meta Ads Manager",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Canva",
+      "Meta Business Suite",
+      "Facebook Pages"
+    ],
+    "gallery": [
+      {
+        "id": 1,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20(1).jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dayes design 1"
+      },
+      {
+        "id": 2,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20(2).jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dayes design 2"
+      },
+      {
+        "id": 3,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20(3).jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dayes design 3"
+      },
+      {
+        "id": 4,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20(4).jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dayes design 4"
+      },
+      {
+        "id": 5,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20(5).jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dayes design 5"
+      },
+      {
+        "id": 6,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%AA%D8%B5%D9%85%D9%8A%D9%82%20(6).jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dayes design 6"
+      },
+      {
+        "id": 7,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20(7).jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dayes design 7"
+      }
+    ],
+    "videos": [],
+    "timeline": [
+      {
+        "phase": "Brand Identity",
+        "phase_ar": "الهوية البصرية",
+        "desc": "Developed logo usage guidelines, color palette, and visual brand system",
+        "desc_ar": "تطوير إرشادات اللوجو ولوحة الألوان ونظام الهوية البصرية"
+      },
+      {
+        "phase": "Content Strategy",
+        "phase_ar": "استراتيجية المحتوى",
+        "desc": "Built a structured content calendar focused on product showcasing and promotions",
+        "desc_ar": "بناء تقويم محتوى منظم يركز على عرض المنتجات والعروض الترويجية"
+      },
+      {
+        "phase": "Growth",
+        "phase_ar": "النمو",
+        "desc": "Executed consistent publishing strategy that grew the page to 41K+ followers",
+        "desc_ar": "تنفيذ استراتيجية نشر منتظمة أوصلت الصفحة لأكثر من 41 ألف متابع"
+      },
+      {
+        "phase": "Sales Activation",
+        "phase_ar": "تفعيل المبيعات",
+        "desc": "Launched targeted campaigns and converted the digital audience into active customers",
+        "desc_ar": "إطلاق حملات مستهدفة وتحويل الجمهور الرقمي إلى عملاء فعليين"
+      }
+    ],
+    "relatedProjects": ["vako", "esco", "ttc"]
   }
 ]

@@ -28,14 +28,6 @@ const categoryColors: Record<string, string> = {
   Educational: 'from-emerald-600 to-teal-500',
 };
 
-// map Arabic category back to English key for color lookup
-const arToEn: Record<string, string> = {
-  'ريلز': 'Reels',
-  'إعلانات': 'Ads',
-  'ترويجية': 'Promotional',
-  'تعليمية': 'Educational',
-};
-
 export default function VideoPortfolio() {
   const { t, lang } = useI18n();
   const [activeCategory, setActiveCategory] = useState(t.videos.categories[0]);

@@ -11,6 +11,7 @@ const projectMeta = [
   { color: 'from-amber-600/20 via-orange-600/10 to-transparent', gradient: 'from-amber-500 to-orange-500', number: '01' },
   { color: 'from-violet-600/20 via-purple-600/10 to-transparent', gradient: 'from-violet-500 to-purple-500', number: '02' },
   { color: 'from-emerald-600/20 via-teal-600/10 to-transparent', gradient: 'from-emerald-500 to-teal-500', number: '03' },
+  { color: 'from-rose-600/20 via-pink-600/10 to-transparent', gradient: 'from-rose-500 to-pink-500', number: '04' },
 ];
 
 export default function Projects() {
@@ -40,6 +41,8 @@ export default function Projects() {
                             <img src="https://ik.imagekit.io/effect/effect/TTC/TTC/WQF.jpg?updatedAt=1781366001803" alt="TTC Logo" className="w-full h-full object-cover" />
                           ) : project.id === 'vako' ? (
                             <img src="https://ik.imagekit.io/effect/effect/vaco/logo.jpg" alt="VAKO Logo" className="w-full h-full object-cover" />
+                          ) : project.id === 'dayes' ? (
+                            <img src="https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D9%84%D9%88%D8%AC%D9%88%20%D8%AF%D8%A7%D9%8A%D8%B3.jpg" alt="Dayes Logo" className="w-full h-full object-cover" />
                           ) : (
                             <img src="https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755" alt="Salem Rizk" className="w-full h-full object-cover" />
                           )}
