@@ -79,7 +79,7 @@ export default function ProjectGallery({ project }: Props) {
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-white">
             {t.project.gallery.title}{' '}
-            <span className="bg-gradient-to-r from-violet-400 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
               {t.project.gallery.highlight}
             </span>
           </h2>
@@ -128,7 +128,7 @@ export default function ProjectGallery({ project }: Props) {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3 }}
-                className="group relative rounded-2xl overflow-hidden cursor-pointer border border-white/8 hover:border-white/25 transition-all duration-300 hover:shadow-2xl break-inside-avoid mb-4"
+                className="group relative rounded-2xl overflow-hidden cursor-pointer border border-white/8 hover:border-amber-500/30 transition-all duration-300 hover:shadow-lg break-inside-avoid mb-4"
                 onClick={() => setLightboxIndex(index)}
               >
                 <div className="relative w-full">
@@ -142,9 +142,9 @@ export default function ProjectGallery({ project }: Props) {
                     loading={index < 6 ? 'eager' : 'lazy'}
                   />
                   {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="w-12 h-12 rounded-full bg-white/25 backdrop-blur-sm flex items-center justify-center">
-                      <ZoomIn size={20} className="text-white" />
+                  <div className="absolute inset-0 bg-[#111827]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center">
+                      <ZoomIn size={20} className="text-[#111827]" />
                     </div>
                   </div>
                 </div>

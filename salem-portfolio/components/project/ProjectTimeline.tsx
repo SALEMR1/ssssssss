@@ -19,19 +19,19 @@ export default function ProjectTimeline({ project }: Props) {
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-white">
             {t.project.timeline.title}{' '}
-            <span className="bg-gradient-to-r from-violet-400 to-pink-500 bg-clip-text text-transparent">{t.project.timeline.highlight}</span>
+            <span className="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">{t.project.timeline.highlight}</span>
           </h2>
         </motion.div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-white/5 via-white/10 to-white/5 -translate-x-1/2" />
+          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-amber-500/5 via-amber-500/15 to-amber-500/5 -translate-x-1/2" />
           <div className="space-y-8 lg:space-y-0">
             {project.timeline.map((step, i) => {
               const isLeft = i % 2 === 0;
               const phase = lang === 'ar' ? step.phase_ar || step.phase : step.phase;
               const desc = lang === 'ar' ? step.desc_ar || step.desc : step.desc;
               const card = (
-                <div className="rounded-2xl p-6 border bg-gradient-to-br from-[#0d0d0d] to-[#080808] hover:border-white/15 transition-all duration-300" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
+                <div className="rounded-2xl p-6 border bg-gradient-to-br from-[#130e0a] to-[#0e0b07] hover:border-amber-500/25 transition-all duration-300" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
                   <div className="inline-flex items-center gap-2 mb-3 font-black text-sm tracking-wider uppercase" style={{ color: project.color }}>
                     <span className="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-black" style={{ backgroundColor: `${project.color}20`, border: `1px solid ${project.color}40` }}>{i + 1}</span>
                     {phase}

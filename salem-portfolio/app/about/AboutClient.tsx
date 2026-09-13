@@ -4,143 +4,133 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useI18n } from '@/lib/i18n/context';
 import { fadeIn, staggerContainer } from '@/lib/animations';
-import { ArrowLeft, ArrowRight, GraduationCap, Briefcase, Award, MonitorPlay, Code, BookOpen } from 'lucide-react';
+import { ArrowLeft, ArrowRight, GraduationCap, Briefcase, Award, MonitorPlay, Code } from 'lucide-react';
 import Link from 'next/link';
-
-const IMAGE_MAIN = 'https://ik.imagekit.io/effect/gemini-3-pro-image-preview_b_%D8%AE%D9%84%D9%8A_%D8%A7%D9%84%D8%B4%D8%AE%D8%B5_%D8%A7%D9%84%D9%8A_%D8%B9%D9%84%D9%8A_%D8%A7%D9%84%20(1)%20(1).png';
-const IMAGE_WORK = 'https://ik.imagekit.io/effect/SDR.png';
-const IMAGE_DAYES = 'https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/w.jpg';
 
 export default function AboutClient() {
   const { t, isRTL } = useI18n();
   const data = t.aboutPage;
 
   const timeline = [
-    { year: 'قبل 2020 / Before 2020', icon: Award,        content: data.bio1 },
-    { year: '2020',                    icon: MonitorPlay,   content: data.bio2 },
-    { year: '2024 – 2025',             icon: Briefcase,     content: data.bio3 },
-    { year: '2025 – Present',          icon: GraduationCap, content: data.bio4 },
-    { year: '2025',                    icon: Code,          content: data.bio5 },
-    { year: 'التدريس / Teaching',       icon: BookOpen,      content: data.bio6 },
+    {
+      year: "Before 2020",
+      icon: Award,
+      content: data.bio1
+    },
+    {
+      year: "2020",
+      icon: MonitorPlay,
+      content: data.bio2
+    },
+    {
+      year: "2021-2022",
+      icon: Briefcase,
+      content: data.bio3
+    },
+    {
+      year: "2023",
+      icon: GraduationCap,
+      content: data.bio4
+    },
+    {
+      year: "2024 - Present",
+      icon: Code,
+      content: data.bio5
+    }
   ];
 
   return (
     <div className="min-h-screen bg-[#080808] pt-24 pb-20 overflow-hidden relative">
-      {/* Subtle bg glow — desktop only */}
-      <div className="hidden md:block absolute top-0 right-1/4 w-96 h-96 bg-violet-600/15 rounded-full blur-[120px] pointer-events-none" />
-      <div className="hidden md:block absolute bottom-0 left-1/4 w-96 h-96 bg-blue-600/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute inset-0 pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-violet-600/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-
-        {/* Back link */}
         <motion.div
           initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.4 }}
-          className="mb-10"
+          transition={{ duration: 0.5 }}
+          className="mb-12"
         >
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-medium group"
+            className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-200 text-sm font-medium group"
           >
-            {isRTL
-              ? <><ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />{t.nav.home}</>
-              : <><ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />{t.nav.home}</>
-            }
+            {isRTL ? (
+              <><ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />{t.nav.home}</>
+            ) : (
+              <><ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />{t.nav.home}</>
+            )}
           </Link>
         </motion.div>
 
-        {/* ── Top section: images + heading ── */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-20">
-
-          {/* Images column */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-24">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="flex flex-col gap-4"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="relative"
           >
-            {/* صورة دايس — أولاً */}
-            <div className="relative w-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-[#0d0d0d]">
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
               <Image
-                src={IMAGE_DAYES}
-                alt="سالم رزق — إدارة تسويق دايس دمنهور"
-                width={800}
-                height={800}
-                className="w-full h-auto object-contain"
-                priority
+                src="https://ik.imagekit.io/effect/gemini-3-pro-image-preview_b_%D8%AE%D9%84%D9%8A_%D8%A7%D9%84%D8%B4%D8%AE%D8%B5_%D8%A7%D9%84%D9%8A_%D8%B9%D9%84%D9%8A_%D8%A7%D9%84%20(1)%20(1).png"
+                alt="Salem Rezk"
+                fill
                 unoptimized
+                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-transparent opacity-80" />
             </div>
-
-            {/* الصورتين الباقيتين جنب بعض */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative w-full rounded-3xl overflow-hidden border border-white/10 shadow-xl bg-[#0d0d0d]">
-                <Image
-                  src={IMAGE_MAIN}
-                  alt="سالم رزق — مدير تسويق رقمي"
-                  width={400}
-                  height={500}
-                  className="w-full h-auto object-contain"
-                  unoptimized
-                  sizes="(max-width: 1024px) 50vw, 25vw"
-                />
-              </div>
-              <div className="relative w-full rounded-3xl overflow-hidden border border-white/10 shadow-xl bg-[#0d0d0d]">
-                <Image
-                  src={IMAGE_WORK}
-                  alt="سالم رزق في العمل — تصميم ومونتاج"
-                  width={400}
-                  height={500}
-                  className="w-full h-auto object-contain"
-                  unoptimized
-                  sizes="(max-width: 1024px) 50vw, 25vw"
-                />
-              </div>
-            </div>
+            
+            {/* Floating Image */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className={`absolute -bottom-12 ${isRTL ? '-left-12' : '-right-12'} w-64 aspect-square rounded-3xl overflow-hidden border-4 border-[#080808] shadow-2xl hidden md:block`}
+            >
+              <Image
+                src="https://ik.imagekit.io/effect/SDR.png"
+                alt="Salem Rezk Working"
+                fill
+                unoptimized
+                className="object-cover"
+                sizes="256px"
+              />
+            </motion.div>
           </motion.div>
 
-          {/* Heading + timeline column */}
           <motion.div
-            variants={staggerContainer(0.08, 0.1)}
+            variants={staggerContainer()}
             initial="hidden"
             animate="show"
-            className="space-y-10"
+            className="space-y-8"
           >
             <motion.div variants={fadeIn('up', 0)}>
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-5 bg-violet-500/10 text-violet-400 border border-violet-500/20">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6 bg-violet-500/10 text-violet-400 border border-violet-500/20">
                 {data.title}
               </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight">
                 {data.heading}
               </h1>
             </motion.div>
 
-            {/* Timeline */}
-            <div className="space-y-8">
+            <div className="space-y-12">
               {timeline.map((item, index) => (
-                <motion.div
-                  key={index}
-                  variants={fadeIn('up', index * 0.07)}
-                  className="flex gap-5"
-                >
-                  {/* Icon + connector */}
-                  <div className="flex flex-col items-center gap-2 flex-shrink-0">
-                    <div className="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
-                      <item.icon size={18} className="text-violet-400" />
+                <motion.div key={index} variants={fadeIn('up', index * 0.1)} className="flex gap-6">
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                      <item.icon size={20} className="text-violet-400" />
                     </div>
                     {index !== timeline.length - 1 && (
-                      <div className="w-px flex-1 bg-gradient-to-b from-white/10 to-transparent min-h-[32px]" />
+                      <div className="w-px h-full bg-gradient-to-b from-white/10 to-transparent min-h-[40px]" />
                     )}
                   </div>
-
-                  {/* Text */}
-                  <div className="pb-6">
-                    <span className="text-xs font-bold text-violet-400 mb-1.5 block tracking-wider uppercase">
-                      {item.year}
-                    </span>
-                    <p className="text-gray-300 text-base leading-relaxed">
+                  <div className="pb-8">
+                    <span className="text-sm font-bold text-violet-400 mb-2 block">{item.year}</span>
+                    <p className="text-gray-300 text-lg leading-relaxed">
                       {item.content}
                     </p>
                   </div>

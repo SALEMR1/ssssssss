@@ -18,14 +18,14 @@ export default function ProjectRelated({ projects }: Props) {
   const { t, lang } = useI18n();
   if (!projects.length) return null;
   return (
-    <section className="py-24 bg-[#080808] border-t border-white/5">
+    <section className="py-24 bg-[#0A0805] border-t border-amber-500/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div variants={fadeIn('up', 0)} initial="hidden" whileInView="show" viewport={{ once: true }} className="mb-12 flex items-center justify-between">
           <div>
             <h2 className="text-3xl font-black text-white">{t.project.related.title}</h2>
             <p className="text-gray-400 mt-2">{t.project.related.subtitle}</p>
           </div>
-          <Link href="/#projects" className="hidden sm:flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors duration-200 group">
+          <Link href="/#projects" className="hidden sm:flex items-center gap-2 text-sm text-gray-400 hover:text-amber-400 transition-colors duration-200 group">
             {t.project.related.viewAll}
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </Link>
@@ -38,7 +38,7 @@ export default function ProjectRelated({ projects }: Props) {
             const tags = lang === 'ar' ? project.tags_ar || project.tags : project.tags;
             return (
               <motion.div key={project.slug} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} whileHover={{ y: -4 }}
-                className="group relative rounded-3xl overflow-hidden border border-white/8 bg-gradient-to-br from-[#0d0d0d] to-[#080808] p-8 hover:border-white/15 transition-all duration-500">
+                className="group relative rounded-3xl overflow-hidden border border-white/8 bg-gradient-to-br from-[#130e0a] to-[#0e0b07] p-8 hover:border-amber-500/25 transition-all duration-500">
                 <div className="absolute top-0 right-0 w-48 h-48 rounded-full blur-3xl opacity-0 group-hover:opacity-15 transition-opacity duration-500" style={{ backgroundColor: project.color }} />
                 <div className="relative space-y-4">
                   <div className="flex items-center justify-between">
@@ -66,7 +66,7 @@ export default function ProjectRelated({ projects }: Props) {
           })}
         </div>
         <motion.div variants={fadeIn('up', 0)} initial="hidden" whileInView="show" viewport={{ once: true }} className="mt-12 text-center">
-          <Link href="/#contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-violet-600 to-pink-600 text-white font-semibold hover:shadow-xl hover:shadow-violet-500/30 transition-all duration-300 hover:-translate-y-1">
+          <Link href="/#contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold hover:shadow-xl hover:shadow-amber-500/25 transition-all duration-300 hover:-translate-y-1">
             {t.project.related.cta} <ArrowRight size={18} />
           </Link>
         </motion.div>

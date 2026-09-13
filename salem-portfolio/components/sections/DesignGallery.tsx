@@ -12,10 +12,18 @@ import { useI18n } from '@/lib/i18n/context';
 
 export default function DesignGallery() {
   const { t } = useI18n();
-  const [activeCategory, setActiveCategory] = useState(t.gallery.categories[0]);
+  const enCategories = ['All', 'Posts', 'Carousels', 'Ads', 'Stories', 'Branding'];
+
+  // Only show categories that have at least one design item
+  const availableCategories = t.gallery.categories.filter((cat, i) => {
+    if (i === 0) return true; // Always show "All"
+    const enCat = enCategories[i];
+    return galleryData.some((item) => item.category === enCat);
+  });
+
+  const [activeCategory, setActiveCategory] = useState(availableCategories[0] || t.gallery.categories[0]);
   const [lightboxIndex, setLightboxIndex] = useState(-1);
 
-  const enCategories = ['All', 'Posts', 'Carousels', 'Ads', 'Stories', 'Branding'];
   const activeCatIndex = t.gallery.categories.indexOf(activeCategory);
   const activeEnCat = enCategories[activeCatIndex] ?? 'All';
   const filteredItems =
@@ -30,8 +38,8 @@ export default function DesignGallery() {
   }));
 
   return (
-    <section id="gallery" className="relative py-32 bg-black overflow-hidden">
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-600/8 rounded-full blur-3xl pointer-events-none" />
+    <section id="gallery" className="relative py-32 bg-saey-gray overflow-hidden">
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-violet-100/30 rounded-full blur-3xl pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionHeader
           badge={t.gallery.badge}
@@ -48,14 +56,14 @@ export default function DesignGallery() {
           viewport={{ once: true }}
           className="flex flex-wrap justify-center gap-3 mb-12"
         >
-          {t.gallery.categories.map((cat, i) => (
+          {availableCategories.map((cat, i) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
                 activeCategory === cat
-                  ? 'bg-gradient-to-r from-violet-600 to-pink-600 text-white shadow-lg shadow-violet-500/30'
-                  : 'bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10'
+                  ? 'bg-saey-blue text-white shadow-md shadow-blue-200'
+                  : 'bg-white border border-blue-100 text-saey-muted hover:text-saey-navy hover:border-blue-300'
               }`}
             >
               {i === 0 && <Filter size={14} />}
@@ -78,7 +86,7 @@ export default function DesignGallery() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.25 }}
-                className={`group relative rounded-2xl overflow-hidden cursor-pointer bg-[#0d0d0d] border border-white/8 hover:border-white/20 transition-all duration-300 hover:shadow-xl hover:shadow-violet-500/10 ${
+                className={`group relative rounded-2xl overflow-hidden cursor-pointer bg-saey-gray border border-blue-100 hover:border-blue-300 transition-all duration-300 hover:shadow-xl hover:shadow-blue-100/60 ${
                   index % 7 === 0 || index % 7 === 4 ? 'row-span-2' : ''
                 }`}
                 onClick={() => setLightboxIndex(index)}
@@ -98,7 +106,7 @@ export default function DesignGallery() {
                     priority={index < 4}
                   />
                   {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+                  <div className="absolute inset-0 bg-saey-navy/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
                     <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
                         <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
@@ -107,7 +115,7 @@ export default function DesignGallery() {
                   </div>
                 </div>
                 <div className="absolute bottom-3 left-3 z-10">
-                  <span className="px-2 py-1 rounded-lg text-xs font-semibold bg-black/80 text-gray-300 backdrop-blur-sm border border-white/10">
+                  <span className="px-2 py-1 rounded-lg text-xs font-semibold bg-white/90 text-saey-navy backdrop-blur-sm border border-blue-100">
                     {item.category}
                   </span>
                 </div>

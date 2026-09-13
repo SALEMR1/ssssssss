@@ -1,14 +1,74 @@
 [
-  { "id": 1, "thumbnail": "/images/videos/reel-1-thumb.jpg", "title": "Product Launch Reel", "duration": "0:45", "category": "Reels", "description": "High-energy product launch Reel with motion graphics and dynamic transitions." },
-  { "id": 2, "thumbnail": "/images/videos/ad-1-thumb.jpg", "title": "Facebook Ad Campaign", "duration": "0:30", "category": "Ads", "description": "Performance-optimized video ad designed for maximum click-through rate." },
-  { "id": 3, "thumbnail": "/images/videos/promo-1-thumb.jpg", "title": "Brand Promotional Film", "duration": "1:20", "category": "Promotional", "description": "Full-length brand story video with cinematic style and narrative storytelling." },
-  { "id": 4, "thumbnail": "/images/videos/edu-1-thumb.jpg", "title": "Educational Course Preview", "duration": "2:00", "category": "Educational", "description": "Engaging course preview designed to drive enrollment inquiries." },
-  { "id": 5, "thumbnail": "/images/videos/reel-2-thumb.jpg", "title": "Fashion Collection Reel", "duration": "0:30", "category": "Reels", "description": "Dynamic fashion Reel with trending audio and editorial-style transitions." },
-  { "id": 6, "thumbnail": "/images/videos/ad-2-thumb.jpg", "title": "Seasonal Sale Campaign", "duration": "0:15", "category": "Ads", "description": "Short-form video ad optimized for Story and Reel placements." },
-  { "id": 7, "thumbnail": "/images/videos/fb-reel-1.jpg", "title": "Vaco Store", "title_ar": "محل vaco", "duration": "0:30", "category": "Reels", "description": "Facebook Reel video content.", "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2404827516663461%2F&show_text=false&width=267&t=0\" width=\"267\" height=\"476\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>" },
-  { "id": 8, "thumbnail": "/images/videos/fb-reel-2.jpg", "title": "ESCO Company", "title_ar": "شركة esco", "duration": "0:30", "category": "Reels", "description": "Facebook Reel video content.", "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1348089610792114%2F&show_text=false&width=560&t=0\" width=\"560\" height=\"314\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>" },
-  { "id": 9, "thumbnail": "/images/videos/fb-reel-3.jpg", "title": "Anime Avatar", "title_ar": "انيمي بشخصيتي", "duration": "0:30", "category": "Reels", "description": "Facebook Reel video content.", "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=321&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2417147412082728%2F&show_text=false&width=560&t=0\" width=\"560\" height=\"321\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>" },
-  { "id": 10, "thumbnail": "/images/videos/fb-reel-4.jpg", "title": "Low Sales Problem", "title_ar": "قله المبيعات", "duration": "0:30", "category": "Reels", "description": "Facebook Reel video content.", "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1730995357917279%2F&show_text=false&width=267&t=0\" width=\"267\" height=\"476\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>" },
-  { "id": 11, "thumbnail": "/images/videos/fb-reel-5.jpg", "title": "Benefits of a Website", "title_ar": "الاستفاده من الويب سايت", "duration": "0:30", "category": "Reels", "description": "Facebook Reel video content.", "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2250080435728753%2F&show_text=false&width=267&t=0\" width=\"267\" height=\"476\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>" },
-  { "id": 12, "thumbnail": "/images/videos/fb-reel-6.jpg", "title": "How a Website Helps", "title_ar": "ازاي الويب سايت بيفيد", "duration": "0:30", "category": "Reels", "description": "Facebook Reel video content.", "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4411084775806227%2F&show_text=false&width=560&t=0\" width=\"560\" height=\"314\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>" }
+  {
+    "id": 1,
+    "thumbnail": "",
+    "title": "Vaco Store",
+    "title_ar": "محل فاكو",
+    "duration": "0:30",
+    "category": "Reels",
+    "category_ar": "ريلز",
+    "description": "Facebook Reel for Vaco clothing store.",
+    "description_ar": "ريل فيسبوك لمحل فاكو للملابس.",
+    "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1015860887486031%2F&show_text=false&width=265&t=0\" width=\"265\" height=\"476\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>"
+  },
+  {
+    "id": 2,
+    "thumbnail": "",
+    "title": "ESCO Company",
+    "title_ar": "شركة ESCO",
+    "duration": "0:30",
+    "category": "Reels",
+    "category_ar": "ريلز",
+    "description": "Facebook Reel for ESCO Motor Oils.",
+    "description_ar": "ريل فيسبوك لشركة ESCO لزيوت المحركات.",
+    "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1653008666409986%2F&show_text=false&width=560&t=0\" width=\"560\" height=\"314\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>"
+  },
+  {
+    "id": 3,
+    "thumbnail": "",
+    "title": "Dice Damanhour",
+    "title_ar": "دايس دمنهور",
+    "duration": "0:30",
+    "category": "Reels",
+    "category_ar": "ريلز",
+    "description": "Facebook Reel for Dice Damanhour store.",
+    "description_ar": "ريل فيسبوك لمحل دايس دمنهور.",
+    "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2680599492336679%2F&show_text=false&width=265&t=0\" width=\"265\" height=\"476\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>"
+  },
+  {
+    "id": 4,
+    "thumbnail": "",
+    "title": "Anime Avatar",
+    "title_ar": "انيميشن بشخصيتي",
+    "duration": "0:30",
+    "category": "Reels",
+    "category_ar": "ريلز",
+    "description": "Creative anime avatar animation reel.",
+    "description_ar": "ريل انيميشن إبداعي بشخصيتي.",
+    "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=321&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2417147412082728%2F&show_text=false&width=560&t=0\" width=\"560\" height=\"321\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>"
+  },
+  {
+    "id": 5,
+    "thumbnail": "",
+    "title": "Brand Owners Problem",
+    "title_ar": "مشكلة أصحاب البراندات اللي لسه بتبدأ",
+    "duration": "0:30",
+    "category": "Educational",
+    "category_ar": "تعليمية",
+    "description": "Educational reel about common problems for new brand owners.",
+    "description_ar": "ريل تعليمي عن مشاكل أصحاب البراندات اللي لسه بيبدأوا.",
+    "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2122269449168968%2F&show_text=false&width=560&t=0\" width=\"560\" height=\"314\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>"
+  },
+  {
+    "id": 6,
+    "thumbnail": "",
+    "title": "AI as a Tool",
+    "title_ar": "الـ AI إضافة لينا",
+    "duration": "0:30",
+    "category": "Educational",
+    "category_ar": "تعليمية",
+    "description": "Educational reel about how AI is an addition to our work.",
+    "description_ar": "ريل تعليمي عن إزاي الـ AI إضافة وأداة لينا مش تهديد.",
+    "embedCode": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1059406946495687%2F&show_text=false&width=267&t=0\" width=\"267\" height=\"476\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowFullScreen=\"true\"></iframe>"
+  }
 ]

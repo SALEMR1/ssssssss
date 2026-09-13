@@ -47,18 +47,17 @@
     "badge": "About Me",
     "title": "Turning Digital Presence Into",
     "highlight": "Business Growth",
-    "role": "Web Developer & Creative Designer | Digital Marketing Expert",
+    "role": "Developer & Creative Designer",
     "location": "Beheira Governorate, Edko City",
-    "p1": "I'm Salem Rizk — a graduate of the British Institute of Computing and Information Technology (Computeorem), based in Edko, Beheira, Egypt. I've built my career on two pillars: a solid technical foundation and a refined creative sensibility — a combination that sets my work apart and delivers real impact.",
-    "p2": "Over 3+ years of professional experience spanning social media management, Meta Ads, visual identity design, video production, and web development, every project I take on is driven by one principle:",
-    "p2_highlight": "real results are the only measure of success",
-    "p3": "I currently work as a freelancer managing multiple projects simultaneously — handling full-cycle marketing operations that include content management, paid advertising campaigns, graphic design, and digital development solutions.",
-    "p4": "My ongoing goal is to continuously elevate the quality of services I deliver by staying ahead of the latest digital marketing tools and web technologies — ensuring every client receives solutions that meet international professional standards.",
+    "p1": "I'm Salem Rizk — a performance-focused Social Media Manager, Meta Ads specialist, and Creative Designer based in Edko, Beheira, Egypt. I don't just manage pages; I architect complete digital marketing systems that deliver measurable business results.",
+    "p2": "With 3+ years of hands-on experience across diverse industries — from automotive lubricants to fashion retail and education — I've developed a deep understanding of what moves people to act. Every campaign I run is designed with one goal in mind:",
+    "p2_highlight": "your return on investment",
+    "p3": "Currently working as a freelancer managing multiple projects simultaneously — page management, content design, ad campaigns, and web development. I believe real work in this field is measured by results, not just aesthetics.",
+    "p4": "My goal is to keep growing in digital marketing and development to deliver stronger and more professional services in the future.",
     "badges": [
       "Meta Ads Certified",
       "Creative Designer",
-      "Video Editor",
-      "Web Developer"
+      "Video Editor"
     ],
     "expertise": [
       "Social Media Management",
@@ -184,27 +183,27 @@
         }
       },
       {
-        "id": "dayes",
-        "title": "Dayes Damanhour",
-        "subtitle": "Building a Local Fashion Brand & Reviving Sales",
-        "industry": "Fashion & Clothing",
+        "id": "dr-salman",
+        "title": "Dr. Mohamed Abdelaziz Salman",
+        "subtitle": "Salman Baby Clinic — Pediatrics & Neonatology",
+        "industry": "Healthcare & Pediatrics",
         "tags": [
           "Social Media Management",
-          "Brand Building",
-          "Graphic Design",
+          "Medical Graphic Design",
+          "Targeted Meta Ads",
           "Content Strategy"
         ],
         "metric1": {
-          "value": "1M+",
+          "value": "+380K",
           "label": "Total Reach"
         },
         "metric2": {
-          "value": "41K+",
-          "label": "Followers"
+          "value": "5.2x",
+          "label": "ROAS"
         },
         "metric3": {
-          "value": "20K+",
-          "label": "Customer Messages"
+          "value": "+4.5K",
+          "label": "Followers Gained"
         }
       }
     ]
@@ -215,8 +214,8 @@
     "highlight": "Achievements",
     "subtitle": "Numbers don't lie. Here's what I've delivered across all client campaigns combined.",
     "context": "These results were achieved across",
-    "clients": "3 major clients",
-    "context2": "in the automotive, fashion, and education industries — proving that the right strategy works across any sector.",
+    "clients": "4 major clients",
+    "context2": "in the automotive, fashion, education, and healthcare industries — proving that the right strategy works across any sector.",
     "stats": [
       {
         "label": "Total Reach"
@@ -456,7 +455,8 @@
       "projects": [
         "ESCO Motor Oils",
         "VAKO Damanhour",
-        "TTC Educational Center"
+        "TTC Educational Center",
+        "Dr. Mohamed Abdelaziz Salman"
       ],
       "quick": [
         "About Me",
@@ -468,10 +468,10 @@
     }
   },
   "devProjects": {
-    "badge": "Web Development",
+    "badge": "Software Development",
     "title": "Development ",
     "highlight": "Projects",
-    "subtitle": "8 real-world web and mobile applications — from e-commerce platforms to automation bots. Built with modern tech stacks and production-ready code.",
+    "subtitle": "Real-world applications — from offline POS and inventory ERP systems to e-commerce platforms. Built with modern tech stacks.",
     "filterAll": "All",
     "filters": [
       "All",
@@ -558,13 +558,12 @@
     }
   },
   "aboutPage": {
-    "title": "About Salem Rizk",
+    "title": "About Salem Rezk",
     "heading": "The Beginning, Evolution, and Ongoing Journey.",
-    "bio1": "Born in Beheira Governorate, Edko City, Salem Rizk began his journey with a deep passion for football, representing several sports clubs until 2020 — the year that marked a pivotal turning point, as he chose to dedicate himself fully to his academic studies at the British Institute of Computing and Information Technology (Computeorem).",
-    "bio2": "In early 2020, he stepped into the world of technology and launched his digital content career with momentum, producing over 600 professional videos and summaries — building a distinctive creative style and advanced visual communication skills.",
-    "bio3": "During his studies, he served as Administrative Manager at Al-Hilal Alexandrian Club for a season and a half, taking full responsibility for marketing, club systems management, and comprehensive administrative coordination — all while actively working as a freelancer in digital marketing and design.",
-    "bio4": "He then moved on to head the marketing operations for TTC Educational Center in Alexandria, one of the region's leading training institutions, before adding ESCO Motor Oils to his professional portfolio — achieving exceptional growth figures and record-breaking results with both clients.",
-    "bio5": "To this day, Salem continues to fully manage the marketing operations for TTC and ESCO, while also serving as the Digital Marketing Manager for Dayes Damanhour — overseeing paid Meta advertising campaigns, content publishing plans, social media page management, and full marketing operations. Concurrently, he maintains his freelance work in web development and graphic design, delivering comprehensive digital solutions for businesses that aim to grow.",
-    "bio6": "Alongside his professional career, Salem delivered offline programming courses for high school and university students — covering HTML, CSS, JavaScript, and web development fundamentals. These sessions produced measurable improvements in students' coding abilities and added a valuable educational dimension to his expertise, strengthening his ability to explain technical concepts in a clear, practical, and accessible way."
+    "bio1": "Born in Beheira Governorate, Salem Rezk initially pursued a passion for football, playing for several sports clubs until 2020. This year marked a turning point in his career as he stopped playing football to focus on completing his academic studies.",
+    "bio2": "In early 2020, he entered the tech industry and strongly began his journey in content creation, producing over 600 videos and summaries, which helped hone his creative skills.",
+    "bio3": "During his studies, he served as the Administrative Manager at Al-Hilal Alexandrian Club for a season and a half. He was entirely responsible for marketing, club systems, and coordinating all internal administrative affairs. Simultaneously, he worked as a freelancer.",
+    "bio4": "He later took over the marketing management for a major educational center in Alexandria (TTC), and subsequently added the management of ESCO Motor Oils to his portfolio, achieving exceptional success with both.",
+    "bio5": "Since graduating and up to the present day, Salem continues to fully manage the marketing operations for both TTC and ESCO. Concurrently, he maintains his freelance work in web development, social media management, and graphic design, providing comprehensive solutions for major companies and projects."
   }
 }

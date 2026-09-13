@@ -25,13 +25,17 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
   const tags = lang === 'ar' ? project.tags_ar || project.tags : project.tags;
 
   return (
-    <section className="relative min-h-[70vh] flex flex-col justify-end overflow-hidden bg-black pt-32 pb-20">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] rounded-full blur-[120px] opacity-20 pointer-events-none" style={{ backgroundColor: project.color }} />
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.018)_1px,transparent_1px)] bg-[size:72px_72px] pointer-events-none" />
+    <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-[#0A0805] pt-32 pb-20">
+      {/* Amber atmospheric glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] rounded-full blur-[120px] opacity-25 pointer-events-none" style={{ backgroundColor: project.color }} />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-orange-700/10 rounded-full blur-[100px] pointer-events-none" />
+      {/* Subtle grid */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(245,158,11,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(245,158,11,0.03)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#080808] to-transparent pointer-events-none" />
+
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, x: isRTL ? 20 : -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className="mb-12">
-          <Link href="/#projects" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-200 text-sm font-medium group">
+          <Link href="/#projects" className="inline-flex items-center gap-2 text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm font-medium group">
             {isRTL
               ? <><ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />{t.project.backToProjects}</>
               : <><ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />{t.project.backToProjects}</>
@@ -42,7 +46,7 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
           <div className="space-y-8">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="flex flex-wrap gap-2">
               {tags.slice(0, 3).map((tag) => (
-                <span key={tag} className="px-3 py-1.5 rounded-lg text-xs font-semibold text-white/80 border border-white/15 bg-white/5 backdrop-blur-sm">{tag}</span>
+                <span key={tag} className="px-3 py-1.5 rounded-lg text-xs font-semibold text-amber-300 border border-amber-500/25 bg-amber-500/10 backdrop-blur-sm">{tag}</span>
               ))}
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.15 }}>
@@ -56,10 +60,10 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
                 { icon: Calendar, label: t.project.labels.year, value: project.year },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-2">
-                  <item.icon size={16} className="text-gray-500" />
+                  <item.icon size={16} className="text-amber-500/70" />
                   <div>
                     <p className="text-xs text-gray-500 leading-none">{item.label}</p>
-                    <p className="text-sm text-white font-semibold mt-0.5">{item.value}</p>
+                    <p className="text-sm text-gray-200 font-semibold mt-0.5">{item.value}</p>
                   </div>
                 </div>
               ))}
@@ -72,7 +76,7 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
               { value: project.results.roas, label: t.project.resultMetrics.roas },
               { value: project.results.followers, label: t.project.resultMetrics.followers },
             ].map((stat) => (
-              <div key={stat.label} className="rounded-2xl bg-white/5 border border-white/10 p-5 text-center backdrop-blur-sm">
+              <div key={stat.label} className="rounded-2xl bg-white/5 border border-amber-500/20 p-5 text-center backdrop-blur-sm hover:border-amber-500/40 transition-colors duration-300">
                 <div className="text-3xl font-black leading-none" style={{ color: project.color }}>{stat.value}</div>
                 <div className="text-xs text-gray-400 mt-2 font-medium">{stat.label}</div>
               </div>

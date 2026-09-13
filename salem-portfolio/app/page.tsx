@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import Hero from '@/components/sections/Hero';
-import About from '@/components/sections/About';
 
 // Lazy-load below-the-fold sections to improve LCP and TTI
 const Services      = dynamic(() => import('@/components/sections/Services'));
@@ -12,7 +11,6 @@ const WorkProcess   = dynamic(() => import('@/components/sections/WorkProcess'))
 const Skills        = dynamic(() => import('@/components/sections/Skills'));
 const DesignGallery = dynamic(() => import('@/components/sections/DesignGallery'));
 const VideoPortfolio = dynamic(() => import('@/components/sections/VideoPortfolio'));
-const Testimonials  = dynamic(() => import('@/components/sections/Testimonials'));
 const FAQ           = dynamic(() => import('@/components/sections/FAQ'));
 const Contact       = dynamic(() => import('@/components/sections/Contact'));
 
@@ -31,9 +29,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      {/* Above the fold — loaded immediately */}
       <Hero />
-      <About />
 
       {/* Below the fold — lazy loaded */}
       <Services />
@@ -44,7 +40,6 @@ export default function Home() {
       <Skills />
       <DesignGallery />
       <VideoPortfolio />
-      <Testimonials />
       <FAQ />
       <Contact />
     </>

@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import DevProjectsClient from '@/components/dev/DevProjectsClient';
 
-const OG_IMAGE =
-  'https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755';
+const OG_IMAGE = '/logo.png';
 
 export const metadata: Metadata = {
   title: 'مشاريع برمجية | سالم رزق — مطور Next.js & React',

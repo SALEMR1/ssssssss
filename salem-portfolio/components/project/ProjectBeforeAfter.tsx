@@ -20,7 +20,7 @@ export default function ProjectBeforeAfter({ project }: Props) {
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-white">
             {t.project.beforeAfter.title}{' '}
-            <span className="bg-gradient-to-r from-violet-400 to-pink-500 bg-clip-text text-transparent">{t.project.beforeAfter.highlight}</span>
+            <span className="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">{t.project.beforeAfter.highlight}</span>
           </h2>
         </motion.div>
         {/* Headers */}

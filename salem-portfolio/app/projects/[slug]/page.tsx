@@ -94,7 +94,7 @@ export default async function ProjectPage({ params }: PageProps) {
   };
 
   return (
-    <div className="bg-[#080808] min-h-screen">
+    <div className="min-h-screen bg-[#080808]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudySchema) }}

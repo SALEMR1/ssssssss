@@ -21,12 +21,12 @@ export default function ProjectChallenge({ project }: Props) {
   const objectives = lang === 'ar' ? project.objectives_ar || project.objectives : project.objectives;
 
   return (
-    <section className="py-24 bg-[#050505]">
+    <section className="py-24 bg-[#0A0805]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Challenge */}
           <motion.div variants={fadeIn('up', 0)} initial="hidden" whileInView="show" viewport={{ once: true }}
-            className="rounded-3xl bg-gradient-to-br from-[#0d0d0d] to-[#080808] border border-rose-500/15 p-8 space-y-6">
+            className="rounded-3xl bg-gradient-to-br from-[#130e0a] to-[#0e0b07] border border-rose-500/15 p-8 space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center"><XCircle size={22} className="text-rose-400" /></div>
               <div>
@@ -48,7 +48,7 @@ export default function ProjectChallenge({ project }: Props) {
           </motion.div>
           {/* Objectives */}
           <motion.div variants={fadeIn('up', 0.1)} initial="hidden" whileInView="show" viewport={{ once: true }}
-            className="rounded-3xl bg-gradient-to-br from-[#0d0d0d] to-[#080808] border p-8 space-y-6" style={{ borderColor: `${project.color}25` }}>
+            className="rounded-3xl bg-gradient-to-br from-[#130e0a] to-[#0e0b07] border p-8 space-y-6" style={{ borderColor: `${project.color}25` }}>
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl flex items-center justify-center" style={{ backgroundColor: `${project.color}15`, border: `1px solid ${project.color}30` }}>
                 <Target size={22} style={{ color: project.color }} />

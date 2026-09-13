@@ -20,15 +20,15 @@ export default function ProjectTestimonial({ project }: Props) {
   const title = lang === 'ar' ? project.title_ar || project.title : project.title;
 
   return (
-    <section className="py-24 bg-[#050505]">
+    <section className="py-24 bg-[#0A0805]">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
         <motion.div variants={fadeIn('up', 0)} initial="hidden" whileInView="show" viewport={{ once: true }}
           className="relative rounded-3xl overflow-hidden border p-10 md:p-14" style={{ borderColor: `${project.color}25` }}>
-          <div className="absolute inset-0 opacity-10" style={{ background: `radial-gradient(ellipse at top right, ${project.color}, transparent 60%)` }} />
+          <div className="absolute inset-0 opacity-15" style={{ background: `radial-gradient(ellipse at top right, ${project.color}, transparent 60%)` }} />
           <div className="absolute top-8 right-8 opacity-[0.06]"><Quote size={100} className="text-white" /></div>
           <div className="relative space-y-8">
             <div className="flex gap-1">{[...Array(5)].map((_, i) => <Star key={i} size={20} className="text-amber-400 fill-amber-400" />)}</div>
-            <blockquote className="text-xl md:text-2xl text-gray-200 leading-relaxed font-medium">"{quote}"</blockquote>
+            <blockquote className="text-xl md:text-2xl text-gray-200 leading-relaxed font-medium">&ldquo;{quote}&rdquo;</blockquote>
             <div className="flex items-center gap-4 pt-4 border-t border-white/8">
               <div className="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-white text-xl"
                 style={{ background: `linear-gradient(135deg, ${project.color}, ${project.color}80)` }}>

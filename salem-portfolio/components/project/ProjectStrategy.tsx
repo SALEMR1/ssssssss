@@ -38,7 +38,7 @@ export default function ProjectStrategy({ project }: Props) {
           <motion.div variants={fadeIn('left', 0.1)} initial="hidden" whileInView="show" viewport={{ once: true }} className="lg:col-span-3 space-y-4">
             {points.map((point, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-                className="flex items-start gap-4 p-5 rounded-2xl bg-white/3 border border-white/8 hover:bg-white/5 hover:border-white/15 transition-all duration-300 group">
+                className="flex items-start gap-4 p-5 rounded-2xl bg-white/3 border border-white/8 hover:bg-amber-500/5 hover:border-amber-500/20 transition-all duration-300 group">
                 <div className="flex-shrink-0 w-8 h-8 rounded-xl flex items-center justify-center font-black text-sm" style={{ backgroundColor: `${project.color}15`, color: project.color }}>
                   {String(i + 1).padStart(2, '0')}
                 </div>

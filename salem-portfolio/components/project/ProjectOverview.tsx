@@ -37,7 +37,7 @@ export default function ProjectOverview({ project }: Props) {
                 const desc = lang === 'ar' ? service.desc_ar || service.desc : service.desc;
                 return (
                   <motion.div key={service.title} initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-                    className="flex items-start gap-4 p-4 rounded-2xl bg-white/3 border border-white/8 hover:bg-white/5 hover:border-white/15 transition-all duration-300">
+                    className="flex items-start gap-4 p-4 rounded-2xl bg-white/3 border border-white/8 hover:bg-amber-500/5 hover:border-amber-500/20 transition-all duration-300">
                     <div className="w-10 h-10 rounded-xl flex-shrink-0 flex items-center justify-center" style={{ backgroundColor: `${project.color}15`, border: `1px solid ${project.color}30` }}>
                       <Icon size={18} style={{ color: project.color }} />
                     </div>

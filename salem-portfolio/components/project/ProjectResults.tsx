@@ -47,7 +47,7 @@ export default function ProjectResults({ project }: Props) {
   ];
 
   return (
-    <section className="py-24 bg-[#050505]">
+    <section className="py-24 bg-[#0A0805]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div variants={fadeIn('up', 0)} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6 border"
@@ -57,7 +57,7 @@ export default function ProjectResults({ project }: Props) {
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
             {t.project.results.title}{' '}
-            <span className="bg-gradient-to-r from-violet-400 to-pink-500 bg-clip-text text-transparent">{t.project.results.highlight}</span>
+            <span className="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">{t.project.results.highlight}</span>
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">{t.project.results.subtitle} {title}.</p>
         </motion.div>
@@ -66,7 +66,7 @@ export default function ProjectResults({ project }: Props) {
             const { number, suffix } = parseMetric(metric.value);
             return (
               <motion.div key={metric.label} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.07 }}
-                className="rounded-2xl bg-gradient-to-br from-[#0d0d0d] to-[#080808] border border-white/8 p-6 text-center hover:border-white/15 transition-all duration-300">
+                className="rounded-2xl bg-gradient-to-br from-[#130e0a] to-[#0e0b07] border border-white/8 p-6 text-center hover:border-amber-500/25 transition-all duration-300">
                 <div className="text-3xl md:text-4xl font-black leading-none mb-2" style={{ color: project.color }}>
                   <AnimatedCounter target={number} suffix={suffix} decimals={!Number.isInteger(number) ? 1 : 0} />
                 </div>

@@ -51,13 +51,13 @@ export default function Lightbox({ items, currentIndex, isOpen, onClose, onNext,
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm"
+          className="fixed inset-0 bg-white/95 backdrop-blur-sm z-50 flex items-center justify-center p-4"
           onClick={onClose}
         >
           {/* Close */}
           <button
             onClick={onClose}
-            className="absolute top-6 right-6 z-10 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white"
+            className="absolute top-4 right-4 z-10 flex gap-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors text-[#111827]"
             aria-label="Close lightbox"
           >
             <X size={24} />
@@ -67,7 +67,7 @@ export default function Lightbox({ items, currentIndex, isOpen, onClose, onNext,
           {items.length > 1 && (
             <button
               onClick={(e) => { e.stopPropagation(); onPrev(); }}
-              className="absolute left-6 z-10 p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white"
+              className="absolute left-6 z-10 p-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors text-[#111827]"
               aria-label="Previous image"
             >
               <ChevronLeft size={24} />
@@ -95,7 +95,7 @@ export default function Lightbox({ items, currentIndex, isOpen, onClose, onNext,
               />
             </div>
             {current.category && (
-              <div className="absolute bottom-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-violet-600/80 text-white backdrop-blur-sm">
+              <div className="absolute bottom-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-saey-blue/80 text-white backdrop-blur-sm">
                 {current.category}
               </div>
             )}
@@ -105,7 +105,7 @@ export default function Lightbox({ items, currentIndex, isOpen, onClose, onNext,
           {items.length > 1 && (
             <button
               onClick={(e) => { e.stopPropagation(); onNext(); }}
-              className="absolute right-6 z-10 p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white"
+              className="absolute right-6 z-10 p-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors text-[#111827]"
               aria-label="Next image"
             >
               <ChevronRight size={24} />
@@ -113,7 +113,7 @@ export default function Lightbox({ items, currentIndex, isOpen, onClose, onNext,
           )}
 
           {/* Counter */}
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-white/10 text-white text-sm font-medium backdrop-blur-sm">
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-gray-100 text-[#111827] text-sm font-medium backdrop-blur-sm">
             {currentIndex + 1} / {items.length}
           </div>
         </motion.div>

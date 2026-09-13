@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Cairo } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
@@ -11,8 +11,7 @@ import settings from '@/data/settings.json';
 
 const SITE_URL = 'https://salemrizk.com';
 const OG_IMAGE = settings.ogImage;
-const LOGO_URL =
-  'https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755';
+const LOGO_URL = '/logo.png';
 
 // Only load Cairo — it covers Arabic + Latin, eliminating 2 extra font requests.
 // Inter & Syne are dropped; system-ui fallback is instant (zero CLS, zero network).
@@ -79,6 +78,14 @@ export const metadata: Metadata = {
     },
   },
   category: 'Digital Marketing & Web Development',
+  applicationName: 'Salem Rizk Portfolio',
+  manifest: '/manifest.webmanifest',
+  formatDetection: { email: false, address: false, telephone: false },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#07152E',
+  colorScheme: 'light',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -135,6 +142,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html
       lang="ar"
       dir="rtl"
+      data-scroll-behavior="smooth"
       // Single font variable — less class noise, no CLS from multiple font swaps
       className={`${cairo.variable} h-full`}
       suppressHydrationWarning
@@ -150,8 +158,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           rel="preload"
           as="image"
           href={LOGO_URL}
-          // @ts-expect-error — fetchpriority is valid HTML but not yet in React types
-          fetchpriority="high"
+          fetchPriority="high"
         />
 
         {/* ── Structured data ── */}
@@ -159,7 +166,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       </head>
-      <body className="min-h-full flex flex-col bg-[#080808] text-white overflow-x-hidden">
+      <body className="min-h-full flex flex-col bg-background text-foreground overflow-x-hidden">
         <I18nProvider>
           <LoadingScreen />
           <ScrollProgress />

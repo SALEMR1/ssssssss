@@ -14,19 +14,22 @@ const config: Config = {
         heading: ["var(--font-syne)", "system-ui", "sans-serif"],
       },
       colors: {
-        background: "#080808",
-        foreground: "#ffffff",
-        card: "#0d0d0d",
-        accent: {
-          violet: "#7c3aed",
-          pink: "#db2777",
-          amber: "#f59e0b",
+        background: "#FFFFFF",
+        foreground: "#111827",
+        card: "#FFFFFF",
+        saey: {
+          navy: "#0B1020",
+          blue: "#2563EB",
+          violet: "#6D5DFB",
+          white: "#FFFFFF",
+          gray: "#F5F7FA",
+          dark: "#111827",
         },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "hero-glow": "radial-gradient(ellipse 80% 80% at 50% -20%, rgba(124,58,237,0.3), transparent)",
+        "hero-glow": "radial-gradient(ellipse 80% 80% at 50% -20%, rgba(37,99,235,0.08), transparent)",
       },
       animation: {
         "gradient-x": "gradient-x 6s ease infinite",
@@ -43,8 +46,8 @@ const config: Config = {
           "50%": { transform: "translateY(-20px)" },
         },
         glow: {
-          from: { boxShadow: "0 0 20px rgba(124, 58, 237, 0.3)" },
-          to: { boxShadow: "0 0 60px rgba(124, 58, 237, 0.6)" },
+          from: { boxShadow: "0 0 20px rgba(37, 99, 235, 0.3)" },
+          to: { boxShadow: "0 0 60px rgba(37, 99, 235, 0.5)" },
         },
       },
     },

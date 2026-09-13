@@ -1,28 +1,25 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Globe, AtSign, Mail, MapPin, MessageCircle, ArrowUpRight, Share2, MessageSquare } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
 import settings from '@/data/settings.json';
 
 const socials = [
-  { icon: MessageCircle, label: 'WhatsApp', href: `https://wa.me/${settings.whatsapp}`, color: 'hover:text-green-400' },
-  { icon: Globe, label: 'Facebook', href: settings.facebook, color: 'hover:text-blue-400' },
-  { icon: AtSign, label: 'Instagram', href: settings.instagram, color: 'hover:text-pink-400' },
-  { icon: MessageSquare, label: 'Threads', href: settings.threads, color: 'hover:text-gray-300' },
-  { icon: Share2, label: 'LinkedIn', href: settings.linkedin, color: 'hover:text-sky-400' },
-  { icon: Mail, label: 'Email', href: `mailto:${settings.email}`, color: 'hover:text-violet-400' },
+  { icon: MessageCircle, label: 'WhatsApp', href: `https://wa.me/${settings.whatsapp}` },
+  { icon: Globe, label: 'Facebook', href: settings.facebook },
+  { icon: AtSign, label: 'Instagram', href: settings.instagram },
+  { icon: MessageSquare, label: 'Threads', href: settings.threads },
+  { icon: Share2, label: 'LinkedIn', href: settings.linkedin },
+  { icon: Mail, label: 'Email', href: `mailto:${settings.email}` },
 ];
 
 const svcHrefs = ['/#services','/#services','/#services','/#services','/#services'];
-const projHrefs = ['/projects/esco','/projects/vako','/projects/ttc'];
-const quickHrefs = ['/#about','/#results','/#skills','/#process','/#faq'];
+const projHrefs = ['/projects/esco','/projects/vako','/projects/ttc','/projects/dr-salman'];
+const quickHrefs = ['/about','/#results','/#skills','/#process','/#faq'];
 
-interface FooterCol {
-  title: string;
-  links: readonly string[];
-  hrefs: string[];
-}
+interface FooterCol { title: string; links: readonly string[]; hrefs: string[]; }
 
 export default function Footer() {
   const { t } = useI18n();
@@ -31,44 +28,53 @@ export default function Footer() {
     { title: t.footer.sections.Projects, links: t.footer.links.projects, hrefs: projHrefs },
     { title: t.footer.sections.Quick, links: t.footer.links.quick, hrefs: quickHrefs },
   ];
+  const activeSocials = socials.filter((s) => s.href && s.href !== '#' && s.href !== 'https://wa.me/' && s.href !== 'mailto:');
+
   return (
-    <footer className="relative bg-black border-t border-white/5 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-t from-violet-950/20 to-transparent pointer-events-none" />
+    <footer className="relative bg-saey-navy pt-20 pb-8 overflow-hidden">
+      {/* Subtle blue glow top */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-48 bg-saey-blue/8 rounded-full blur-3xl pointer-events-none" />
+
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+          {/* Brand */}
           <div className="lg:col-span-2 space-y-6">
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full overflow-hidden shadow-lg">
-                <img src="https://ik.imagekit.io/effect/b_%D8%A7%D9%86%D8%A7_%D8%B9%D8%A7%D9%8A%D8%B2_%D8%A7%D9%84%D8%B1%D8%A7%D8%B3_%D8%A8%D8%B3_%D8%B2%D9%8A.png?updatedAt=1781361466755" alt="Salem Rizk" className="w-full h-full object-cover rounded-full" />
+              <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-blue-500/30">
+                <Image src="/logo.png" alt="Salem Rizk" width={48} height={48} className="w-full h-full object-cover rounded-full" />
               </div>
               <div>
                 <span className="font-bold text-white text-xl leading-none">Salem Rizk</span>
-                <span className="block text-xs text-gray-500 leading-none tracking-wider mt-1">DIGITAL MARKETING</span>
+                <span className="block text-xs text-blue-300/70 leading-none tracking-wider mt-1">DIGITAL MARKETING</span>
               </div>
             </Link>
-            <p className="text-gray-400 leading-relaxed text-sm max-w-xs">{t.footer.tagline}</p>
-            <div className="flex items-center gap-2 text-sm text-gray-500">
-              <MapPin size={14} className="text-violet-400" />
+            <p className="text-blue-200/60 leading-relaxed text-sm max-w-xs">{t.footer.tagline}</p>
+            <div className="flex items-center gap-2 text-sm text-blue-200/60">
+              <MapPin size={14} className="text-saey-blue" />
               <span>{t.footer.location}</span>
             </div>
             <div className="flex items-center gap-3">
-              {socials.map((s) => (
-                <Link key={s.label} href={s.href} aria-label={s.label}
-                  className={`w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 ${s.color} hover:bg-white/10 hover:border-white/20 transition-all duration-200`}>
-                  <s.icon size={16} />
+              {activeSocials.map((s) => (
+                <Link key={s.label} href={s.href} aria-label={s.label} target="_blank" rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-blue-200/60 hover:text-white hover:bg-saey-blue/20 hover:border-saey-blue/40 transition-all duration-200">
+                  <s.icon size={15} />
                 </Link>
               ))}
             </div>
           </div>
+
+          {/* Columns */}
           {cols.map((col) => (
             <div key={col.title}>
               <h4 className="text-white font-semibold text-sm uppercase tracking-widest mb-6">{col.title}</h4>
               <ul className="space-y-3">
                 {col.links.map((label, i) => (
                   <li key={label}>
-                    <Link href={col.hrefs[i] || '#'} className="text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-1 group">
+                    <Link href={col.hrefs[i] || '#'}
+                      className="text-blue-200/55 hover:text-white text-sm transition-colors duration-200 flex items-center gap-1 group">
                       {label}
-                      <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                     </Link>
                   </li>
                 ))}
@@ -76,9 +82,11 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="border-t border-white/5 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Salem Rizk. {t.footer.copyright}</p>
-          <p className="text-gray-600 text-sm">{t.footer.madeIn}</p>
+
+        {/* Bottom bar */}
+        <div className="border-t border-white/8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-blue-200/40 text-sm">© {new Date().getFullYear()} Salem Rizk. {t.footer.copyright}</p>
+          <p className="text-blue-200/40 text-sm">{t.footer.madeIn}</p>
         </div>
       </div>
     </footer>
