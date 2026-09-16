@@ -1,33 +1,33 @@
 import type { Metadata } from 'next';
 import AboutClient from './AboutClient';
 
-const OG_IMAGE = 'https://ik.imagekit.io/effect/SDR.png';
+const OG_IMAGE = 'https://ik.imagekit.io/effect/sa.jpg';
 
 export const metadata: Metadata = {
-  title: 'عن سالم رزق | القصة والرحلة المهنية',
+  title: 'من أنا | م. سالم رزق — مؤسس سعي للتسويق الرقمي',
   description:
-    'تعرف على قصة سالم رزق — من ملاعب كرة القدم إلى مدير تسويق رقمي وخبير إعلانات ميتا ومطور مواقع. رحلة شغف وإبداع وخبرة +3 سنوات في التسويق الرقمي.',
+    'م. سالم رزق، مؤسس سعي للتسويق الرقمي — رحلة من صناعة المحتوى إلى بناء منظومة تسويقية متكاملة لعملاء في مصر والخارج. خبير إعلانات ميتا، مدير تسويق رقمي ومطور مواقع.',
   alternates: {
-    canonical: 'https://salemrizk.com/about',
+    canonical: 'https://salemrizk.online/about',
   },
   openGraph: {
-    title: 'عن سالم رزق | القصة والرحلة المهنية',
+    title: 'من أنا | م. سالم رزق — مؤسس سعي للتسويق الرقمي',
     description:
-      'تعرف على رحلة سالم رزق من لعب كرة القدم إلى إدارة التسويق الرقمي وتطوير الويب.',
-    url: 'https://salemrizk.com/about',
+      'تعرّف على م. سالم رزق، مؤسس سعي — رحلة احترافية من صناعة المحتوى إلى إدارة منظومة عملاء متكاملة في قطاعات مختلفة.',
+    url: 'https://salemrizk.online/about',
     images: [
       {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: 'سالم رزق — القصة الشخصية',
+        alt: 'م. سالم رزق — مؤسس سعي للتسويق الرقمي',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'عن سالم رزق | القصة والرحلة المهنية',
-    description: 'تعرف على رحلة سالم رزق في التسويق الرقمي وتطوير الويب.',
+    title: 'من أنا | م. سالم رزق — مؤسس سعي',
+    description: 'م. سالم رزق، مؤسس سعي للتسويق الرقمي — خبير إعلانات ميتا ومطور مواقع من مصر.',
     images: [OG_IMAGE],
   },
 };

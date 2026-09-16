@@ -1,6 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Fix Turbopack workspace root detection for Next.js 16
+  turbopack: {
+    root: process.cwd(),
+  },
+
+  // Increase memory for workers during static generation
+  experimental: {
+    workerThreads: false,
+    cpus: 1,
+  },
+
   // Compress responses
   compress: true,
 

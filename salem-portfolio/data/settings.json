@@ -1,9 +1,9 @@
 {
-  "siteTitle": "سالم رزق | مدير وسائل التواصل الاجتماعي وخبير إعلانات ميتا",
-  "siteDescription": "سالم رزق — مدير وسائل تواصل اجتماعي، خبير إعلانات ميتا، مصمم جرافيك، ومطور مواقع من إدكو، البحيرة، مصر. حقق +3.2M وصول و4.2x ROAS.",
-  "brandName": "Salem Rizk",
+  "siteTitle": "م. سالم رزق | مؤسس سعي للتسويق الرقمي",
+  "siteDescription": "م. سالم رزق — مؤسس سعي للتسويق الرقمي. خبير إعلانات ميتا، مدير تسويق رقمي، مصمم جرافيك ومطور مواقع. حقق +3.2M وصول و4.2x ROAS لعملائه في مصر والخارج.",
+  "brandName": "سعي | Salem Rizk",
   "logo": "/logo.png",
-  "tagline": "I Don't Just Manage Pages. I Build Brands.",
+  "tagline": "لا أدير صفحات فحسب — أبني علامات تجارية.",
   "location": "إدكو، محافظة البحيرة، مصر",
   "email": "salmbrykrzq@gmail.com",
   "whatsapp": "201208569475",
@@ -12,7 +12,7 @@
   "linkedin": "",
   "threads": "https://www.threads.com/@salem_rizk22?invite=0",
   "favicon": "/favicon.ico",
-  "ogImage": "/logo.png",
+  "ogImage": "https://salemrizk.online/logo.png",
   "twitterHandle": "",
   "currency": "USD"
 }

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import projectsData from '@/data/projects.json';
 
-const SITE_URL = 'https://salemrizk.com';
+const SITE_URL = 'https://salemrizk.online';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const projectRoutes: MetadataRoute.Sitemap = projectsData.map((project) => ({
+  const projectRoutes: MetadataRoute.Sitemap = (projectsData as any[]).map((project) => ({
     url: `${SITE_URL}/projects/${project.slug}`,
     lastModified: new Date(`${project.year}-12-31`),
     changeFrequency: 'monthly' as const,

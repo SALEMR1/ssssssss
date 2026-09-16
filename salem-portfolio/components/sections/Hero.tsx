@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, ChevronDown } from 'lucide-react';
+import { ArrowRight, ChevronDown, Sparkles } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
 
 export default function Hero() {
@@ -19,19 +19,33 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-white">
-      {/* Subtle blue atmospheric glows */}
+      {/* Glows */}
       <div className="hidden md:block absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-100/60 rounded-full blur-[100px] pointer-events-none" />
       <div className="hidden md:block absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-violet-100/50 rounded-full blur-[100px] pointer-events-none" />
       {/* Dot grid */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,_#146CFF15_1px,_transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
-      {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 text-center pt-24 md:pt-0">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-8 border border-blue-200 bg-blue-50 text-saey-blue">
-          <span className="w-1.5 h-1.5 rounded-full bg-saey-blue animate-pulse" />
-          Salem Rizk — Digital Marketing
+
+        {/* Brand identity badge */}
+        <div className="flex flex-col items-center gap-3 mb-10">
+          {/* Logo + name */}
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-blue-200 shadow-md shadow-blue-100">
+              <img src="/logo.png" alt="سعي" className="w-full h-full object-cover" />
+            </div>
+            <div className="text-right">
+              <p className="text-saey-navy font-black text-lg leading-tight">م. سالم رزق</p>
+              <p className="text-saey-blue text-xs font-semibold tracking-wider">مؤسس سعي للتسويق الرقمي</p>
+            </div>
+          </div>
+          {/* Saey badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase border border-blue-200 bg-blue-50 text-saey-blue">
+            <Sparkles size={12} className="text-saey-blue" />
+            سعي — Saey Digital Marketing
+            <Sparkles size={12} className="text-saey-blue" />
+          </div>
         </div>
 
         {/* Headline */}
@@ -52,9 +66,9 @@ export default function Hero() {
         </p>
 
         {/* Stats */}
-        <div className="flex flex-wrap justify-center gap-8 mb-12">
+        <div className="flex flex-wrap justify-center gap-6 mb-12">
           {t.hero.stats.map((stat) => (
-            <div key={stat.label} className="text-center">
+            <div key={stat.label} className="text-center px-4 py-3 rounded-2xl bg-saey-gray border border-blue-100">
               <div className="text-2xl font-black bg-gradient-to-r from-saey-blue to-saey-violet bg-clip-text text-transparent">{stat.value}</div>
               <div className="text-saey-muted text-xs tracking-wider mt-0.5">{stat.label}</div>
             </div>

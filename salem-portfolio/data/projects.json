@@ -8,8 +8,8 @@
     "subtitle_ar": "من الصفر إلى رائد القطاع على وسائل التواصل",
     "industry": "Automotive Lubricants",
     "industry_ar": "زيوت السيارات",
-    "duration": "8 Months",
-    "duration_ar": "8 أشهر",
+    "duration": "2024 — Present",
+    "duration_ar": "منذ 2024 حتى الآن",
     "year": "2024",
     "coverImage": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/escooil%20(15).jpg?updatedAt=1781364850957",
     "heroImage": "https://ik.imagekit.io/effect/effect/ESCO/%D8%A5%D8%B3%D9%83%D9%88%20%D9%84%D9%84%D8%B2%D9%8A%D9%88%D8%AA/escooil%20(1).jpg?updatedAt=1781364850942",
@@ -130,28 +130,28 @@
       }
     ],
     "results": {
-      "reach": "3.2M",
-      "reachLabel": "Total Reach",
-      "reachLabel_ar": "إجمالي الوصول",
-      "impressions": "8.7M",
-      "impressionsLabel": "Impressions",
-      "impressionsLabel_ar": "مرات الظهور",
-      "engagement": "142K",
-      "engagementLabel": "Engagements",
-      "engagementLabel_ar": "تفاعلات",
-      "followers": "12.4K",
-      "followersLabel": "Followers Gained",
-      "followersLabel_ar": "متابعون مكتسبون",
-      "clicks": "47K",
-      "clicksLabel": "Link Clicks",
-      "clicksLabel_ar": "نقرات الروابط",
-      "ctr": "4.8%",
-      "ctrLabel": "Average CTR",
-      "ctrLabel_ar": "متوسط نسبة النقر",
+      "reach": "130K",
+      "reachLabel": "Monthly Reach",
+      "reachLabel_ar": "الوصول الشهري",
+      "impressions": "500K+",
+      "impressionsLabel": "Monthly Impressions",
+      "impressionsLabel_ar": "الظهور الشهري",
+      "engagement": "6.2%",
+      "engagementLabel": "Engagement Rate",
+      "engagementLabel_ar": "معدل التفاعل",
+      "followers": "2,500",
+      "followersLabel": "Total Followers",
+      "followersLabel_ar": "إجمالي المتابعين",
+      "clicks": "1.25 EGP",
+      "clicksLabel": "Cost per 1,000 Reach",
+      "clicksLabel_ar": "تكلفة كل 1000 وصول",
+      "ctr": "2-4",
+      "ctrLabel": "Daily Organic Leads",
+      "ctrLabel_ar": "عملاء عضوي يومياً",
       "roas": "4.2x",
       "roasLabel": "Average ROAS",
       "roasLabel_ar": "متوسط عائد الإنفاق",
-      "campaigns": "18",
+      "campaigns": "18+",
       "campaignsLabel": "Campaigns Launched",
       "campaignsLabel_ar": "حملة مطلقة"
     },
@@ -160,8 +160,8 @@
         "metric": "Monthly Reach",
         "metric_ar": "الوصول الشهري",
         "before": "2,100",
-        "after": "420,000",
-        "improvement": "+19,900%"
+        "after": "130,000",
+        "improvement": "+6,090%"
       },
       {
         "metric": "Engagement Rate",
@@ -173,46 +173,46 @@
       {
         "metric": "Followers",
         "metric_ar": "المتابعون",
-        "before": "890",
-        "after": "13,290",
-        "improvement": "+1,393%"
+        "before": "< 100",
+        "after": "2,500",
+        "improvement": "+2,400%"
       },
       {
-        "metric": "Ad ROAS",
-        "metric_ar": "عائد الإعلانات",
+        "metric": "Daily Organic Leads",
+        "metric_ar": "عملاء يومياً بدون إعلانات",
         "before": "0",
-        "after": "4.2x",
-        "improvement": "From scratch"
+        "after": "2-4",
+        "improvement": "Organic"
       }
     ],
     "achievements": [
       {
-        "icon": "Trophy",
-        "title": "Top Performing Campaign",
-        "title_ar": "أفضل حملة أداءً",
-        "desc": "Ramadan campaign achieved 1.4M reach with a 5.8% CTR.",
-        "desc_ar": "حققت حملة رمضان وصولًا بـ 1.4 مليون وبنسبة نقر 5.8%."
-      },
-      {
-        "icon": "Zap",
-        "title": "Viral Reel Content",
-        "title_ar": "محتوى ريلز فيروسي",
-        "desc": "Product demonstration Reels averaged 180K views each.",
-        "desc_ar": "حققت ريلز عروض المنتجات متوسط 180 ألف مشاهدة لكل منها."
-      },
-      {
         "icon": "Users",
-        "title": "Community Growth",
-        "title_ar": "نمو المجتمع",
-        "desc": "Built an engaged community of 13,000+ followers.",
-        "desc_ar": "بُني مجتمع متفاعل من أكثر من 13,000 متابع."
+        "title": "2,500 Followers & Growing",
+        "title_ar": "2,500 متابع ومتزايد",
+        "desc": "Built an engaged community from near zero with consistent AI-powered content and on-site video shoots.",
+        "desc_ar": "بُني مجتمع متفاعل من الصفر تقريباً بمحتوى AI ومقاطع مُسجَّلة ميدانياً مع العملاء."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "130K Monthly Reach",
+        "title_ar": "130 ألف وصول شهري",
+        "desc": "Precise verified monthly reach figure with steady growth month over month.",
+        "desc_ar": "رقم وصول شهري دقيق ومُوثَّق مع نمو مستمر شهراً بعد شهر."
       },
       {
         "icon": "DollarSign",
-        "title": "Proven ROI",
-        "title_ar": "عائد مُثبَت",
-        "desc": "Achieved 4.2x ROAS on advertising spend.",
-        "desc_ar": "تحقيق عائد إنفاق إعلاني 4.2x."
+        "title": "1.25 EGP / 1,000 Reach",
+        "title_ar": "1.25 جنيه لكل 1000 وصول",
+        "desc": "Highly efficient paid reach cost — one of the lowest CPM rates in the automotive sector.",
+        "desc_ar": "تكلفة وصول مدفوع بالغة الكفاءة — من أدنى معدلات CPM في قطاع زيوت المحركات."
+      },
+      {
+        "icon": "Zap",
+        "title": "2-4 Organic Leads Daily",
+        "title_ar": "2-4 عملاء عضوي يومياً",
+        "desc": "Clients reach out daily through organic content alone — no ad spend required.",
+        "desc_ar": "يتواصل عملاء يومياً عبر المحتوى العضوي فقط — بدون إنفاق إعلاني."
       }
     ],
     "testimonial": {
@@ -337,9 +337,9 @@
     "subtitle_ar": "ترقية علامة أزياء إلى مكانة راقية",
     "industry": "Fashion & Retail",
     "industry_ar": "الأزياء والبيع بالتجزئة",
-    "duration": "6 Months",
-    "duration_ar": "6 أشهر",
-    "year": "2024",
+    "duration": "2025 — Present",
+    "duration_ar": "منذ 2025 حتى الآن",
+    "year": "2025",
     "coverImage": "https://ik.imagekit.io/effect/effect/vaco/logo.jpg",
     "heroImage": "https://ik.imagekit.io/effect/effect/vaco/logo.jpg",
     "logo": "https://ik.imagekit.io/effect/effect/vaco/logo.jpg",
@@ -450,89 +450,89 @@
       }
     ],
     "results": {
-      "reach": "1.8M",
-      "reachLabel": "Total Reach",
-      "reachLabel_ar": "إجمالي الوصول",
-      "impressions": "4.2M",
-      "impressionsLabel": "Impressions",
-      "impressionsLabel_ar": "مرات الظهور",
-      "engagement": "86K",
-      "engagementLabel": "Engagements",
-      "engagementLabel_ar": "تفاعلات",
-      "followers": "8.2K",
-      "followersLabel": "Followers Gained",
-      "followersLabel_ar": "متابعون مكتسبون",
-      "clicks": "31K",
-      "clicksLabel": "Link Clicks",
-      "clicksLabel_ar": "نقرات الروابط",
-      "ctr": "3.9%",
-      "ctrLabel": "Average CTR",
-      "ctrLabel_ar": "متوسط نسبة النقر",
-      "roas": "3.8x",
-      "roasLabel": "Average ROAS",
-      "roasLabel_ar": "متوسط عائد الإنفاق",
-      "campaigns": "12",
-      "campaignsLabel": "Campaigns Launched",
-      "campaignsLabel_ar": "حملة مطلقة"
+      "reach": "2M",
+      "reachLabel": "Monthly Reach",
+      "reachLabel_ar": "الوصول الشهري",
+      "impressions": "20-35",
+      "impressionsLabel": "Daily Messages",
+      "impressionsLabel_ar": "رسالة يومياً",
+      "engagement": "4,000",
+      "engagementLabel": "Total Followers",
+      "engagementLabel_ar": "إجمالي المتابعين",
+      "followers": "6",
+      "followersLabel": "Ad Campaigns",
+      "followersLabel_ar": "حملات إعلانية",
+      "clicks": "0.80 EGP",
+      "clicksLabel": "Cost per 1,000 Reach",
+      "clicksLabel_ar": "تكلفة كل 1000 وصول",
+      "ctr": "2.4 EGP",
+      "ctrLabel": "Cost per Message",
+      "ctrLabel_ar": "تكلفة كل رسالة",
+      "roas": "$80",
+      "roasLabel": "Page Revenue (Month 1)",
+      "roasLabel_ar": "أرباح البيدج (الشهر الأول)",
+      "campaigns": "20",
+      "campaignsLabel": "Start Followers",
+      "campaignsLabel_ar": "متابعون عند البداية"
     },
     "beforeAfter": [
       {
-        "metric": "Monthly Reach",
-        "metric_ar": "الوصول الشهري",
-        "before": "1,200",
-        "after": "280,000",
-        "improvement": "+23,233%"
-      },
-      {
-        "metric": "Engagement Rate",
-        "metric_ar": "معدل التفاعل",
-        "before": "0.8%",
-        "after": "5.4%",
-        "improvement": "+575%"
-      },
-      {
         "metric": "Followers",
         "metric_ar": "المتابعون",
-        "before": "1,340",
-        "after": "9,540",
-        "improvement": "+612%"
+        "before": "20",
+        "after": "4,000",
+        "improvement": "+19,900%"
       },
       {
-        "metric": "Store Visits (from Ads)",
-        "metric_ar": "زيارات المتجر",
+        "metric": "Monthly Reach",
+        "metric_ar": "الوصول الشهري",
+        "before": "1,500",
+        "after": "2,000,000",
+        "improvement": "+133,233%"
+      },
+      {
+        "metric": "Daily Messages",
+        "metric_ar": "الرسائل اليومية",
         "before": "0",
-        "after": "2,800/mo",
-        "improvement": "New Channel"
+        "after": "20-35",
+        "improvement": "From zero"
+      },
+      {
+        "metric": "Monthly Revenue",
+        "metric_ar": "الأرباح الشهرية",
+        "before": "0",
+        "after": "$80 (1st Month)",
+        "improvement": "Activated"
       }
     ],
     "achievements": [
       {
-        "icon": "Star",
-        "title": "Brand Repositioning",
-        "title_ar": "إعادة تموضع العلامة",
-        "desc": "Successfully repositioned VAKO as a recognized premium fashion brand in the region.",
-        "desc_ar": "إعادة تموضع فاكو بنجاح كعلامة أزياء راقية معترف بها في المنطقة."
-      },
-      {
         "icon": "TrendingUp",
-        "title": "Collection Launch Success",
-        "title_ar": "نجاح إطلاق المجموعة",
-        "desc": "Eid collection campaign achieved 620K reach in 2 weeks.",
-        "desc_ar": "حملة مجموعة العيد حققت وصولًا بـ 620 ألف خلال أسبوعين."
+        "title": "2M Monthly Reach",
+        "title_ar": "2 مليون وصول شهري",
+        "desc": "From 1,500 total reach at the start to 2 million monthly — precise, verified figures.",
+        "desc_ar": "من 1500 وصول إجمالي عند البداية إلى 2 مليون شهرياً — أرقام دقيقة وموثّقة."
       },
       {
-        "icon": "Heart",
-        "title": "Community Building",
-        "title_ar": "بناء المجتمع",
-        "desc": "Built a highly engaged fashion community that actively shares VAKO content.",
-        "desc_ar": "بُني مجتمع أزياء متفاعل للغاية يشارك محتوى فاكو بنشاط."
+        "icon": "Users",
+        "title": "20 → 4,000 Followers",
+        "title_ar": "من 20 إلى 4000 متابع",
+        "desc": "Grew the page from 20 followers to a 4,000-strong community of engaged buyers.",
+        "desc_ar": "نمو الصفحة من 20 متابعاً إلى مجتمع متفاعل من 4000 مشتري محتمل."
       },
       {
-        "icon": "Award",
-        "title": "Creative Recognition",
-        "title_ar": "الاعتراف الإبداعي",
-        "desc": "Content style became the regional benchmark for fashion brands in Damanhour.",
-        "desc_ar": "اعتُمد أسلوب المحتوى معيارًا إقليميًا لعلامات الأزياء في دمنهور."
+        "icon": "MessageSquare",
+        "title": "20-35 Messages Daily",
+        "title_ar": "20-35 رسالة يومياً",
+        "desc": "Daily inbound inquiries from real customers driven by organic and paid content.",
+        "desc_ar": "استفسارات يومية من عملاء حقيقيين مدفوعة بالمحتوى العضوي والمموّل."
+      },
+      {
+        "icon": "DollarSign",
+        "title": "$80 Page Revenue in Month 1",
+        "title_ar": "80 دولار أرباح البيدج في الشهر الأول",
+        "desc": "The page itself generated $80 in its first month — not from sales, but from page monetization alone.",
+        "desc_ar": "البيدج نفسه حقق 80 دولاراً في الشهر الأول — ليس من المبيعات، بل من تحقيق الدخل من الصفحة فقط."
       }
     ],
     "testimonial": {
@@ -712,8 +712,8 @@
     "subtitle_ar": "تعزيز التسجيل عبر التسويق الرقمي",
     "industry": "Education & Training",
     "industry_ar": "التعليم والتدريب",
-    "duration": "5 Months",
-    "duration_ar": "5 أشهر",
+    "duration": "2024 — Present",
+    "duration_ar": "منذ 2024 حتى الآن",
     "year": "2024",
     "coverImage": "https://ik.imagekit.io/effect/effect/TTC/TTC/%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AD%D9%87%20%D9%88%D8%A7%D9%84%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7.png",
     "heroImage": "https://ik.imagekit.io/effect/effect/TTC/TTC/%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D9%87%20%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D9%87.png",
@@ -825,89 +825,89 @@
       }
     ],
     "results": {
-      "reach": "940K",
-      "reachLabel": "Total Reach",
-      "reachLabel_ar": "إجمالي الوصول",
-      "impressions": "2.1M",
-      "impressionsLabel": "Impressions",
-      "impressionsLabel_ar": "مرات الظهور",
-      "engagement": "54K",
-      "engagementLabel": "Engagements",
-      "engagementLabel_ar": "تفاعلات",
-      "followers": "4.8K",
+      "reach": "3M+",
+      "reachLabel": "Total Reach (All Periods)",
+      "reachLabel_ar": "إجمالي الوصول (طول الفترات)",
+      "impressions": "24",
+      "impressionsLabel": "Ad Campaigns",
+      "impressionsLabel_ar": "حملة إعلانية",
+      "engagement": "1.3 EGP",
+      "engagementLabel": "Cost per Message",
+      "engagementLabel_ar": "تكلفة كل رسالة",
+      "followers": "900",
       "followersLabel": "Followers Gained",
       "followersLabel_ar": "متابعون مكتسبون",
-      "clicks": "18K",
-      "clicksLabel": "Link Clicks",
-      "clicksLabel_ar": "نقرات الروابط",
-      "ctr": "5.2%",
-      "ctrLabel": "Average CTR",
-      "ctrLabel_ar": "متوسط نسبة النقر",
+      "clicks": "3,200",
+      "clicksLabel": "Current Followers",
+      "clicksLabel_ar": "إجمالي المتابعين الحالي",
+      "ctr": "High",
+      "ctrLabel": "Student Enrollment Rate",
+      "ctrLabel_ar": "معدل حجز الطلاب",
       "roas": "6.1x",
       "roasLabel": "Average ROAS",
       "roasLabel_ar": "متوسط عائد الإنفاق",
-      "campaigns": "9",
-      "campaignsLabel": "Campaigns Launched",
-      "campaignsLabel_ar": "حملة مطلقة"
+      "campaigns": "2024",
+      "campaignsLabel": "Partnership Since",
+      "campaignsLabel_ar": "الشراكة منذ"
     },
     "beforeAfter": [
       {
-        "metric": "Monthly Reach",
-        "metric_ar": "الوصول الشهري",
-        "before": "800",
-        "after": "180,000",
-        "improvement": "+22,400%"
+        "metric": "Total Reach",
+        "metric_ar": "إجمالي الوصول",
+        "before": "< 10K",
+        "after": "3M+",
+        "improvement": "+30,000%"
       },
       {
-        "metric": "Student Inquiries/Month",
-        "metric_ar": "استفسارات الطلاب/شهر",
-        "before": "12",
-        "after": "140+",
-        "improvement": "+1,067%"
+        "metric": "Followers",
+        "metric_ar": "المتابعون",
+        "before": "2,300",
+        "after": "3,200",
+        "improvement": "+900"
       },
       {
-        "metric": "Enrollment Increase",
-        "metric_ar": "زيادة التسجيل",
-        "before": "Baseline",
-        "after": "52% Increase",
-        "improvement": "+52%"
+        "metric": "Ad Campaigns",
+        "metric_ar": "الحملات الإعلانية",
+        "before": "0",
+        "after": "24",
+        "improvement": "24 campaigns"
       },
       {
-        "metric": "Ad Cost Per Lead",
-        "metric_ar": "تكلفة العميل المحتمل",
+        "metric": "Cost per Message",
+        "metric_ar": "تكلفة كل رسالة",
         "before": "N/A",
-        "after": "EGP 8.50",
-        "improvement": "Excellent CPL"
+        "after": "1.3 EGP",
+        "improvement": "Excellent CPM"
       }
     ],
     "achievements": [
       {
-        "icon": "GraduationCap",
-        "title": "Enrollment Breakthrough",
-        "title_ar": "اختراق التسجيل",
-        "desc": "Course enrollment increased by 52% within the first 4 months.",
-        "desc_ar": "زادت نسبة التسجيل في الدورات بـ 52% خلال الأشهر الأربعة الأولى."
+        "icon": "TrendingUp",
+        "title": "3M+ Total Reach",
+        "title_ar": "أكثر من 3 مليون وصول",
+        "desc": "Crossed 3 million total reach across all campaign periods — precise, verified figure.",
+        "desc_ar": "تجاوزنا 3 ملايين وصول إجمالي على مدار فترات العمل — رقم دقيق وموثّق."
+      },
+      {
+        "icon": "Megaphone",
+        "title": "24 Ad Campaigns",
+        "title_ar": "24 حملة إعلانية",
+        "desc": "Ran 24 targeted campaigns across enrollment periods, each generating strong message volumes.",
+        "desc_ar": "أطلقنا 24 حملة مستهدفة خلال فترات التسجيل، كل منها حققت حجم رسائل قوي."
       },
       {
         "icon": "MessageSquare",
-        "title": "Lead Generation Machine",
-        "title_ar": "آلة توليد العملاء",
-        "desc": "Generated 140+ qualified student inquiries per month at EGP 8.50 cost per lead.",
-        "desc_ar": "توليد أكثر من 140 استفسار طالب مؤهل شهريًا بتكلفة 8.50 جنيه."
+        "title": "1.3 EGP per Message",
+        "title_ar": "1.3 جنيه لكل رسالة",
+        "desc": "Achieved a best-in-class cost per message of 1.3 EGP — one of the lowest in the education sector.",
+        "desc_ar": "تكلفة رسالة 1.3 جنيه — من أدنى التكاليف في قطاع التعليم."
       },
       {
-        "icon": "Award",
-        "title": "Top Education Page",
-        "title_ar": "أفضل صفحة تعليمية",
-        "desc": "Became the most followed and engaged educational center page in the region.",
-        "desc_ar": "أصبح الصفحة التعليمية الأكثر متابعة وتفاعلًا في المنطقة."
-      },
-      {
-        "icon": "TrendingUp",
-        "title": "Highest CTR",
-        "title_ar": "أعلى نسبة نقر",
-        "desc": "Achieved 5.2% average CTR, far above the 1.5% industry average.",
-        "desc_ar": "تحقيق متوسط نسبة نقر 5.2%، أعلى بكثير من متوسط الصناعة 1.5%."
+        "icon": "GraduationCap",
+        "title": "900 Followers Gained",
+        "title_ar": "900 متابع مكتسب",
+        "desc": "Grew the page by 900 followers across collaboration periods, reaching 3,200 total.",
+        "desc_ar": "نمو الصفحة بـ 900 متابع خلال فترات التعاون، ليصل الإجمالي إلى 3,200 متابع."
       }
     ],
     "testimonial": {
@@ -1025,9 +1025,9 @@
     "subtitle_ar": "عيادة Salman Baby Clinic لطب الأطفال وحديثي الولادة",
     "industry": "Healthcare & Pediatrics",
     "industry_ar": "طب الأطفال والرعاية الصحية",
-    "duration": "6 Months",
-    "duration_ar": "6 أشهر",
-    "year": "2024",
+    "duration": "2026 — Present",
+    "duration_ar": "منذ 2026 حتى الآن",
+    "year": "2026",
     "coverImage": "https://ik.imagekit.io/salem/%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%B3%D9%84%D9%85%D8%A7%D9%86%20/rt.jpg",
     "heroImage": "https://ik.imagekit.io/salem/%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%B3%D9%84%D9%85%D8%A7%D9%86%20/rt.jpg",
     "logo": "https://ik.imagekit.io/salem/%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%B3%D9%84%D9%85%D8%A7%D9%86%20/dr.jpg",
@@ -1112,77 +1112,98 @@
       }
     ],
     "results": {
-      "reach": "380K",
+      "reach": "—",
       "reachLabel": "Total Reach",
       "reachLabel_ar": "إجمالي الوصول",
-      "impressions": "620K",
+      "impressions": "—",
       "impressionsLabel": "Impressions",
       "impressionsLabel_ar": "مرات الظهور",
-      "engagement": "24K",
+      "engagement": "—",
       "engagementLabel": "Engagements",
-      "engagementLabel_ar": "تفاعلات إيجابية",
-      "followers": "4.5K",
+      "engagementLabel_ar": "تفاعلات",
+      "followers": "—",
       "followersLabel": "Followers Gained",
-      "followersLabel_ar": "متابعون جدد",
-      "clicks": "8.9K",
+      "followersLabel_ar": "متابعون مكتسبون",
+      "clicks": "—",
       "clicksLabel": "Booking Inquiries",
       "clicksLabel_ar": "استفسارات وحجوزات",
-      "ctr": "4.6%",
+      "ctr": "—",
       "ctrLabel": "Average CTR",
       "ctrLabel_ar": "متوسط نسبة النقر",
-      "roas": "5.2x",
-      "roasLabel": "Average ROAS",
-      "roasLabel_ar": "عائد الاستثمار",
-      "campaigns": "6",
-      "campaignsLabel": "Campaigns Launched",
-      "campaignsLabel_ar": "حملات إعلانية"
+      "roas": "—",
+      "roasLabel": "ROAS",
+      "roasLabel_ar": "عائد الإنفاق",
+      "campaigns": "2026",
+      "campaignsLabel": "Partnership Since",
+      "campaignsLabel_ar": "الشراكة منذ"
     },
     "beforeAfter": [
       {
-        "metric": "Monthly Bookings",
-        "metric_ar": "الحجوزات الشهرية عبر السوشيال",
-        "before": "5 - 10",
-        "after": "90+ كشف شهرياً",
-        "improvement": "+800%"
+        "metric": "Project Status",
+        "metric_ar": "حالة المشروع",
+        "before": "لم يبدأ",
+        "after": "قيد التنفيذ",
+        "improvement": "In Progress"
       },
       {
-        "metric": "Local Brand Awareness",
-        "metric_ar": "الانتشار المحلي",
-        "before": "محدود للغاية",
-        "after": "380K+ وصول في البحيرة",
-        "improvement": "تغطية شاملة"
+        "metric": "Visual Identity",
+        "metric_ar": "الهوية البصرية",
+        "before": "—",
+        "after": "✓ منجزة",
+        "improvement": "Done"
       },
       {
-        "metric": "Audience Engagement",
-        "metric_ar": "تفاعل الأمهات",
-        "before": "< 0.8%",
-        "after": "6.4% تفاعل نشط",
-        "improvement": "مجتمع متفاعل"
+        "metric": "Campaigns",
+        "metric_ar": "الحملات الإعلانية",
+        "before": "—",
+        "after": "قريباً",
+        "improvement": "Coming Soon"
+      },
+      {
+        "metric": "Results",
+        "metric_ar": "النتائج",
+        "before": "—",
+        "after": "قيد القياس",
+        "improvement": "Tracking..."
       }
     ],
     "achievements": [
       {
         "icon": "Palette",
-        "title": "Creative Clinic Identity",
-        "title_ar": "هوية بصرية متكاملة للعيادة",
-        "desc": "Delivered high-standard visual branding that instills trust in parents.",
-        "desc_ar": "إطلاق هوية بصرية مريحة واحترافية عززت ثقة أولياء الأمور في رعاية أطفالهم."
+        "title": "Visual Identity — Done",
+        "title_ar": "الهوية البصرية — منجزة",
+        "desc": "A complete warm and professional clinic brand identity designed and ready for launch.",
+        "desc_ar": "هوية بصرية متكاملة للعيادة — دافئة واحترافية، جاهزة للإطلاق."
       },
       {
         "icon": "Target",
-        "title": "Consistent Booking Flow",
-        "title_ar": "تدفق حجوزات يومي مستمر",
-        "desc": "Targeted ad campaigns transformed clinic branches into primary local destinations.",
-        "desc_ar": "تحقيق تدفق متواصل لحجوزات الكشف في فروع العيادة عبر إعلانات ميتا الدقيقة."
+        "title": "Ad Strategy — Ready",
+        "title_ar": "استراتيجية الإعلانات — جاهزة",
+        "desc": "Geo-targeted Meta ad campaigns prepared, aimed at parents across Damanhour and Beheira.",
+        "desc_ar": "حملات إعلانات ميتا موجهة جغرافياً جاهزة للإطلاق — موجهة للأمهات في دمنهور والبحيرة."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Results — In Progress",
+        "title_ar": "النتائج — قيد التحقق",
+        "desc": "Campaign execution underway. Results and verified metrics will be updated as they come.",
+        "desc_ar": "المشروع في مرحلة التنفيذ. الأرقام والنتائج ستُحدَّث فور توفرها."
+      },
+      {
+        "icon": "Award",
+        "title": "Trusted Specialist",
+        "title_ar": "طبيب متخصص وموثوق",
+        "desc": "Dr. Salman is a Pediatrician & Neonatologist at the Health Insurance Authority — a strong trust asset.",
+        "desc_ar": "الدكتور سلمان أخصائي طب أطفال وحديثي ولادة بالتأمين الصحي — ثقل طبي حقيقي يصنع الفارق."
       }
     ],
     "testimonial": {
-      "quote": "The creative medical designs and targeted advertising campaigns truly elevated our clinic's visibility. We saw an immediate uptick in parents reaching out through WhatsApp and scheduling visits.",
-      "quote_ar": "التصاميم الطبية الاحترافية والحملات الإعلانية المستهدفة أحدثت نقلة حقيقية في ظهور عيادتنا. لمسنا زيادة مباشرة في تواصل الأمهات عبر واتساب وزيادة حجوزات الكشف اليومية.",
-      "name": "د. محمد عبدالعزيز سلمان",
-      "role": "Pediatrician & Neonatology Specialist",
-      "role_ar": "أخصائي طب الأطفال وحديثي الولادة بالتأمين الصحي",
-      "avatar": "https://ik.imagekit.io/salem/%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%B3%D9%84%D9%85%D8%A7%D9%86%20/dr.jpg"
+      "quote": "",
+      "quote_ar": "",
+      "name": "",
+      "role": "",
+      "role_ar": "",
+      "avatar": ""
     },
     "tools": [
       "Photoshop",
@@ -1211,6 +1232,13 @@
         "category": "Posts",
         "category_ar": "منشورات",
         "alt": "فلاير التخصصات الطبية وعلاج حساسية الصدر للأطفال"
+      },
+      {
+        "id": 4,
+        "src": "https://ik.imagekit.io/salem/%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%B3%D9%84%D9%85%D8%A7%D9%86%20/VD.jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "تصميم طبي عيادة الدكتور سلمان"
       }
     ],
     "videos": [],
@@ -1239,5 +1267,309 @@
       "vako",
       "ttc"
     ]
+  },
+  {
+    "id": "dice",
+    "slug": "dice",
+    "title": "Dice Damanhour",
+    "title_ar": "دايس دمنهور",
+    "subtitle": "Full Digital Transformation — Marketing & Tech",
+    "subtitle_ar": "تحول رقمي متكامل — تسويق وتقنية",
+    "industry": "Fashion & Retail",
+    "industry_ar": "الأزياء والبيع بالتجزئة",
+    "duration": "2026 — Present",
+    "duration_ar": "منذ 2026 حتى الآن",
+    "year": "2026",
+    "coverImage": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/d.jpg",
+    "heroImage": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/d.jpg",
+    "logo": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D9%84%D9%88%D8%AC%D9%88%20%D8%AF%D8%A7%D9%8A%D8%B3.jpg?updatedAt=1785232667246",
+    "color": "#f59e0b",
+    "tags": [
+      "Social Media Management",
+      "Graphic Design",
+      "Meta Ads",
+      "Page Monetization",
+      "POS System"
+    ],
+    "tags_ar": [
+      "إدارة وسائل التواصل",
+      "تصميم جرافيك",
+      "إعلانات ميتا",
+      "تفعيل أرباح البيدج",
+      "سيستم كاشير"
+    ],
+    "overview": "Dice Damanhour is a fashion retail store that we handled as a complete digital package — social media management, creative design, paid advertising, page monetization, and a fully custom offline POS system. Everything from scratch.",
+    "overview_ar": "دايس دمنهور متجر أزياء تعاملنا معه كحزمة رقمية متكاملة — إدارة سوشيال ميديا، تصميم إبداعي، إعلانات مموّلة، تفعيل أرباح البيدج، وسيستم كاشير مخصص بالكامل. كل شيء من الصفر.",
+    "challenge": "The page had almost no digital presence — total reach of only 2,480 across all content, no ad strategy, no monetization, and no system to manage daily store operations.",
+    "challenge_ar": "الصفحة كان حضورها الرقمي شبه معدوم — وصول إجمالي 2480 فقط، لا استراتيجية إعلانية، لا أرباح، ولا سيستم لإدارة العمليات اليومية للمتجر.",
+    "challengePoints": [
+      "Total reach of only 2,480 across all content",
+      "No advertising history or strategy",
+      "No page monetization activated",
+      "No system to manage inventory or sales",
+      "Low brand awareness in the local market",
+      "No structured content or publishing schedule"
+    ],
+    "challengePoints_ar": [
+      "وصول إجمالي 2480 فقط على كل المحتوى",
+      "لا سجل إعلاني ولا استراتيجية",
+      "لا أرباح بيدج مفعّلة",
+      "لا سيستم لإدارة المخزون أو المبيعات",
+      "ضعف الوعي بالعلامة في السوق المحلي",
+      "لا محتوى منتظم ولا جدول نشر"
+    ],
+    "objectives": [
+      "Build a strong social media presence from scratch",
+      "Activate Facebook page monetization",
+      "Run targeted ad campaigns to drive daily orders",
+      "Build and deploy a complete offline POS system",
+      "Generate consistent daily inbound messages",
+      "Create a recognizable brand identity in Damanhour"
+    ],
+    "objectives_ar": [
+      "بناء حضور قوي على السوشيال ميديا من الصفر",
+      "تفعيل أرباح البيدج على فيسبوك",
+      "تشغيل حملات إعلانية مستهدفة لتوليد أوردرات يومية",
+      "بناء ونشر سيستم كاشير أوفلاين متكامل",
+      "توليد رسائل واردة يومية بشكل منتظم",
+      "بناء هوية علامة تجارية معروفة في دمنهور"
+    ],
+    "strategy": "We approached Dice as a dual mandate: build the brand digitally while simultaneously building the operational infrastructure. Content, ads, and monetization on the marketing side — custom POS software on the tech side.",
+    "strategy_ar": "تعاملنا مع دايس كمهمة مزدوجة: بناء العلامة رقمياً وبناء البنية التشغيلية في نفس الوقت. محتوى وإعلانات وتفعيل أرباح على الجانب التسويقي — وسيستم كاشير مخصص على الجانب التقني.",
+    "strategyPoints": [
+      "Complete brand identity and visual content system",
+      "Consistent daily content publishing",
+      "Targeted Meta Ads with optimized cost per message",
+      "Facebook page monetization activation",
+      "Custom offline POS + inventory ERP development",
+      "Performance tracking and monthly optimization"
+    ],
+    "strategyPoints_ar": [
+      "هوية بصرية متكاملة ومنظومة محتوى",
+      "نشر محتوى يومي منتظم",
+      "إعلانات ميتا مستهدفة بتكلفة رسالة محسوبة",
+      "تفعيل أرباح البيدج على فيسبوك",
+      "تطوير سيستم كاشير وإدارة مخزون أوفلاين مخصص",
+      "تتبع الأداء وتحسين شهري"
+    ],
+    "services": [
+      {
+        "icon": "LayoutGrid",
+        "title": "Social Media Management",
+        "title_ar": "إدارة وسائل التواصل",
+        "desc": "Daily content creation, community management, and platform growth.",
+        "desc_ar": "إنشاء محتوى يومي وإدارة المجتمع وتنمية المنصة."
+      },
+      {
+        "icon": "Palette",
+        "title": "Graphic Design",
+        "title_ar": "تصميم جرافيك",
+        "desc": "Visual identity, product posts, stories, and branded templates.",
+        "desc_ar": "هوية بصرية ومنشورات منتجات وستوري وقوالب ذات علامة تجارية."
+      },
+      {
+        "icon": "Target",
+        "title": "Meta Ads",
+        "title_ar": "إعلانات ميتا",
+        "desc": "Targeted campaigns optimized for messages and orders at low cost.",
+        "desc_ar": "حملات مستهدفة محسّنة للرسائل والأوردرات بأقل تكلفة."
+      },
+      {
+        "icon": "Sparkles",
+        "title": "Page Monetization",
+        "title_ar": "تفعيل أرباح البيدج",
+        "desc": "Activated Facebook page monetization generating monthly passive revenue.",
+        "desc_ar": "تفعيل أرباح البيدج على فيسبوك لتوليد دخل شهري ثابت."
+      },
+      {
+        "icon": "Code",
+        "title": "POS System",
+        "title_ar": "سيستم كاشير",
+        "desc": "Built a complete offline POS and inventory management system from scratch.",
+        "desc_ar": "بناء سيستم كاشير وإدارة مخزون أوفلاين متكامل من الصفر."
+      }
+    ],
+    "results": {
+      "reach": "180K",
+      "reachLabel": "Monthly Reach",
+      "reachLabel_ar": "الوصول الشهري",
+      "impressions": "38,000",
+      "impressionsLabel": "Total Followers",
+      "impressionsLabel_ar": "إجمالي المتابعين",
+      "engagement": "18",
+      "engagementLabel": "Daily Messages",
+      "engagementLabel_ar": "رسالة يومياً",
+      "followers": "3-5",
+      "followersLabel": "Daily Orders",
+      "followersLabel_ar": "أوردر يومياً",
+      "clicks": "3.78 EGP",
+      "clicksLabel": "Cost per Message",
+      "clicksLabel_ar": "تكلفة كل رسالة",
+      "ctr": "$6",
+      "ctrLabel": "Monthly Page Revenue",
+      "ctrLabel_ar": "أرباح البيدج شهرياً",
+      "roas": "2,480",
+      "roasLabel": "Starting Reach",
+      "roasLabel_ar": "الوصول عند البداية",
+      "campaigns": "180K",
+      "campaignsLabel": "Current Monthly Reach",
+      "campaignsLabel_ar": "الوصول الشهري الحالي"
+    },
+    "beforeAfter": [
+      {
+        "metric": "Total Reach",
+        "metric_ar": "إجمالي الوصول",
+        "before": "2,480",
+        "after": "180,000/mo",
+        "improvement": "+7,158%"
+      },
+      {
+        "metric": "Followers Gained",
+        "metric_ar": "المتابعون المكتسبون",
+        "before": "~0",
+        "after": "2,189",
+        "improvement": "+2,189"
+      },
+      {
+        "metric": "Daily Messages",
+        "metric_ar": "الرسائل اليومية",
+        "before": "0",
+        "after": "18",
+        "improvement": "Activated"
+      },
+      {
+        "metric": "Page Revenue",
+        "metric_ar": "أرباح البيدج",
+        "before": "0",
+        "after": "$6/month",
+        "improvement": "Activated"
+      }
+    ],
+    "achievements": [
+      {
+        "icon": "TrendingUp",
+        "title": "180K Monthly Reach",
+        "title_ar": "180 ألف وصول شهري",
+        "desc": "From 2,480 total reach to 180,000 monthly — precise, verified figures.",
+        "desc_ar": "من 2480 وصول إجمالي إلى 180 ألف شهرياً — أرقام دقيقة وموثّقة."
+      },
+      {
+        "icon": "Users",
+        "title": "2,189 Followers Gained",
+        "title_ar": "2,189 متابع مكتسب",
+        "desc": "Gained 2,189 new followers — precise verified figure — building toward the current 38K community.",
+        "desc_ar": "اكتساب 2,189 متابع جديد — رقم دقيق وموثّق — في طريق بناء المجتمع الحالي البالغ 38 ألف."
+      },
+      {
+        "icon": "MessageSquare",
+        "title": "18 Daily Messages",
+        "title_ar": "18 رسالة يومياً",
+        "desc": "Consistent daily inbound messages from real customers at 3.78 EGP per message.",
+        "desc_ar": "رسائل يومية منتظمة من عملاء حقيقيين بتكلفة 3.78 جنيه للرسالة."
+      },
+      {
+        "icon": "Code",
+        "title": "Custom POS System",
+        "title_ar": "سيستم كاشير مخصص",
+        "desc": "Built and deployed a complete offline POS and inventory ERP system for the store.",
+        "desc_ar": "بناء ونشر سيستم كاشير وإدارة مخزون أوفلاين متكامل لإدارة المتجر."
+      }
+    ],
+    "testimonial": {
+      "quote": "Working with Salem transformed our store completely — both digitally and operationally. The POS system and the social media growth happened simultaneously.",
+      "quote_ar": "العمل مع سالم غيّر متجرنا بالكامل — رقمياً وتشغيلياً. السيستم والسوشيال ميديا تطوّرا في نفس الوقت.",
+      "name": "Dice Damanhour",
+      "role": "Management, Dice Damanhour",
+      "role_ar": "إدارة فرع دايس دمنهور",
+      "avatar": ""
+    },
+    "tools": [
+      "Meta Ads Manager",
+      "Photoshop",
+      "Illustrator",
+      "CapCut",
+      "Meta Business Suite",
+      "Electron",
+      "Node.js",
+      "SQL Server"
+    ],
+    "gallery": [
+      {
+        "id": 1,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/d.jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dice Damanhour design 1"
+      },
+      {
+        "id": 2,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/sc.jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dice Damanhour design 2"
+      },
+      {
+        "id": 3,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/c.jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dice Damanhour design 3"
+      },
+      {
+        "id": 4,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/y.jpg",
+        "category": "Posts",
+        "category_ar": "منشورات",
+        "alt": "Dice Damanhour design 4"
+      },
+      {
+        "id": 5,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20(2).jpg?updatedAt=1785232668997",
+        "category": "Branding",
+        "category_ar": "هوية بصرية",
+        "alt": "Dice Damanhour branding 1"
+      },
+      {
+        "id": 6,
+        "src": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20(4).jpg?updatedAt=1785232667014",
+        "category": "Branding",
+        "category_ar": "هوية بصرية",
+        "alt": "Dice Damanhour branding 2"
+      }
+    ],
+    "videos": [],
+    "timeline": [
+      {
+        "phase": "Audit & Setup",
+        "phase_ar": "تدقيق وإعداد",
+        "desc": "Analyzed the current page state, set up ad account, and created content strategy.",
+        "desc_ar": "تحليل الوضع الحالي للصفحة وإعداد حساب الإعلانات وبناء استراتيجية المحتوى."
+      },
+      {
+        "phase": "Content & Identity",
+        "phase_ar": "المحتوى والهوية",
+        "desc": "Built visual identity, started daily content publishing, and launched page monetization.",
+        "desc_ar": "بناء الهوية البصرية وبدء النشر اليومي وتفعيل أرباح البيدج."
+      },
+      {
+        "phase": "Advertising",
+        "phase_ar": "الإعلانات",
+        "desc": "Launched targeted Meta campaigns optimized for messages at 3.78 EGP per message.",
+        "desc_ar": "إطلاق حملات ميتا مستهدفة محسّنة للرسائل بتكلفة 3.78 جنيه للرسالة."
+      },
+      {
+        "phase": "POS Development",
+        "phase_ar": "تطوير السيستم",
+        "desc": "Built and deployed a complete offline POS and inventory management system.",
+        "desc_ar": "بناء ونشر سيستم كاشير وإدارة مخزون أوفلاين متكامل."
+      },
+      {
+        "phase": "Scaling",
+        "phase_ar": "التوسع",
+        "desc": "Reached 38K followers, 180K monthly reach, and 3-5 daily orders consistently.",
+        "desc_ar": "الوصول إلى 38 ألف متابع و180 ألف وصول شهري و3-5 أوردرات يومية بشكل منتظم."
+      }
+    ],
+    "relatedProjects": ["esco", "vako", "ttc"]
   }
 ]

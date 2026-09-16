@@ -2,13 +2,18 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Salem Rizk | Digital Marketing',
-    short_name: 'Salem Rizk',
-    description: 'Digital marketing, Meta Ads, branding, and web development portfolio.',
+    name: 'م. سالم رزق | سعي للتسويق الرقمي',
+    short_name: 'سعي | Salem Rizk',
+    description: 'م. سالم رزق، مؤسس سعي للتسويق الرقمي — خبير إعلانات ميتا، تصميم، وتطوير مواقع.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#FBFCFF',
-    theme_color: '#07152E',
-    icons: [{ src: '/logo.png', sizes: '1080x1080', type: 'image/png', purpose: 'any' }],
+    background_color: '#FFFFFF',
+    theme_color: '#2563EB',
+    lang: 'ar',
+    dir: 'rtl',
+    icons: [
+      { src: '/logo.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+      { src: '/logo.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+    ],
   };
 }

@@ -13,6 +13,7 @@ const projectMeta = [
   { accent: 'text-saey-violet', metricBg: 'bg-violet-50', metricBorder: 'border-violet-100', number: '02', dot: 'bg-saey-violet' },
   { accent: 'text-blue-600',    metricBg: 'bg-blue-50',   metricBorder: 'border-blue-100',   number: '03', dot: 'bg-blue-600' },
   { accent: 'text-indigo-600',  metricBg: 'bg-indigo-50', metricBorder: 'border-indigo-100', number: '04', dot: 'bg-indigo-600' },
+  { accent: 'text-amber-600',   metricBg: 'bg-amber-50',  metricBorder: 'border-amber-100',  number: '05', dot: 'bg-amber-500' },
 ];
 
 export default function Projects() {
@@ -48,6 +49,8 @@ export default function Projects() {
                             <Image src="https://ik.imagekit.io/effect/effect/vaco/logo.jpg" alt="VAKO Logo" fill sizes="64px" className="object-cover" />
                           ) : project.id === 'dr-salman' ? (
                             <Image src="https://ik.imagekit.io/salem/%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%B3%D9%84%D9%85%D8%A7%D9%86%20/dr.jpg" alt="Dr. Salman Logo" fill sizes="64px" className="object-cover" />
+                          ) : project.id === 'dice' ? (
+                            <Image src="https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D9%84%D9%88%D8%AC%D9%88%20%D8%AF%D8%A7%D9%8A%D8%B3.jpg?updatedAt=1785232667246" alt="Dice Logo" fill sizes="64px" className="object-cover" />
                           ) : (
                             <Image src="/logo.png" alt="Salem Rizk" fill sizes="64px" className="object-cover" />
                           )}
@@ -76,16 +79,16 @@ export default function Projects() {
 
                     {/* Right: metrics */}
                     <div className="lg:col-span-2">
-                      <div className="grid grid-cols-3 gap-3">
+                      <div className="grid grid-cols-3 gap-2">
                         {[project.metric1, project.metric2, project.metric3].map((metric) => (
-                          <div key={metric.label} className={`rounded-2xl ${meta.metricBg} border ${meta.metricBorder} p-4 text-center`} data-metric={metric.value}>
-                            <div className={`text-xl font-black ${meta.accent} leading-none mb-1`}>{metric.value}</div>
-                            <div className="text-xs text-saey-muted leading-tight">{metric.label}</div>
+                          <div key={metric.label} className={`rounded-2xl ${meta.metricBg} border ${meta.metricBorder} p-3 text-center min-w-0`} data-metric={metric.value}>
+                            <div className={`text-sm font-black ${meta.accent} leading-tight mb-1 break-words hyphens-auto`}>{metric.value}</div>
+                            <div className="text-[10px] text-saey-muted leading-tight">{metric.label}</div>
                           </div>
                         ))}
                       </div>
-                      <div className={`mt-3 rounded-2xl ${meta.metricBg} border ${meta.metricBorder} h-24 sm:h-28 flex items-center justify-center`}>
-                        <TrendingUp size={28} className={meta.accent} />
+                      <div className={`mt-2 rounded-2xl ${meta.metricBg} border ${meta.metricBorder} h-20 sm:h-24 flex items-center justify-center`}>
+                        <TrendingUp size={24} className={meta.accent} />
                       </div>
                     </div>
                   </div>

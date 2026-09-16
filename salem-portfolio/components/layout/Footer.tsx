@@ -45,8 +45,8 @@ export default function Footer() {
                 <Image src="/logo.png" alt="Salem Rizk" width={48} height={48} className="w-full h-full object-cover rounded-full" />
               </div>
               <div>
-                <span className="font-bold text-white text-xl leading-none">Salem Rizk</span>
-                <span className="block text-xs text-blue-300/70 leading-none tracking-wider mt-1">DIGITAL MARKETING</span>
+                <span className="font-bold text-white text-xl leading-none">م. سالم رزق</span>
+                <span className="block text-xs text-blue-300/70 leading-none tracking-wider mt-1">سعي للتسويق الرقمي</span>
               </div>
             </Link>
             <p className="text-blue-200/60 leading-relaxed text-sm max-w-xs">{t.footer.tagline}</p>

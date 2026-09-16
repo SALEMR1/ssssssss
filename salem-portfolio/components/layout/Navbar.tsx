@@ -52,8 +52,8 @@ export default function Navbar() {
                 <Image src="/logo.png" alt="Salem Rizk" width={40} height={40} priority className="w-full h-full object-cover rounded-full" />
               </div>
               <div>
-                <span className="font-bold text-saey-navy text-lg leading-none">Salem Rizk</span>
-                <span className="block text-[10px] text-saey-muted leading-none tracking-wider mt-0.5">DIGITAL MARKETING</span>
+                <span className="font-bold text-saey-navy text-lg leading-none">م. سالم رزق</span>
+                <span className="block text-[10px] text-saey-muted leading-none tracking-wider mt-0.5">سعي للتسويق الرقمي</span>
               </div>
             </Link>
 

@@ -15,15 +15,11 @@ const FAQ           = dynamic(() => import('@/components/sections/FAQ'));
 const Contact       = dynamic(() => import('@/components/sections/Contact'));
 
 export const metadata: Metadata = {
-  title: 'سالم رزق | مدير وسائل التواصل الاجتماعي وخبير إعلانات ميتا — مصر',
+  title: 'م. سالم رزق | مؤسس سعي للتسويق الرقمي — مصر',
   description:
-    'سالم رزق — مدير وسائل تواصل اجتماعي، خبير إعلانات ميتا، مصمم جرافيك، مونتير فيديو، ومطور مواقع من إدكو، البحيرة، مصر. حقق +3.2M وصول و4.2x ROAS لعملائه.',
-  alternates: {
-    canonical: 'https://salemrizk.com',
-  },
-  openGraph: {
-    url: 'https://salemrizk.com',
-  },
+    'م. سالم رزق، مؤسس سعي للتسويق الرقمي — خبير إعلانات ميتا، مدير تسويق رقمي، مصمم جرافيك ومطور مواقع من إدكو، البحيرة، مصر. حقق +3.2M وصول لعملائه.',
+  alternates: { canonical: 'https://salemrizk.online' },
+  openGraph: { url: 'https://salemrizk.online' },
 };
 
 export default function Home() {

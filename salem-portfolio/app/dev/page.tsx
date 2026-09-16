@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
 import DevProjectsClient from '@/components/dev/DevProjectsClient';
 
-const OG_IMAGE = '/logo.png';
+const OG_IMAGE = 'https://salemrizk.online/logo.png';
 
 export const metadata: Metadata = {
-  title: 'مشاريع برمجية | سالم رزق — مطور Next.js & React',
+  title: 'مشاريع برمجية | م. سالم رزق — مطور Next.js & React',
   description:
-    'معرض مشاريع تطوير الويب لسالم رزق — 9 تطبيقات ويب حقيقية مبنية بـ Next.js وReact وTypeScript. من متاجر إلكترونية إلى منصات تعليمية.',
+    'معرض مشاريع تطوير الويب لـ م. سالم رزق، مؤسس سعي — تطبيقات ويب حقيقية مبنية بـ Next.js وReact وTypeScript. من متاجر إلكترونية إلى أنظمة ERP.',
   alternates: {
-    canonical: 'https://salemrizk.com/dev',
+    canonical: 'https://salemrizk.online/dev',
   },
   openGraph: {
-    title: 'مشاريع برمجية | سالم رزق — مطور Next.js & React',
+    title: 'مشاريع برمجية | م. سالم رزق — مطور Next.js & React',
     description:
-      '9 تطبيقات ويب حقيقية مبنية بـ Next.js وReact وTypeScript من إبداع سالم رزق.',
-    url: 'https://salemrizk.com/dev',
+      'تطبيقات ويب حقيقية مبنية بـ Next.js وReact وTypeScript من إبداع م. سالم رزق.',
+    url: 'https://salemrizk.online/dev',
     images: [
       {
         url: OG_IMAGE,
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'مشاريع برمجية | سالم رزق',
-    description: '9 تطبيقات ويب حقيقية بـ Next.js وReact وTypeScript.',
+    title: 'مشاريع برمجية | م. سالم رزق — مؤسس سعي',
+    description: 'تطبيقات ويب حقيقية بـ Next.js وReact وTypeScript من إبداع م. سالم رزق.',
     images: [OG_IMAGE],
   },
 };

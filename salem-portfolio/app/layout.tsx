@@ -9,8 +9,8 @@ import BackToTop from '@/components/layout/BackToTop';
 import { I18nProvider } from '@/lib/i18n/context';
 import settings from '@/data/settings.json';
 
-const SITE_URL = 'https://salemrizk.com';
-const OG_IMAGE = settings.ogImage;
+const SITE_URL = 'https://salemrizk.online';
+const OG_IMAGE = `https://salemrizk.online${settings.ogImage}`;
 const LOGO_URL = '/logo.png';
 
 // Only load Cairo — it covers Arabic + Latin, eliminating 2 extra font requests.
@@ -27,43 +27,53 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'سالم رزق | مدير وسائل التواصل الاجتماعي وخبير إعلانات ميتا',
-    template: '%s | سالم رزق',
+    default: 'م. سالم رزق | مؤسس سعي للتسويق الرقمي — مصر',
+    template: '%s | سعي — م. سالم رزق',
   },
   description:
-    'سالم رزق — مدير وسائل تواصل اجتماعي، خبير إعلانات ميتا، مصمم جرافيك، ومطور مواقع من إدكو، البحيرة، مصر. حقق +3.2M وصول و4.2x ROAS.',
+    'م. سالم رزق، مؤسس سعي للتسويق الرقمي — خبير إعلانات ميتا، مدير تسويق رقمي، مصمم جرافيك ومطور مواقع من إدكو، البحيرة، مصر. حقق +3.2M وصول و4.2x ROAS لعملائه.',
   keywords: [
-    'Salem Rizk', 'social media manager Egypt', 'Meta Ads specialist',
-    'Facebook advertising Egypt', 'Instagram marketing Egypt',
-    'graphic designer Egypt', 'performance marketer', 'digital marketing Egypt',
-    'video editing reels', 'content creator Egypt', 'brand building',
-    'website development Egypt', 'Edko Beheira Egypt', 'freelance marketer Egypt',
-    'سالم رزق', 'مدير وسائل تواصل اجتماعي', 'إعلانات ميتا',
-    'تسويق رقمي مصر', 'تصميم جرافيك', 'مونتاج فيديو',
-    'إدارة صفحات فيسبوك', 'إنستجرام مصر', 'مطور مواقع',
-    'فريلانسر مصر', 'إدكو البحيرة',
+    'م. سالم رزق', 'سالم رزق', 'سعي', 'سعي للتسويق الرقمي',
+    'مؤسس سعي', 'مدير تسويق رقمي مصر', 'خبير إعلانات ميتا',
+    'إعلانات فيسبوك مصر', 'تسويق إنستجرام مصر',
+    'مصمم جرافيك مصر', 'مونتاج فيديو', 'تطوير مواقع مصر',
+    'فريلانسر مصر', 'إدكو البحيرة', 'salemrizk.online',
+    'Salem Rizk', 'Saey', 'Saey Digital Marketing',
+    'social media manager Egypt', 'Meta Ads specialist Egypt',
+    'Facebook advertising Egypt', 'performance marketer Egypt',
+    'graphic designer Egypt', 'website development Egypt',
+    'freelance marketer Egypt', 'Edko Beheira Egypt',
+    'salemrizk online', 'salem rizk online',
   ],
-  authors: [{ name: 'Salem Rizk', url: SITE_URL }],
-  creator: 'Salem Rizk',
-  publisher: 'Salem Rizk',
-  alternates: { canonical: SITE_URL },
+  authors: [{ name: 'م. سالم رزق — سعي', url: SITE_URL }],
+  creator: 'م. سالم رزق',
+  publisher: 'سعي للتسويق الرقمي',
+  alternates: {
+    canonical: SITE_URL,
+    languages: {
+      'ar': SITE_URL,
+      'ar-EG': SITE_URL,
+      'en': `${SITE_URL}?lang=en`,
+      'x-default': SITE_URL,
+    },
+  },
   openGraph: {
     type: 'website',
     locale: 'ar_EG',
     alternateLocale: 'en_US',
     url: SITE_URL,
-    siteName: 'Salem Rizk Portfolio',
-    title: 'سالم رزق | مدير وسائل التواصل الاجتماعي وخبير إعلانات ميتا',
+    siteName: 'سعي — م. سالم رزق',
+    title: 'م. سالم رزق | مؤسس سعي للتسويق الرقمي',
     description:
-      'سالم رزق — مدير وسائل تواصل اجتماعي، خبير إعلانات ميتا، مصمم جرافيك، ومطور مواقع. حقق +3.2M وصول و4.2x ROAS لعملائه.',
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'سالم رزق', type: 'image/png' }],
+      'م. سالم رزق، مؤسس سعي — خبير إعلانات ميتا، مدير تسويق رقمي، مصمم جرافيك ومطور مواقع. حقق +3.2M وصول و4.2x ROAS لعملائه في مصر والخارج.',
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'م. سالم رزق — مؤسس سعي', type: 'image/png' }],
   },
   twitter: {
     card: 'summary_large_image',
     site: '@salemrizk',
     creator: '@salemrizk',
-    title: 'سالم رزق | مدير وسائل التواصل الاجتماعي وخبير إعلانات ميتا',
-    description: 'سالم رزق — مدير وسائل تواصل اجتماعي، خبير إعلانات ميتا، مصمم جرافيك من مصر.',
+    title: 'م. سالم رزق | مؤسس سعي للتسويق الرقمي',
+    description: 'م. سالم رزق، مؤسس سعي — خبير إعلانات ميتا، مدير تسويق رقمي، مصمم جرافيك من مصر.',
     images: [OG_IMAGE],
   },
   robots: {
@@ -93,17 +103,28 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     '@context': 'https://schema.org',
     '@type': 'Person',
     '@id': `${SITE_URL}/#person`,
-    name: 'Salem Rizk',
-    alternateName: 'سالم رزق',
-    jobTitle: 'Social Media Manager & Performance Marketer',
+    name: 'م. سالم رزق',
+    alternateName: ['سالم رزق', 'Salem Rizk', 'Eng. Salem Rizk'],
+    jobTitle: 'مؤسس سعي للتسويق الرقمي | Digital Marketing Director & Web Developer',
     description: settings.siteDescription,
     url: SITE_URL,
-    image: { '@type': 'ImageObject', url: settings.logo, width: 400, height: 400 },
+    image: { '@type': 'ImageObject', url: `${SITE_URL}/logo.png`, width: 400, height: 400 },
     email: `mailto:${settings.email}`,
     telephone: `+2${settings.whatsapp}`,
     address: { '@type': 'PostalAddress', addressLocality: 'Edko', addressRegion: 'Beheira', addressCountry: 'EG' },
     sameAs: [settings.facebook, settings.instagram, settings.threads, `https://wa.me/${settings.whatsapp}`].filter(l => l !== '#'),
-    knowsAbout: ['Social Media Management', 'Meta Ads', 'Facebook Advertising', 'Instagram Marketing', 'Graphic Design', 'Video Editing', 'Digital Marketing', 'Web Development'],
+    knowsAbout: [
+      'Social Media Management', 'Meta Ads', 'Facebook Advertising',
+      'Instagram Marketing', 'Graphic Design', 'Video Editing',
+      'Digital Marketing', 'Web Development', 'Brand Strategy',
+      'Performance Marketing', 'Content Creation',
+    ],
+    founder: {
+      '@type': 'Organization',
+      name: 'سعي للتسويق الرقمي',
+      alternateName: 'Saey Digital Marketing',
+      url: SITE_URL,
+    },
   };
 
   const websiteSchema = {
@@ -111,10 +132,42 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     '@type': 'WebSite',
     '@id': `${SITE_URL}/#website`,
     url: SITE_URL,
-    name: 'Salem Rizk Portfolio',
+    name: 'سعي — م. سالم رزق',
+    alternateName: 'Saey — Salem Rizk',
     description: settings.siteDescription,
     inLanguage: ['ar', 'en'],
     author: { '@id': `${SITE_URL}/#person` },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${SITE_URL}/?q={search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
+  // Logo schema — يجعل اللوجو يظهر في نتائج Google
+  const logoSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
+    name: 'سعي للتسويق الرقمي',
+    alternateName: ['Saey Digital Marketing', 'Salem Rizk', 'سالم رزق'],
+    url: SITE_URL,
+    logo: {
+      '@type': 'ImageObject',
+      '@id': `${SITE_URL}/#logo`,
+      url: `${SITE_URL}/logo.png`,
+      contentUrl: `${SITE_URL}/logo.png`,
+      width: 1080,
+      height: 1080,
+      caption: 'سعي للتسويق الرقمي — م. سالم رزق',
+    },
+    image: { '@id': `${SITE_URL}/#logo` },
+    sameAs: [
+      settings.facebook,
+      settings.instagram,
+      settings.threads,
+      `https://wa.me/${settings.whatsapp}`,
+    ].filter(l => l && l !== '#'),
   };
 
   const serviceSchema = {
@@ -148,6 +201,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       suppressHydrationWarning
     >
       <head>
+        {/* ── Google Analytics ── */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MM0YWJ93L4" />
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MM0YWJ93L4');
+        `}} />
+
+        {/* ── hreflang — bilingual AR/EN ── */}
+        <link rel="alternate" hrefLang="ar" href="https://salemrizk.online" />
+        <link rel="alternate" hrefLang="ar-EG" href="https://salemrizk.online" />
+        <link rel="alternate" hrefLang="en" href="https://salemrizk.online" />
+        <link rel="alternate" hrefLang="x-default" href="https://salemrizk.online" />
+
         {/* ── Critical resource hints ── */}
         {/* ImageKit — where all images come from */}
         <link rel="preconnect" href="https://ik.imagekit.io" crossOrigin="anonymous" />
@@ -164,6 +232,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {/* ── Structured data ── */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(logoSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground overflow-x-hidden">

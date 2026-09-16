@@ -1,10 +1,10 @@
 [
   {
     "id": 10,
-    "title": "Dice Damanhour — Offline POS & Inventory ERP",
-    "title_ar": "دايس دمنهور — سيستم كاشير ونقاط بيع وإدارة مخزون متكامل (أوفلاين)",
-    "description": "Comprehensive offline desktop POS & inventory ERP system built for Dice Damanhour retail store. Works 100% offline with local database, barcode scanning, thermal invoice printing, and real-time sales reports.",
-    "description_ar": "سيستم كاشير ونقاط بيع وإدارة مخزون متكامل مخصص لمتجر دايس فرع دمنهور. يعمل بشكل كامل أوفلاين 100% بدون إنترنت، ويدعم قارئ الباركود، وطباعة الفواتير الحرارية، وجرد المخازن، والتقارير المالية واليومية.",
+    "title": "Dice Damanhour — Offline POS & Social Media",
+    "title_ar": "دايس دمنهور — سيستم كاشير + إدارة السوشيال ميديا",
+    "description": "Full-stack client: built a complete offline POS & inventory ERP system, AND managed social media marketing from scratch. Page grew from 2,480 total reach to 180K monthly reach, 38K followers, and 3-5 daily orders.",
+    "description_ar": "عميل متكامل: بنيت سيستم كاشير وإدارة مخزون أوفلاين بالكامل، وفي نفس الوقت أدرت السوشيال ميديا من الصفر. الصفحة وصلت من 2480 وصول إجمالي إلى 180 ألف وصول شهري و38 ألف متابع و3-5 أوردرات يومياً.",
     "image": "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%B3%D9%8A%D8%B3%D8%AA%D9%85%20%D9%83%D8%A7%D8%B4%D9%8A%D8%B1/%D8%B3%D9%8A%D8%B3%D8%AA%D9%85/FGER.png",
     "images": [
       "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%B3%D9%8A%D8%B3%D8%AA%D9%85%20%D9%83%D8%A7%D8%B4%D9%8A%D8%B1/%D8%B3%D9%8A%D8%B3%D8%AA%D9%85/FGER.png",
@@ -15,26 +15,30 @@
       "https://ik.imagekit.io/salem/%D8%AF%D8%A7%D9%8A%D8%B3%20%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%8A/%D8%B3%D9%8A%D8%B3%D8%AA%D9%85%20%D9%83%D8%A7%D8%B4%D9%8A%D8%B1/%D8%B3%D9%8A%D8%B3%D8%AA%D9%85/ASC44.png"
     ],
     "color": "#f59e0b",
-    "tags": ["Electron", "Desktop POS", "Offline-First", "Inventory ERP", "Local Database"],
+    "tags": ["Electron", "Desktop POS", "Offline-First", "Social Media", "Marketing"],
     "category": "fullstack",
     "category_ar": "فول ستاك",
     "isOffline": true,
-    "year": "2024",
+    "year": "2026",
     "status": "Production",
     "status_ar": "جاهز للإنتاج",
     "features": [
-      "100% Offline-first local operation",
-      "Fast POS checkout & barcode scanning",
-      "Comprehensive inventory & SKU stock count",
-      "Daily/weekly sales analytics & charts",
-      "Cashier shifts & expense tracking"
+      "Complete offline POS & inventory ERP system",
+      "Social media: 2,480 reach → 180K monthly",
+      "Page monetization: $6/month from page revenue",
+      "38,000 followers from near zero",
+      "3-5 daily orders from social content",
+      "18 daily messages | 3.78 EGP per message (ads)",
+      "Cashier shifts, barcode scanning & sales reports"
     ],
     "features_ar": [
-      "يعمل أوفلاين بالكامل 100% بدون إنترنت",
-      "نقطة بيع سريعة ودعم قارئ الباركود",
-      "إدارة شاملة للمخزون وجرد المنتجات والـ SKU",
-      "لوحة تحكم وتحليلات ورسوم بيانية للمبيعات",
-      "إدارة ورديات الكاشير والمصروفات والعملاء"
+      "سيستم كاشير وإدارة مخزون أوفلاين متكامل",
+      "السوشيال: من 2480 وصول إلى 180 ألف شهرياً",
+      "تفعيل أرباح البيدج: 6 دولار شهرياً",
+      "38 ألف متابع من الصفر تقريباً",
+      "3-5 أوردرات يومياً من المحتوى",
+      "18 رسالة يومياً | 3.78 جنيه لكل رسالة (إعلانات)",
+      "ورديات الكاشير وقارئ الباركود والتقارير المالية"
     ]
   },
   {

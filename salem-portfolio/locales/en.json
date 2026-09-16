@@ -31,12 +31,12 @@
         "label": "Total Reach"
       },
       {
-        "value": "39+",
-        "label": "Campaigns"
+        "value": "48+",
+        "label": "Ad Campaigns"
       },
       {
-        "value": "4.2x",
-        "label": "Avg. ROAS"
+        "value": "5+",
+        "label": "Active Clients"
       }
     ],
     "cta_primary": "View Portfolio",
@@ -121,16 +121,16 @@
           "Video Editing"
         ],
         "metric1": {
-          "value": "3.2M+",
-          "label": "Total Reach"
+          "value": "130K",
+          "label": "Monthly Reach"
         },
         "metric2": {
           "value": "4.2x",
           "label": "ROAS"
         },
         "metric3": {
-          "value": "+1,393%",
-          "label": "Followers Growth"
+          "value": "2-4/day",
+          "label": "Organic Leads"
         }
       },
       {
@@ -144,18 +144,17 @@
           "Graphic Design",
           "Advertising"
         ],
-        "description": "I started working with VAKO some time ago, where I created a Google Maps store location and developed a professional website for the store. When I took over the page, it had only 180 followers with limited reach (400-300). In a short period, I worked on developing content and implementing an integrated marketing strategy, which led to growing followers to 1,900 and achieving a total reach of 2.5 million. I executed advertising campaigns that achieved the best results at the lowest possible cost, and we started achieving organic reach of 60,000 to 70,000 per post. As a result of these efforts, messages and customers began flowing in significantly through digital marketing.",
         "metric1": {
-          "value": "180 → 1,900",
-          "label": "Followers Growth"
+          "value": "2M",
+          "label": "Monthly Reach"
         },
         "metric2": {
-          "value": "20K → 2.5M",
-          "label": "Total Reach"
+          "value": "20-35",
+          "label": "Daily Messages"
         },
         "metric3": {
-          "value": "+956%",
-          "label": "Growth Rate"
+          "value": "20→4K",
+          "label": "Followers Growth"
         }
       },
       {
@@ -194,16 +193,40 @@
           "Content Strategy"
         ],
         "metric1": {
-          "value": "+380K",
-          "label": "Total Reach"
+          "value": "2026",
+          "label": "Partnership Since"
         },
         "metric2": {
-          "value": "5.2x",
-          "label": "ROAS"
+          "value": "✓",
+          "label": "Identity Ready"
         },
         "metric3": {
-          "value": "+4.5K",
-          "label": "Followers Gained"
+          "value": "Soon",
+          "label": "Campaign Results"
+        }
+      },
+      {
+        "id": "dice",
+        "title": "Dice Damanhour",
+        "subtitle": "Full Digital Transformation — Marketing & Tech",
+        "industry": "Fashion & Retail",
+        "tags": [
+          "Social Media Management",
+          "Graphic Design",
+          "Meta Ads",
+          "POS System"
+        ],
+        "metric1": {
+          "value": "180K",
+          "label": "Monthly Reach"
+        },
+        "metric2": {
+          "value": "38K",
+          "label": "Followers"
+        },
+        "metric3": {
+          "value": "3-5/day",
+          "label": "Daily Orders"
         }
       }
     ]
@@ -558,12 +581,13 @@
     }
   },
   "aboutPage": {
-    "title": "About Salem Rezk",
-    "heading": "The Beginning, Evolution, and Ongoing Journey.",
-    "bio1": "Born in Beheira Governorate, Salem Rezk initially pursued a passion for football, playing for several sports clubs until 2020. This year marked a turning point in his career as he stopped playing football to focus on completing his academic studies.",
-    "bio2": "In early 2020, he entered the tech industry and strongly began his journey in content creation, producing over 600 videos and summaries, which helped hone his creative skills.",
-    "bio3": "During his studies, he served as the Administrative Manager at Al-Hilal Alexandrian Club for a season and a half. He was entirely responsible for marketing, club systems, and coordinating all internal administrative affairs. Simultaneously, he worked as a freelancer.",
-    "bio4": "He later took over the marketing management for a major educational center in Alexandria (TTC), and subsequently added the management of ESCO Motor Oils to his portfolio, achieving exceptional success with both.",
-    "bio5": "Since graduating and up to the present day, Salem continues to fully manage the marketing operations for both TTC and ESCO. Concurrently, he maintains his freelance work in web development, social media management, and graphic design, providing comprehensive solutions for major companies and projects."
+    "title": "About Salem Rizk",
+    "heading": "From Content Creation to Building Real Brands.",
+    "bio1": "My journey began in digital content creation — specifically in movie summaries and entertainment content, producing over 600 videos in a short period. It started as a passion for storytelling and creativity, not knowing it would become the foundation for everything that followed.",
+    "bio2": "While studying, I didn't wait for graduation to gain real experience. I was designing visual identities and building full websites for actual clients — earning hands-on skills that went far beyond any classroom. Every project sharpened both my technical and creative edge simultaneously.",
+    "bio3": "I took on the role of Administrative & Media Manager at Al-Hilal Alexandrian Club, then progressed to Technical Director. I was fully responsible for the club's digital presence, social media operations, and internal coordination — a real-world school in managing institutions from the inside.",
+    "bio4": "I led digital marketing for TTC Educational Center in Alexandria, driving measurable growth in enrollment and reach. Then came ESCO Motor Oils — a brand that went from zero digital presence to a recognized name in its industry within months. Both cases became proof that the right strategy delivers results.",
+    "bio5": "The portfolio expanded to include Vaco clothing store — full digital marketing and creative content from scratch to building a solid presence. Then came Dice Damanhour branch, where I handled all marketing and creative design. On another front, I joined Nojom Al-Mustaqbal Academy as Technical Director — responsible for the visual identity and digital operations. In parallel, I delivered web development projects for clients outside Egypt, adding an international dimension to my experience.",
+    "bio6": "To this day, I run an integrated portfolio of clients — ESCO Motor Oils, TTC Educational Center, Dice Damanhour, Vaco clothing store, and Dr. Mohamed Abdulaziz Salman's pediatric clinic. Five clients across completely different industries, all managed simultaneously under a single, structured system that I lead end-to-end. Alongside that, I serve as Technical Director at Bara'em Nojom Al-Mustaqbal Academy. This breadth of parallel responsibility is what makes every new challenge sharper and every result more meaningful."
   }
 }

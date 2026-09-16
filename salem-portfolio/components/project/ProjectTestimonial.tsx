@@ -19,6 +19,9 @@ export default function ProjectTestimonial({ project }: Props) {
   const role = lang === 'ar' ? testimonial.role_ar || testimonial.role : testimonial.role;
   const title = lang === 'ar' ? project.title_ar || project.title : project.title;
 
+  // Don't render if no testimonial
+  if (!quote || !testimonial.name) return null;
+
   return (
     <section className="py-24 bg-[#0A0805]">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
