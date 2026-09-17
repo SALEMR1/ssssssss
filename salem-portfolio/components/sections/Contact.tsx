@@ -4,23 +4,42 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn } from '@/lib/animations';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { MessageCircle, Globe, AtSign, Share2, MapPin, Send, CheckCircle2, ArrowRight, MessageSquare } from 'lucide-react';
+import { MessageCircle, Globe, MapPin, Send, CheckCircle2, ArrowRight, Loader2 } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
 import settings from '@/data/settings.json';
 
-const contactIcons = [MessageCircle, Globe, AtSign, MessageSquare, Share2, MapPin];
+const contactIcons = [MessageCircle, Globe, MapPin];
 export default function Contact() {
   const { t } = useI18n();
-  const [formState, setFormState] = useState({ name: '', email: '', service: '', message: '' });
+  const [formState, setFormState] = useState({ name: '', email: '', phone: '', service: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `الاسم: ${formState.name}\nالبريد: ${formState.email}\nالخدمة: ${formState.service}\nالرسالة: ${formState.message}`;
-    const whatsappUrl = `https://wa.me/${settings.whatsapp}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    setLoading(true);
+    setError('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formState),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        setFormState({ name: '', email: '', phone: '', service: '', message: '' });
+        setTimeout(() => setSubmitted(false), 6000);
+      } else {
+        setError('حدث خطأ أثناء الإرسال. حاول مرة أخرى.');
+      }
+    } catch {
+      setError('تعذّر الاتصال. تحقق من الإنترنت وحاول مجدداً.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -41,8 +60,12 @@ export default function Contact() {
 
             {t.contact.links
               .filter((link) => {
+                const isThreads = link.label.includes('ثريد') || link.label.includes('Threads');
                 const isLinkedIn = link.label.includes('لينكدإن') || link.label.includes('LinkedIn');
-                if (isLinkedIn && (!settings.linkedin || settings.linkedin === '#')) return false;
+                const isInstagram = link.label.includes('إنستجرام') || link.label.includes('Instagram');
+                if (isLinkedIn && (!settings.linkedin || settings.linkedin === '#' || settings.linkedin === '')) return false;
+                if (isInstagram && (!settings.instagram || settings.instagram === '#' || settings.instagram === '')) return false;
+                if (isThreads) return false;
                 return true;
               })
               .map((link, i) => {
@@ -54,7 +77,7 @@ export default function Contact() {
                   if (label.includes('إنستجرام') || label.includes('Instagram')) return settings.instagram;
                   if (label.includes('ثريد') || label.includes('Threads')) return settings.threads;
                   if (label.includes('لينكدإن') || label.includes('LinkedIn')) return settings.linkedin;
-                  if (label.includes('الموقع') || label.includes('Location')) return `https://maps.google.com/?q=${encodeURIComponent(settings.location)}`;
+                  if (label.includes('الموقع') || label.includes('Location')) return settings.locationUrl || `https://maps.google.com/?q=${encodeURIComponent(settings.location)}`;
                   return '#';
                 };
                 const href = getHref(link.label);
@@ -79,9 +102,12 @@ export default function Contact() {
 
               {submitted ? (
                 <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="flex flex-col items-center justify-center py-16 text-center">
-                  <CheckCircle2 size={48} className="text-emerald-500 mb-4" />
+                  <div className="w-16 h-16 rounded-full bg-emerald-50 border-2 border-emerald-200 flex items-center justify-center mb-4">
+                    <CheckCircle2 size={32} className="text-emerald-500" />
+                  </div>
                   <h4 className="text-xl font-bold text-saey-navy mb-2">{t.contact.successTitle}</h4>
                   <p className="text-saey-muted">{t.contact.successSub}</p>
+                  <p className="text-xs text-saey-blue mt-3 font-medium">📧 تم إرسال رسالتك إلى saey.egyptian@gmail.com</p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
@@ -92,29 +118,47 @@ export default function Contact() {
                         className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy placeholder-saey-muted/50 focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-saey-navy">{t.contact.emailLabel} *</label>
-                      <input type="email" required placeholder={t.contact.emailPlaceholder} value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                      <label className="text-sm font-medium text-saey-navy">{t.contact.emailLabel}</label>
+                      <input type="email" placeholder={t.contact.emailPlaceholder} value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy placeholder-saey-muted/50 focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm" />
                     </div>
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-saey-navy">{t.contact.serviceLabel}</label>
-                    <select value={formState.service} onChange={(e) => setFormState({ ...formState, service: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm appearance-none">
-                      <option value="">{t.contact.servicePlaceholder}</option>
-                      {t.contact.services.map((s) => <option key={s} value={s}>{s}</option>)}
-                    </select>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-saey-navy">رقم الهاتف / واتساب *</label>
+                      <input type="tel" required placeholder="01xxxxxxxxx" value={formState.phone} onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
+                        className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy placeholder-saey-muted/50 focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm" />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-saey-navy">{t.contact.serviceLabel}</label>
+                      <select value={formState.service} onChange={(e) => setFormState({ ...formState, service: e.target.value })}
+                        className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm appearance-none">
+                        <option value="">{t.contact.servicePlaceholder}</option>
+                        {t.contact.services.map((s) => <option key={s} value={s}>{s}</option>)}
+                      </select>
+                    </div>
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-saey-navy">{t.contact.messageLabel} *</label>
                     <textarea required rows={5} placeholder={t.contact.messagePlaceholder} value={formState.message} onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy placeholder-saey-muted/50 focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm resize-none" />
                   </div>
-                  <button type="submit" className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-saey-blue text-white font-semibold text-lg hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-200 transition-all duration-300 hover:-translate-y-0.5 group">
-                    {t.contact.submitBtn}
-                    <Send size={18} className="group-hover:translate-x-1 transition-transform" />
+
+                  {error && (
+                    <div className="px-4 py-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-600 text-sm">
+                      {error}
+                    </div>
+                  )}
+
+                  <button type="submit" disabled={loading}
+                    className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-saey-blue text-white font-semibold text-lg hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-200 transition-all duration-300 hover:-translate-y-0.5 group disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0">
+                    {loading ? (
+                      <><Loader2 size={18} className="animate-spin" /> جاري الإرسال...</>
+                    ) : (
+                      <>{t.contact.submitBtn} <Send size={18} className="group-hover:translate-x-1 transition-transform" /></>
+                    )}
                   </button>
-                  <p className="text-center text-xs text-saey-muted mt-3">{t.contact.privacy}</p>
+                  <p className="text-center text-xs text-saey-muted mt-3">📧 سيصلك رد خلال 24 ساعة على بريدك الإلكتروني</p>
                 </form>
               )}
             </div>

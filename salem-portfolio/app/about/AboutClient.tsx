@@ -74,7 +74,7 @@ const timelineItems = [
     key: 'bio5',
   },
   {
-    label: 'الحاضر',
+    label: 'تأسيس سعي',
     icon: CheckCircle2,
     iconBg: 'bg-saey-gray',
     iconBorder: 'border-blue-200',

@@ -2,21 +2,18 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Globe, AtSign, Mail, MapPin, MessageCircle, ArrowUpRight, Share2, MessageSquare } from 'lucide-react';
+import { Globe, Mail, MapPin, MessageCircle, ArrowUpRight } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
 import settings from '@/data/settings.json';
 
 const socials = [
   { icon: MessageCircle, label: 'WhatsApp', href: `https://wa.me/${settings.whatsapp}` },
   { icon: Globe, label: 'Facebook', href: settings.facebook },
-  { icon: AtSign, label: 'Instagram', href: settings.instagram },
-  { icon: MessageSquare, label: 'Threads', href: settings.threads },
-  { icon: Share2, label: 'LinkedIn', href: settings.linkedin },
   { icon: Mail, label: 'Email', href: `mailto:${settings.email}` },
 ];
 
 const svcHrefs = ['/#services','/#services','/#services','/#services','/#services'];
-const projHrefs = ['/projects/esco','/projects/vako','/projects/ttc','/projects/dr-salman'];
+const projHrefs = ['/projects/esco','/projects/vako','/projects/ttc','/projects/dr-salman','/projects/dice'];
 const quickHrefs = ['/about','/#results','/#skills','/#process','/#faq'];
 
 interface FooterCol { title: string; links: readonly string[]; hrefs: string[]; }
@@ -51,8 +48,15 @@ export default function Footer() {
             </Link>
             <p className="text-blue-200/60 leading-relaxed text-sm max-w-xs">{t.footer.tagline}</p>
             <div className="flex items-center gap-2 text-sm text-blue-200/60">
-              <MapPin size={14} className="text-saey-blue" />
-              <span>{t.footer.location}</span>
+              <MapPin size={14} className="text-saey-blue flex-shrink-0" />
+              <a
+                href={(settings as any).locationUrl || `https://maps.google.com/?q=${encodeURIComponent(settings.location)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors duration-200"
+              >
+                {t.footer.location}
+              </a>
             </div>
             <div className="flex items-center gap-3">
               {activeSocials.map((s) => (

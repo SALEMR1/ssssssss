@@ -27,11 +27,11 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'م. سالم رزق | مؤسس سعي للتسويق الرقمي — مصر',
+    default: 'سعي للتسويق الرقمي | م. سالم رزق — إعلانات ميتا، تصميم، تطوير مواقع',
     template: '%s | سعي — م. سالم رزق',
   },
   description:
-    'م. سالم رزق، مؤسس سعي للتسويق الرقمي — خبير إعلانات ميتا، مدير تسويق رقمي، مصمم جرافيك ومطور مواقع من إدكو، البحيرة، مصر. حقق +3.2M وصول و4.2x ROAS لعملائه.',
+    'سعي للتسويق الرقمي — فريق م. سالم رزق. خبرة في إعلانات ميتا، إدارة وسائل التواصل، تصميم جرافيك، مونتاج فيديو وتطوير مواقع. نتائج حقيقية قابلة للقياس.',
   keywords: [
     'م. سالم رزق', 'سالم رزق', 'سعي', 'سعي للتسويق الرقمي',
     'مؤسس سعي', 'مدير تسويق رقمي مصر', 'خبير إعلانات ميتا',
@@ -63,17 +63,17 @@ export const metadata: Metadata = {
     alternateLocale: 'en_US',
     url: SITE_URL,
     siteName: 'سعي — م. سالم رزق',
-    title: 'م. سالم رزق | مؤسس سعي للتسويق الرقمي',
+    title: 'سعي للتسويق الرقمي | م. سالم رزق — إعلانات ميتا، تصميم، تطوير مواقع',
     description:
-      'م. سالم رزق، مؤسس سعي — خبير إعلانات ميتا، مدير تسويق رقمي، مصمم جرافيك ومطور مواقع. حقق +3.2M وصول و4.2x ROAS لعملائه في مصر والخارج.',
+      'سعي للتسويق الرقمي — فريق م. سالم رزق. إعلانات ميتا، إدارة وسائل التواصل، تصميم جرافيك ومطور مواقع. نتائج حقيقية لعملاء في مصر والخارج.',
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'م. سالم رزق — مؤسس سعي', type: 'image/png' }],
   },
   twitter: {
     card: 'summary_large_image',
     site: '@salemrizk',
     creator: '@salemrizk',
-    title: 'م. سالم رزق | مؤسس سعي للتسويق الرقمي',
-    description: 'م. سالم رزق، مؤسس سعي — خبير إعلانات ميتا، مدير تسويق رقمي، مصمم جرافيك من مصر.',
+    title: 'م. سالم رزق | سعي للتسويق الرقمي — مؤسس سعي',
+    description: 'سعي للتسويق الرقمي — فريق م. سالم رزق. إعلانات ميتا، تصميم جرافيك، تطوير مواقع من مصر.',
     images: [OG_IMAGE],
   },
   robots: {
@@ -125,6 +125,55 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       alternateName: 'Saey Digital Marketing',
       url: SITE_URL,
     },
+  };
+
+  // LocalBusiness schema — يظهر الموقع في Google Maps وSearch
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${SITE_URL}/#localbusiness`,
+    name: 'سعي للتسويق الرقمي',
+    alternateName: 'Saey Digital Marketing',
+    description: 'وكالة تسويق رقمي متكاملة — إعلانات ميتا، إدارة وسائل التواصل، تصميم جرافيك، مونتاج فيديو، وتطوير مواقع.',
+    url: SITE_URL,
+    telephone: `+2${settings.whatsapp}`,
+    email: settings.email,
+    image: `${SITE_URL}/logo.png`,
+    logo: `${SITE_URL}/logo.png`,
+    hasMap: 'https://share.google/eXBtlDnSXtqe8UsxX',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'إدكو',
+      addressLocality: 'Edko',
+      addressRegion: 'Beheira',
+      addressCountry: 'EG',
+      postalCode: '22745',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: '31.3000',
+      longitude: '30.2833',
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Sunday'],
+      opens: '09:00',
+      closes: '22:00',
+    },
+    areaServed: [
+      { '@type': 'City', name: 'إدكو' },
+      { '@type': 'State', name: 'البحيرة' },
+      { '@type': 'Country', name: 'مصر' },
+    ],
+    sameAs: [
+      settings.facebook,
+      `https://wa.me/${settings.whatsapp}`,
+      SITE_URL,
+    ].filter(Boolean),
+    founder: { '@id': `${SITE_URL}/#person` },
+    priceRange: '$$',
+    currenciesAccepted: 'EGP, USD',
+    paymentAccepted: 'Cash, Bank Transfer',
   };
 
   const websiteSchema = {
@@ -233,6 +282,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(logoSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground overflow-x-hidden">

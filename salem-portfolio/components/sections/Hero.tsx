@@ -28,23 +28,21 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 text-center pt-24 md:pt-0">
 
-        {/* Brand identity badge */}
+        {/* Brand identity */}
         <div className="flex flex-col items-center gap-3 mb-10">
-          {/* Logo + name */}
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-blue-200 shadow-md shadow-blue-100">
               <img src="/logo.png" alt="سعي" className="w-full h-full object-cover" />
             </div>
             <div className="text-right">
-              <p className="text-saey-navy font-black text-lg leading-tight">م. سالم رزق</p>
-              <p className="text-saey-blue text-xs font-semibold tracking-wider">مؤسس سعي للتسويق الرقمي</p>
+              <p className="text-saey-navy font-black text-lg leading-tight">سعي للتسويق الرقمي</p>
+              <p className="text-saey-blue text-xs font-semibold tracking-wider">Saey Digital Marketing</p>
             </div>
           </div>
-          {/* Saey badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase border border-blue-200 bg-blue-50 text-saey-blue">
-            <Sparkles size={12} className="text-saey-blue" />
-            سعي — Saey Digital Marketing
-            <Sparkles size={12} className="text-saey-blue" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest border border-blue-200 bg-blue-50 text-saey-blue">
+            <Sparkles size={12} />
+            م. سالم رزق — مؤسس سعي
+            <Sparkles size={12} />
           </div>
         </div>
 
