@@ -22,7 +22,7 @@ export default function FAQ() {
   const [openId, setOpenId] = useState<number | null>(1);
 
   return (
-    <section id="faq" className="relative py-32 bg-saey-gray overflow-hidden">
+    <section id="faq" aria-label="الأسئلة الشائعة" className="relative py-32 bg-saey-gray overflow-hidden">
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl pointer-events-none" />
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
         <SectionHeader badge={t.faq.badge} title={t.faq.title} highlight={t.faq.highlight} subtitle={t.faq.subtitle} light />
@@ -33,7 +33,7 @@ export default function FAQ() {
             return (
               <motion.div key={faq.id} variants={fadeIn('up', index * 0.05)} initial="hidden" whileInView="show" viewport={{ once: true }}
                 className={`rounded-2xl border overflow-hidden transition-all duration-300 ${openId === faq.id ? 'border-blue-300 bg-blue-50' : 'border-blue-100 bg-white hover:border-blue-200'}`}>
-                <button onClick={() => setOpenId(openId === faq.id ? null : faq.id)} className="w-full flex items-center justify-between gap-4 p-6 text-left group" aria-expanded={openId === faq.id}>
+                <button onClick={() => setOpenId(openId === faq.id ? null : faq.id)} className="w-full flex items-center justify-between gap-4 p-6 text-left group" aria-expanded={openId === faq.id} aria-controls={`faq-panel-${faq.id}`}>
                   <div className="flex items-center gap-4">
                     <span className={`text-sm font-black w-8 ${openId === faq.id ? 'text-saey-blue' : 'text-gray-600'}`}>{String(index + 1).padStart(2, '0')}</span>
                     <span className={`font-semibold transition-colors duration-200 ${openId === faq.id ? 'text-saey-blue' : 'text-saey-navy group-hover:text-saey-blue'}`}>{question}</span>
@@ -45,6 +45,9 @@ export default function FAQ() {
                 <AnimatePresence initial={false}>
                   {openId === faq.id && (
                     <motion.div
+                      id={`faq-panel-${faq.id}`}
+                      role="region"
+                      aria-label={question}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: openId === faq.id ? 'auto' : 0, opacity: openId === faq.id ? 1 : 0 }}
                       exit={{ height: 0, opacity: 0 }}

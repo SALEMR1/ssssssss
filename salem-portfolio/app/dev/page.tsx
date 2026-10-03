@@ -9,6 +9,12 @@ export const metadata: Metadata = {
     'معرض مشاريع تطوير الويب لـ م. سالم رزق، مؤسس سعي — تطبيقات ويب حقيقية مبنية بـ Next.js وReact وTypeScript. من متاجر إلكترونية إلى أنظمة ERP.',
   alternates: {
     canonical: 'https://salemrizk.online/dev',
+    languages: {
+      'ar': 'https://salemrizk.online/dev',
+      'ar-EG': 'https://salemrizk.online/dev',
+      'en': 'https://salemrizk.online/dev',
+      'x-default': 'https://salemrizk.online/dev',
+    },
   },
   openGraph: {
     title: 'مشاريع برمجية | م. سالم رزق — مطور Next.js & React',

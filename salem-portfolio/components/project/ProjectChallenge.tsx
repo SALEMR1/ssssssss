@@ -4,18 +4,13 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
 import { XCircle, Target, CheckCircle2 } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
-interface Props {
-  project: {
-    challenge: string; challenge_ar?: string;
-    challengePoints: string[]; challengePoints_ar?: string[];
-    objectives: string[]; objectives_ar?: string[];
-    color: string;
-  };
-}
+interface Props { project: Project; }
 
 export default function ProjectChallenge({ project }: Props) {
   const { t, lang } = useI18n();
+  if (!project.challenge || !project.challengePoints?.length || !project.objectives?.length) return null;
   const challenge = lang === 'ar' ? project.challenge_ar || project.challenge : project.challenge;
   const points = lang === 'ar' ? project.challengePoints_ar || project.challengePoints : project.challengePoints;
   const objectives = lang === 'ar' ? project.objectives_ar || project.objectives : project.objectives;

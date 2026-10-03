@@ -426,6 +426,8 @@
     "nameLabel": "Full Name",
     "namePlaceholder": "Your name",
     "emailLabel": "Email Address",
+    "phoneLabel": "Phone / WhatsApp",
+    "phonePlaceholder": "01xxxxxxxxx",
     "emailPlaceholder": "your@email.com",
     "serviceLabel": "Service Needed",
     "servicePlaceholder": "Select a service...",

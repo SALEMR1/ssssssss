@@ -426,6 +426,8 @@
     "nameLabel": "الاسم الكامل",
     "namePlaceholder": "اسمك",
     "emailLabel": "البريد الإلكتروني",
+    "phoneLabel": "رقم الهاتف / واتساب",
+    "phonePlaceholder": "01xxxxxxxxx",
     "emailPlaceholder": "بريدك@مثال.com",
     "serviceLabel": "الخدمة المطلوبة",
     "servicePlaceholder": "اختر خدمة...",

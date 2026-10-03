@@ -4,11 +4,13 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
 import { Wrench } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
-interface Props { project: { tools: string[]; color: string; }; }
+interface Props { project: Project; }
 
 export default function ProjectTools({ project }: Props) {
   const { t } = useI18n();
+  if (!project.tools?.length) return null;
   return (
     <section className="py-20 bg-[#050505]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -20,7 +22,7 @@ export default function ProjectTools({ project }: Props) {
             <h3 className="text-xl font-bold text-white">{t.project.tools.title}</h3>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
-            {project.tools.map((tool, i) => (
+          {project.tools!.map((tool, i) => (
               <motion.span key={tool} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}
                 className="px-4 py-2 rounded-xl text-sm font-medium border transition-all duration-200 hover:scale-105"
                 style={{ backgroundColor: `${project.color}08`, borderColor: `${project.color}25`, color: '#d1d5db' }}>

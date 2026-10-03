@@ -4,19 +4,9 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
 import AnimatedCounter from '@/components/ui/AnimatedCounter';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
-interface Results {
-  reach: string; reachLabel: string; reachLabel_ar?: string;
-  impressions: string; impressionsLabel: string; impressionsLabel_ar?: string;
-  engagement: string; engagementLabel: string; engagementLabel_ar?: string;
-  followers: string; followersLabel: string; followersLabel_ar?: string;
-  clicks: string; clicksLabel: string; clicksLabel_ar?: string;
-  ctr: string; ctrLabel: string; ctrLabel_ar?: string;
-  roas: string; roasLabel: string; roasLabel_ar?: string;
-  campaigns: string; campaignsLabel: string; campaignsLabel_ar?: string;
-}
-
-interface Props { project: { results: Results; color: string; title: string; title_ar?: string; }; }
+interface Props { project: Project; }
 
 function parseMetric(value: string) {
   const c = value.replace(/,/g, '');
@@ -32,6 +22,7 @@ function parseMetric(value: string) {
 
 export default function ProjectResults({ project }: Props) {
   const { t, lang } = useI18n();
+  if (!project.results) return null;
   const r = project.results;
   const title = lang === 'ar' ? project.title_ar || project.title : project.title;
 

@@ -34,7 +34,7 @@ const colorMap: Record<string, { iconBg: string; iconBorder: string; check: stri
 export default function Services() {
   const { t, lang } = useI18n();
   return (
-    <section id="services" className="relative py-32 bg-saey-gray overflow-hidden">
+    <section id="services" aria-label="خدماتنا" className="relative py-32 bg-saey-gray overflow-hidden">
       {/* Subtle dot grid */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,_#146CFF0D_1px,_transparent_1px)] bg-[size:36px_36px] pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-blue-100/50 rounded-full blur-3xl pointer-events-none" />
@@ -49,7 +49,7 @@ export default function Services() {
             const isLast = index === servicesData.length - 1;
             return (
               <motion.div key={service.id} variants={fadeIn('up', 0)}
-                className={`brand-surface group relative rounded-3xl p-8 flex flex-col gap-6 transition-all duration-400 ${isLast ? 'md:col-span-2 lg:col-span-1' : ''}`}>
+                className={`brand-surface group relative rounded-3xl p-8 flex flex-col gap-6 transition-all duration-300 ${isLast ? 'md:col-span-2 lg:col-span-1' : ''}`}>
 
                 {/* Icon */}
                 <div className={`w-14 h-14 rounded-2xl ${c.iconBg} border ${c.iconBorder} flex items-center justify-center text-3xl`}>
@@ -77,7 +77,7 @@ export default function Services() {
                 </ul>
 
                 {/* Bottom accent line */}
-                <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-saey-blue to-saey-violet rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+                <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-saey-blue to-saey-violet rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.div>
             );
           })}

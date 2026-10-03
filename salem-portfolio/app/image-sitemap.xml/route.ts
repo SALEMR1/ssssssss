@@ -1,10 +1,11 @@
 import { NextResponse } from 'next/server';
 import projectsData from '@/data/projects.json';
+import type { Project, GalleryImage } from '@/lib/types';
 
 const SITE_URL = 'https://salemrizk.online';
 
 export async function GET() {
-  const projects = projectsData as any[];
+  const projects = projectsData as Project[];
 
   const imageEntries = projects
     .filter((p) => p.coverImage || p.heroImage)
@@ -13,15 +14,15 @@ export async function GET() {
         p.coverImage,
         p.heroImage,
         p.logo,
-        ...(p.gallery || []).map((g: any) => g.src),
-      ].filter(Boolean).slice(0, 10);
+        ...(p.gallery || []).map((g: GalleryImage) => g.src),
+      ].filter((img): img is string => Boolean(img)).slice(0, 10);
 
       return `
   <url>
     <loc>${SITE_URL}/projects/${p.slug}</loc>
     ${images.map((img: string) => `
     <image:image>
-      <image:loc>${img}</image:loc>
+      <image:loc>${encodeURI(img)}</image:loc>
       <image:title>${p.title_ar || p.title} — سعي · م. سالم رزق</image:title>
       <image:caption>${p.overview_ar ? p.overview_ar.slice(0, 100) : p.overview.slice(0, 100)}</image:caption>
     </image:image>`).join('')}

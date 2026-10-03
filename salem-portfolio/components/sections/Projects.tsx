@@ -19,7 +19,7 @@ const projectMeta = [
 export default function Projects() {
   const { t } = useI18n();
   return (
-    <section id="projects" className="relative py-32 bg-white overflow-hidden">
+    <section id="projects" aria-label="مشاريعنا" className="relative py-32 bg-white overflow-hidden">
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-100/30 rounded-full blur-3xl pointer-events-none" />
 

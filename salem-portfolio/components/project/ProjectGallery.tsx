@@ -7,23 +7,9 @@ import { fadeIn } from '@/lib/animations';
 import Lightbox from '@/components/ui/Lightbox';
 import { ZoomIn } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
-interface GalleryItem {
-  id: number;
-  src: string;
-  category: string;
-  category_ar?: string;
-  alt: string;
-}
-
-interface Props {
-  project: {
-    gallery: GalleryItem[];
-    color: string;
-    title: string;
-    title_ar?: string;
-  };
-}
+interface Props { project: Project; }
 
 // Detect if src is a real remote image (http/https) or a placeholder path
 function isRealImage(src: string) {
@@ -38,7 +24,7 @@ export default function ProjectGallery({ project }: Props) {
   const projectTitle = lang === 'ar' ? project.title_ar || project.title : project.title;
 
   // Only keep real remote images (http/https), skip local/placeholder paths
-  const realGallery = project.gallery.filter((g) => isRealImage(g.src));
+  const realGallery = (project.gallery ?? []).filter((g) => isRealImage(g.src));
 
   const enCats = ['All', ...Array.from(new Set(realGallery.map((g) => g.category)))];
 
@@ -94,7 +80,7 @@ export default function ProjectGallery({ project }: Props) {
             const arLabel =
               i === 0
                 ? 'الكل'
-                : project.gallery.find((g) => g.category === cat)?.category_ar || cat;
+                : project.gallery!.find((g) => g.category === cat)?.category_ar || cat;
             const label = lang === 'ar' ? arLabel : cat;
             return (
               <button

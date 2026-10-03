@@ -12,7 +12,7 @@ const colorTextMap: Record<string, string> = { violet: 'text-violet-400', rose: 
 export default function Skills() {
   const { t, lang } = useI18n();
   return (
-    <section id="skills" className="relative py-32 bg-white overflow-hidden">
+    <section id="skills" aria-label="مهاراتنا" className="relative py-32 bg-white overflow-hidden">
       <div className="absolute top-1/2 right-0 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionHeader badge={t.skills.badge} title={t.skills.title} highlight={t.skills.highlight} subtitle={t.skills.subtitle} light />

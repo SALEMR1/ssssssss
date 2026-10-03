@@ -28,7 +28,7 @@ export default function Footer() {
   const activeSocials = socials.filter((s) => s.href && s.href !== '#' && s.href !== 'https://wa.me/' && s.href !== 'mailto:');
 
   return (
-    <footer className="relative bg-saey-navy pt-20 pb-8 overflow-hidden">
+    <footer className="relative bg-saey-navy pt-20 pb-8 lg:pb-8 pb-24 overflow-hidden">
       {/* Subtle blue glow top */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-48 bg-saey-blue/8 rounded-full blur-3xl pointer-events-none" />

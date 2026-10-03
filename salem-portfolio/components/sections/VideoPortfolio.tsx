@@ -61,7 +61,7 @@ export default function VideoPortfolio() {
     : realVideos.filter((v) => v.category === activeEnCat);
 
   return (
-    <section id="videos" className="relative py-32 bg-white overflow-hidden">
+    <section id="videos" aria-label="محفظة الفيديو" className="relative py-32 bg-white overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle,_#146CFF08_1px,_transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionHeader badge={t.videos.badge} title={t.videos.title} highlight={t.videos.highlight} subtitle={t.videos.subtitle} light />

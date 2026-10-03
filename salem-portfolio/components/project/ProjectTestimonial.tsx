@@ -4,16 +4,13 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
 import { Star, Quote } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
-interface Props {
-  project: {
-    testimonial: { quote: string; quote_ar?: string; name: string; role: string; role_ar?: string; avatar?: string; };
-    color: string; title: string; title_ar?: string;
-  };
-}
+interface Props { project: Project; }
 
 export default function ProjectTestimonial({ project }: Props) {
   const { lang } = useI18n();
+  if (!project.testimonial) return null;
   const { testimonial } = project;
   const quote = lang === 'ar' ? testimonial.quote_ar || testimonial.quote : testimonial.quote;
   const role = lang === 'ar' ? testimonial.role_ar || testimonial.role : testimonial.role;

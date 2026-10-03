@@ -4,14 +4,15 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
 import { Trophy, Zap, Users, DollarSign, Star, TrendingUp, Heart, Award, MessageSquare, GraduationCap } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
 const iconMap: Record<string, React.ElementType> = { Trophy, Zap, Users, DollarSign, Star, TrendingUp, Heart, Award, MessageSquare, GraduationCap };
 
-interface Achievement { icon: string; title: string; title_ar?: string; desc: string; desc_ar?: string; }
-interface Props { project: { achievements: Achievement[]; color: string; }; }
+interface Props { project: Project; }
 
 export default function ProjectAchievements({ project }: Props) {
   const { t, lang } = useI18n();
+  if (!project.achievements?.length) return null;
   return (
     <section className="py-24 bg-[#080808]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -26,7 +27,7 @@ export default function ProjectAchievements({ project }: Props) {
           </h2>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {project.achievements.map((item, i) => {
+          {project.achievements!.map((item, i) => {
             const Icon = iconMap[item.icon] || Trophy;
             const title = lang === 'ar' ? item.title_ar || item.title : item.title;
             const desc = lang === 'ar' ? item.desc_ar || item.desc : item.desc;

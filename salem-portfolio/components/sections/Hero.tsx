@@ -1,24 +1,29 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, ChevronDown, Sparkles } from 'lucide-react';
+import { useReducedMotion } from 'framer-motion';
 import { useI18n } from '@/lib/i18n/context';
 
 export default function Hero() {
   const { t, isRTL } = useI18n();
+  const prefersReduced = useReducedMotion();
   const words = t.hero.words;
   const [wordIndex, setWordIndex] = useState(0);
 
   useEffect(() => {
+    // Stop word cycling if user prefers reduced motion
+    if (prefersReduced) return;
     const interval = setInterval(() => {
       setWordIndex((prev) => (prev + 1) % words.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, [words.length]);
+  }, [words.length, prefersReduced]);
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-white">
+    <section id="home" aria-label="الصفحة الرئيسية" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-white">
       {/* Glows */}
       <div className="hidden md:block absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-100/60 rounded-full blur-[100px] pointer-events-none" />
       <div className="hidden md:block absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-violet-100/50 rounded-full blur-[100px] pointer-events-none" />
@@ -32,7 +37,7 @@ export default function Hero() {
         <div className="flex flex-col items-center gap-3 mb-10">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-blue-200 shadow-md shadow-blue-100">
-              <img src="/logo.png" alt="سعي" className="w-full h-full object-cover" />
+              <Image src="/logo.png" alt="سعي — م. سالم رزق" width={48} height={48} className="w-full h-full object-cover" priority />
             </div>
             <div className="text-right">
               <p className="text-saey-navy font-black text-lg leading-tight">سعي للتسويق الرقمي</p>

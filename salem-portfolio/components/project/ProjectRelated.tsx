@@ -5,12 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
-
-interface RelatedProject {
-  slug: string; title: string; title_ar?: string; subtitle: string; subtitle_ar?: string;
-  industry: string; industry_ar?: string; color: string; tags: string[]; tags_ar?: string[];
-  results: { reach: string; roas: string; };
-}
+import type { RelatedProject } from '@/lib/types';
 
 interface Props { projects: RelatedProject[]; }
 

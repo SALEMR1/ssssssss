@@ -25,7 +25,7 @@ export default function About() {
   const { t, isRTL } = useI18n();
 
   return (
-    <section id="about" className="relative py-32 bg-white overflow-hidden">
+    <section id="about" aria-label="من أنا" className="relative py-32 bg-white overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -54,8 +54,7 @@ export default function About() {
                     return (
                       <span
                         key={label}
-                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold"
-                        style={{ background: 'rgba(20,108,255,0.06)', border: '1px solid rgba(20,108,255,0.14)', color: '#146CFF' }}
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-saey-blue/[0.06] border border-saey-blue/[0.14] text-saey-blue"
                       >
                         <Icon size={12} className={colorMap[expertiseColors[i]]} />
                         {label}
@@ -105,7 +104,7 @@ export default function About() {
                 <span className="w-1.5 h-1.5 rounded-full bg-saey-blue animate-pulse" />
                 {t.about.badge}
               </span>
-              <h2 className="text-4xl md:text-5xl font-black text-[#111827] leading-tight">
+              <h2 className="text-4xl md:text-5xl font-black text-saey-navy leading-tight">
                 {t.about.title}{' '}
                 <span className="bg-gradient-to-r from-saey-blue to-saey-violet bg-clip-text text-transparent">
                   {t.about.highlight}
@@ -113,18 +112,18 @@ export default function About() {
               </h2>
             </motion.div>
 
-            <motion.p variants={fadeIn('up', 0.1)} className="text-[#6B7280] text-lg leading-relaxed">
+            <motion.p variants={fadeIn('up', 0.1)} className="text-saey-muted text-lg leading-relaxed">
               {t.about.p1}
             </motion.p>
-            <motion.p variants={fadeIn('up', 0.2)} className="text-[#6B7280] leading-relaxed">
-              {t.about.p2} <span className="text-[#111827] font-semibold">{t.about.p2_highlight}</span>.
+            <motion.p variants={fadeIn('up', 0.2)} className="text-saey-muted leading-relaxed">
+              {t.about.p2} <span className="text-saey-navy font-semibold">{t.about.p2_highlight}</span>.
             </motion.p>
 
             <motion.div variants={fadeIn('up', 0.3)} className="grid grid-cols-2 gap-4">
               {t.about.badges.map((label, i) => (
                 <div key={label} className="flex items-center gap-2">
                   <CheckCircle2 size={16} className={badgeColors[i]} />
-                  <span className="text-[#6B7280] text-sm font-medium">{label}</span>
+                  <span className="text-saey-muted text-sm font-medium">{label}</span>
                 </div>
               ))}
             </motion.div>
@@ -133,7 +132,7 @@ export default function About() {
               <Link href="/#contact" className="px-6 py-3 rounded-xl bg-gradient-to-r from-saey-blue to-saey-violet text-white font-semibold transition-all duration-300">
                 {t.about.cta_work}
               </Link>
-              <Link href="/#projects" className="px-6 py-3 rounded-xl bg-white border border-saey-blue/20 text-[#111827] font-semibold transition-all duration-300 hover:border-saey-blue/40">
+              <Link href="/#projects" className="px-6 py-3 rounded-xl bg-white border border-saey-blue/20 text-saey-navy font-semibold transition-colors duration-300 hover:border-saey-blue/40">
                 {t.about.cta_portfolio}
               </Link>
             </motion.div>

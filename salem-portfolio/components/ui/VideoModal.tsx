@@ -86,8 +86,8 @@ export default function VideoModal({ isOpen, onClose, title, videoSrc, embedCode
                 <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mb-4">
                   <Play size={32} className="text-white ml-1" />
                 </div>
-                <p className="text-[#111827] font-medium text-lg">{title}</p>
-                <p className="text-[#6B7280] text-sm mt-2">Video placeholder — replace with your actual video</p>
+                <p className="text-saey-navy font-medium text-lg">{title}</p>
+                <p className="text-saey-muted text-sm mt-2">Video placeholder — replace with your actual video</p>
               </div>
             )}
           </motion.div>

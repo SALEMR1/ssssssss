@@ -4,17 +4,13 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
 import { Lightbulb, ArrowRight } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
-interface Props {
-  project: {
-    strategy: string; strategy_ar?: string;
-    strategyPoints: string[]; strategyPoints_ar?: string[];
-    color: string;
-  };
-}
+interface Props { project: Project; }
 
 export default function ProjectStrategy({ project }: Props) {
   const { t, lang } = useI18n();
+  if (!project.strategy || !project.strategyPoints?.length) return null;
   const strategy = lang === 'ar' ? project.strategy_ar || project.strategy : project.strategy;
   const points = lang === 'ar' ? project.strategyPoints_ar || project.strategyPoints : project.strategyPoints;
 

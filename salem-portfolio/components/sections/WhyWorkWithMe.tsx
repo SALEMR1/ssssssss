@@ -10,15 +10,15 @@ import { useI18n } from '@/lib/i18n/context';
 const reasonIcons = [Lightbulb, BarChart3, Clock, Eye, Database, Award];
 const reasonColors = ['blue', 'violet', 'blue', 'violet', 'blue', 'violet'];
 
-const colorMap: Record<string, { gradient: string; bg: string; border: string; text: string }> = {
-  blue: { gradient: 'from-saey-blue to-saey-blue', bg: 'from-saey-blue/15 to-transparent', border: 'border-saey-blue/20', text: 'text-saey-blue' },
-  violet: { gradient: 'from-saey-violet to-saey-violet', bg: 'from-saey-violet/15 to-transparent', border: 'border-saey-violet/20', text: 'text-saey-violet' },
+const colorMap: Record<string, { iconBg: string; bg: string; border: string; text: string }> = {
+  blue:   { iconBg: 'bg-saey-blue',   bg: 'from-saey-blue/15 to-transparent',   border: 'border-saey-blue/20',   text: 'text-saey-blue' },
+  violet: { iconBg: 'bg-saey-violet', bg: 'from-saey-violet/15 to-transparent', border: 'border-saey-violet/20', text: 'text-saey-violet' },
 };
 
 export default function WhyWorkWithMe() {
   const { t } = useI18n();
   return (
-    <section id="why" className="relative py-32 bg-white overflow-hidden">
+    <section id="why" aria-label="لماذا تعمل معنا" className="relative py-32 bg-white overflow-hidden">
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-violet-100/40 rounded-full blur-3xl pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionHeader badge={t.why.badge} title={t.why.title} highlight={t.why.highlight} subtitle={t.why.subtitle} light />
@@ -31,7 +31,7 @@ export default function WhyWorkWithMe() {
               <motion.div key={reason.title} variants={fadeIn('up', 0)} whileHover={{ y: -6 }}
                 className={`group relative rounded-3xl bg-white border border-blue-100 p-8 transition-all duration-500 hover:shadow-xl hover:shadow-blue-100/60 hover:border-blue-200`}>
                 <div className="relative space-y-5">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${colorMap[reasonColors[i]].gradient} flex items-center justify-center shadow-md shadow-saey-blue/20`}>
+                  <div className={`w-16 h-16 rounded-2xl ${colorMap[reasonColors[i]].iconBg} flex items-center justify-center shadow-md shadow-saey-blue/20`}>
                     <Icon size={24} className={colors.text} />
                   </div>
                   <h3 className="text-xl font-bold text-saey-navy">{reason.title}</h3>

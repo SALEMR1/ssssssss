@@ -306,10 +306,10 @@ export default function DevProjectsClient() {
 
       {/* ─── Hero ─── */}
       <section className="relative pt-36 pb-20 overflow-hidden bg-[#0A0A0A]">
-        {/* Background glows — amber/orange oil palette */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-amber-600/10 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute top-20 left-1/4 w-64 h-64 bg-orange-700/8 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute top-20 right-1/4 w-64 h-64 bg-yellow-700/8 rounded-full blur-3xl pointer-events-none" />
+        {/* Background glows — hidden on mobile for performance */}
+        <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-amber-600/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="hidden md:block absolute top-20 left-1/4 w-64 h-64 bg-orange-700/8 rounded-full blur-3xl pointer-events-none" />
+        <div className="hidden md:block absolute top-20 right-1/4 w-64 h-64 bg-yellow-700/8 rounded-full blur-3xl pointer-events-none" />
         {/* Diagonal engine-grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(245,158,11,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(245,158,11,0.025)_1px,transparent_1px)] bg-[size:72px_72px] pointer-events-none" />
         {/* Fade into body */}

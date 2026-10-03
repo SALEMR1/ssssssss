@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import projectsData from '@/data/projects.json';
+import type { Project, RelatedProject } from '@/lib/types';
 import ProjectHero from '@/components/project/ProjectHero';
 import ProjectOverview from '@/components/project/ProjectOverview';
 import ProjectChallenge from '@/components/project/ProjectChallenge';
@@ -21,12 +22,14 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return (projectsData as any[]).map((project) => ({ slug: project.slug }));
+  return (projectsData as Project[]).map((project) => ({ slug: project.slug }));
 }
+
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const project = (projectsData as any[]).find((p) => p.slug === slug);
+  const project = (projectsData as Project[]).find((p) => p.slug === slug);
   if (!project) return {};
 
   const title = `${project.title_ar || project.title} — دراسة حالة | سعي · م. سالم رزق`;
@@ -44,9 +47,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       project.industry, project.industry_ar,
       'سعي للتسويق الرقمي', 'م. سالم رزق', 'Salem Rizk', 'Saey',
       'دراسة حالة تسويق رقمي', 'إعلانات ميتا مصر', 'digital marketing Egypt',
-    ].filter(Boolean),
+    ].filter((k): k is string => Boolean(k)),
     authors: [{ name: 'م. سالم رزق — سعي', url: SITE_URL }],
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        'ar': url,
+        'ar-EG': url,
+        'en': url,
+        'x-default': url,
+      },
+    },
     openGraph: {
       title,
       description,
@@ -67,11 +78,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ProjectPage({ params }: PageProps) {
   const { slug } = await params;
-  const project = (projectsData as any[]).find((p) => p.slug === slug);
+  const project = (projectsData as Project[]).find((p) => p.slug === slug);
 
   if (!project) notFound();
 
-  const relatedProjects = (projectsData as any[]).filter((p) =>
+  const relatedProjects = (projectsData as Project[]).filter((p) =>
     project.relatedProjects.includes(p.slug)
   );
 
@@ -108,14 +119,12 @@ export default async function ProjectPage({ params }: PageProps) {
     keywords: [project.title, project.industry, 'تسويق رقمي', 'digital marketing Egypt'].join(', '),
   };
 
-  // Schema.org — BreadcrumbList
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'الرئيسية', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: 'المشاريع', item: `${SITE_URL}/#projects` },
-      { '@type': 'ListItem', position: 3, name: project.title_ar || project.title, item: `${SITE_URL}/projects/${slug}` },
+      { '@type': 'ListItem', position: 2, name: project.title_ar || project.title, item: `${SITE_URL}/projects/${slug}` },
     ],
   };
 
@@ -134,7 +143,7 @@ export default async function ProjectPage({ params }: PageProps) {
       <ProjectTestimonial project={project} />
       <ProjectTimeline project={project} />
       <ProjectTools project={project} />
-      <ProjectRelated projects={relatedProjects} />
+      <ProjectRelated projects={relatedProjects as RelatedProject[]} />
     </div>
   );
 }

@@ -21,7 +21,7 @@ const colorMap: Record<string, { gradient: string; bg: string; text: string; bor
 export default function CampaignResults() {
   const { t } = useI18n();
   return (
-    <section id="results" className="relative py-32 bg-saey-gray overflow-hidden">
+    <section id="results" aria-label="نتائج الحملات" className="relative py-32 bg-saey-gray overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(37,99,235,0.06)_0%,_transparent_70%)] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionHeader badge={t.results.badge} title={t.results.title} highlight={t.results.highlight} subtitle={t.results.subtitle} light />

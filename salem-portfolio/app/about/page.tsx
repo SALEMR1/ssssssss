@@ -9,6 +9,12 @@ export const metadata: Metadata = {
     'م. سالم رزق، مؤسس سعي للتسويق الرقمي — رحلة من صناعة المحتوى إلى بناء منظومة تسويقية متكاملة لعملاء في مصر والخارج. خبير إعلانات ميتا، مدير تسويق رقمي ومطور مواقع.',
   alternates: {
     canonical: 'https://salemrizk.online/about',
+    languages: {
+      'ar': 'https://salemrizk.online/about',
+      'ar-EG': 'https://salemrizk.online/about',
+      'en': 'https://salemrizk.online/about',
+      'x-default': 'https://salemrizk.online/about',
+    },
   },
   openGraph: {
     title: 'من أنا | م. سالم رزق — مؤسس سعي للتسويق الرقمي',

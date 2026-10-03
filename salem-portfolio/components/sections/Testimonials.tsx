@@ -34,7 +34,7 @@ export default function Testimonials() {
   const project = lang === 'ar' ? currentT.project_ar || currentT.project : currentT.project;
 
   return (
-    <section id="testimonials" className="relative py-32 bg-saey-gray overflow-hidden">
+    <section id="testimonials" aria-label="آراء العملاء" className="relative py-32 bg-saey-gray overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(37,99,235,0.06)_0%,_transparent_60%)] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionHeader badge={t.testimonials.badge} title={t.testimonials.title} highlight={t.testimonials.highlight} subtitle={t.testimonials.subtitle} light />

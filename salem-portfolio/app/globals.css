@@ -65,9 +65,16 @@
 
 html {
   scroll-behavior: smooth;
+  /* Offset for fixed navbar (80px) on desktop */
+  scroll-padding-top: 88px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+/* On mobile add bottom nav (64px) to scroll offset */
+@media (max-width: 1023px) {
+  html { scroll-padding-top: 96px; }
 }
 
 body {

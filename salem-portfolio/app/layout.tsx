@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Cairo } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -7,10 +8,14 @@ import LoadingScreen from '@/components/layout/LoadingScreen';
 import ScrollProgress from '@/components/layout/ScrollProgress';
 import BackToTop from '@/components/layout/BackToTop';
 import { I18nProvider } from '@/lib/i18n/context';
+import ServiceWorkerRegister from '@/components/layout/ServiceWorkerRegister';
+import PromoBanner from '@/components/layout/PromoBanner';
+import WhatsAppButton from '@/components/layout/WhatsAppButton';
 import settings from '@/data/settings.json';
 
 const SITE_URL = 'https://salemrizk.online';
-const OG_IMAGE = `https://salemrizk.online${settings.ogImage}`;
+// settings.ogImage is already an absolute URL — no prefix needed
+const OG_IMAGE = settings.ogImage;
 const LOGO_URL = '/logo.png';
 
 // Only load Cairo — it covers Arabic + Latin, eliminating 2 extra font requests.
@@ -48,15 +53,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'م. سالم رزق — سعي', url: SITE_URL }],
   creator: 'م. سالم رزق',
   publisher: 'سعي للتسويق الرقمي',
-  alternates: {
-    canonical: SITE_URL,
-    languages: {
-      'ar': SITE_URL,
-      'ar-EG': SITE_URL,
-      'en': `${SITE_URL}?lang=en`,
-      'x-default': SITE_URL,
-    },
-  },
+  // No layout-level canonical or hreflang — each page sets its own via alternates
   openGraph: {
     type: 'website',
     locale: 'ar_EG',
@@ -91,10 +88,13 @@ export const metadata: Metadata = {
   applicationName: 'Salem Rizk Portfolio',
   manifest: '/manifest.webmanifest',
   formatDetection: { email: false, address: false, telephone: false },
+  icons: {
+    apple: [{ url: '/logo.png', sizes: '180x180', type: 'image/png' }],
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: '#07152E',
+  themeColor: '#146CFF',
   colorScheme: 'light',
 };
 
@@ -109,10 +109,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     description: settings.siteDescription,
     url: SITE_URL,
     image: { '@type': 'ImageObject', url: `${SITE_URL}/logo.png`, width: 400, height: 400 },
-    email: `mailto:${settings.email}`,
+    email: settings.email,
     telephone: `+2${settings.whatsapp}`,
     address: { '@type': 'PostalAddress', addressLocality: 'Edko', addressRegion: 'Beheira', addressCountry: 'EG' },
-    sameAs: [settings.facebook, settings.instagram, settings.threads, `https://wa.me/${settings.whatsapp}`].filter(l => l !== '#'),
+    sameAs: [settings.facebook, settings.instagram, settings.threads, `https://wa.me/${settings.whatsapp}`].filter(Boolean).filter(l => l !== '#'),
     knowsAbout: [
       'Social Media Management', 'Meta Ads', 'Facebook Advertising',
       'Instagram Marketing', 'Graphic Design', 'Video Editing',
@@ -186,11 +186,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     description: settings.siteDescription,
     inLanguage: ['ar', 'en'],
     author: { '@id': `${SITE_URL}/#person` },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${SITE_URL}/?q={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
   };
 
   // Logo schema — يجعل اللوجو يظهر في نتائج Google
@@ -250,22 +245,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       suppressHydrationWarning
     >
       <head>
-        {/* ── Google Analytics ── */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MM0YWJ93L4" />
-        <script dangerouslySetInnerHTML={{ __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-MM0YWJ93L4');
-        `}} />
-
-        {/* ── hreflang — bilingual AR/EN ── */}
-        <link rel="alternate" hrefLang="ar" href="https://salemrizk.online" />
-        <link rel="alternate" hrefLang="ar-EG" href="https://salemrizk.online" />
-        <link rel="alternate" hrefLang="en" href="https://salemrizk.online" />
-        <link rel="alternate" hrefLang="x-default" href="https://salemrizk.online" />
+        {/* hreflang is handled by metadata.alternates.languages above — no manual tags needed */}
 
         {/* ── Critical resource hints ── */}
+        {/* Google Analytics / GTM */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         {/* ImageKit — where all images come from */}
         <link rel="preconnect" href="https://ik.imagekit.io" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://ik.imagekit.io" />
@@ -286,6 +271,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground overflow-x-hidden">
+        {/* ── Google Analytics — loaded after page is interactive ── */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-MM0YWJ93L4"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MM0YWJ93L4');
+        `}</Script>
+        <ServiceWorkerRegister />
         <I18nProvider>
           <LoadingScreen />
           <ScrollProgress />
@@ -293,6 +290,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <main className="flex-1">{children}</main>
           <Footer />
           <BackToTop />
+          <PromoBanner />
+          <WhatsAppButton />
         </I18nProvider>
       </body>
     </html>

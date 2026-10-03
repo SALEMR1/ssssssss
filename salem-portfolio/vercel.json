@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.salemrizk.online" }],
+      "destination": "https://salemrizk.online/$1",
+      "permanent": true
+    }
+  ]
+}

@@ -3,12 +3,13 @@
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
-interface TimelineStep { phase: string; phase_ar?: string; desc: string; desc_ar?: string; }
-interface Props { project: { timeline: TimelineStep[]; color: string; }; }
+interface Props { project: Project; }
 
 export default function ProjectTimeline({ project }: Props) {
   const { t, lang } = useI18n();
+  if (!project.timeline?.length) return null;
   return (
     <section className="py-24 bg-[#080808]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -26,7 +27,7 @@ export default function ProjectTimeline({ project }: Props) {
         <div className="relative">
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-amber-500/5 via-amber-500/15 to-amber-500/5 -translate-x-1/2" />
           <div className="space-y-8 lg:space-y-0">
-            {project.timeline.map((step, i) => {
+          {project.timeline!.map((step, i) => {
               const isLeft = i % 2 === 0;
               const phase = lang === 'ar' ? step.phase_ar || step.phase : step.phase;
               const desc = lang === 'ar' ? step.desc_ar || step.desc : step.desc;

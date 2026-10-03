@@ -4,15 +4,16 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
 import { LayoutGrid, Target, Palette, Video, TrendingUp, BarChart3, Sparkles, Film, GraduationCap, Code } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
 const iconMap: Record<string, React.ElementType> = { LayoutGrid, Target, Palette, Video, TrendingUp, BarChart3, Sparkles, Film, GraduationCap, Code };
 
-interface Service { icon: string; title: string; title_ar?: string; desc: string; desc_ar?: string; }
-interface Props { project: { overview: string; overview_ar?: string; services: Service[]; color: string; }; }
+interface Props { project: Project; }
 
 export default function ProjectOverview({ project }: Props) {
   const { t, lang } = useI18n();
   const overview = lang === 'ar' ? project.overview_ar || project.overview : project.overview;
+  if (!project.services?.length) return null;
   return (
     <section className="py-24 bg-[#080808]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -31,7 +32,7 @@ export default function ProjectOverview({ project }: Props) {
           <motion.div variants={fadeIn('left', 0.1)} initial="hidden" whileInView="show" viewport={{ once: true }} className="space-y-4">
             <h3 className="text-lg font-bold text-white mb-6">{t.project.overview.servicesTitle}</h3>
             <div className="grid grid-cols-1 gap-3">
-              {project.services.map((service, i) => {
+              {project.services!.map((service, i) => {
                 const Icon = iconMap[service.icon] || LayoutGrid;
                 const title = lang === 'ar' ? service.title_ar || service.title : service.title;
                 const desc = lang === 'ar' ? service.desc_ar || service.desc : service.desc;

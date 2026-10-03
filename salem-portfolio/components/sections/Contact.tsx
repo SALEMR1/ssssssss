@@ -9,29 +9,52 @@ import { useI18n } from '@/lib/i18n/context';
 import settings from '@/data/settings.json';
 
 const contactIcons = [MessageCircle, Globe, MapPin];
+
+const INPUT_CLASS = 'w-full px-4 py-3 rounded-xl bg-saey-gray border text-saey-navy placeholder-saey-muted/50 focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-saey-blue/20 transition-colors duration-200 text-sm';
+const INPUT_VALID   = 'border-blue-100';
+const INPUT_INVALID = 'border-rose-400 focus:border-rose-400 focus:ring-rose-100';
+
+function isValidEmail(v: string) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+function isValidPhone(v: string) { return /^[0-9+\s\-()]{7,20}$/.test(v.trim()); }
+
 export default function Contact() {
   const { t } = useI18n();
-  const [formState, setFormState] = useState({ name: '', email: '', phone: '', service: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' });
+  const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+  const [loading,   setLoading]   = useState(false);
+  const [error,     setError]     = useState('');
+
+  const setField = (k: keyof typeof form, v: string) => setForm(f => ({ ...f, [k]: v }));
+  const touch    = (k: string) => setTouched(t => ({ ...t, [k]: true }));
+
+  // Per-field validation
+  const errors = {
+    name:    touched.name    && form.name.trim().length < 2       ? 'الاسم قصير جداً'          : '',
+    email:   touched.email   && form.email && !isValidEmail(form.email) ? 'بريد إلكتروني غير صحيح' : '',
+    phone:   touched.phone   && !isValidPhone(form.phone)          ? 'رقم هاتف غير صحيح'        : '',
+    message: touched.message && form.message.trim().length < 10    ? 'الرسالة قصيرة جداً'       : '',
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    // Touch all fields to show errors
+    setTouched({ name: true, email: true, phone: true, message: true });
+    if (errors.name || errors.email || errors.phone || errors.message) return;
+
     setLoading(true);
     setError('');
-
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formState),
+        body: JSON.stringify(form),
       });
-
       if (res.ok) {
         setSubmitted(true);
-        setFormState({ name: '', email: '', phone: '', service: '', message: '' });
-        setTimeout(() => setSubmitted(false), 6000);
+        setForm({ name: '', email: '', phone: '', service: '', message: '' });
+        setTouched({});
+        // Don't auto-dismiss — let user read confirmation
       } else {
         setError('حدث خطأ أثناء الإرسال. حاول مرة أخرى.');
       }
@@ -43,7 +66,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-32 bg-saey-gray overflow-hidden">
+    <section id="contact" aria-label="تواصل معنا" className="relative py-32 bg-saey-gray overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(37,99,235,0.06)_0%,_transparent_50%)] pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(91,78,232,0.04)_0%,_transparent_50%)] pointer-events-none" />
 
@@ -60,11 +83,11 @@ export default function Contact() {
 
             {t.contact.links
               .filter((link) => {
-                const isThreads = link.label.includes('ثريد') || link.label.includes('Threads');
-                const isLinkedIn = link.label.includes('لينكدإن') || link.label.includes('LinkedIn');
-                const isInstagram = link.label.includes('إنستجرام') || link.label.includes('Instagram');
-                if (isLinkedIn && (!settings.linkedin || settings.linkedin === '#' || settings.linkedin === '')) return false;
-                if (isInstagram && (!settings.instagram || settings.instagram === '#' || settings.instagram === '')) return false;
+                const isThreads   = link.label.includes('ثريد')    || link.label.includes('Threads');
+                const isLinkedIn  = link.label.includes('لينكدإن') || link.label.includes('LinkedIn');
+                const isInstagram = link.label.includes('إنستجرام')|| link.label.includes('Instagram');
+                if (isLinkedIn  && !settings.linkedin)  return false;
+                if (isInstagram && !settings.instagram) return false;
                 if (isThreads) return false;
                 return true;
               })
@@ -72,18 +95,19 @@ export default function Contact() {
                 const isLocation = link.label.includes('الموقع') || link.label.includes('Location');
                 const Icon = isLocation ? MapPin : contactIcons[i] || Globe;
                 const getHref = (label: string) => {
-                  if (label.includes('واتساب') || label.includes('WhatsApp')) return `https://wa.me/${settings.whatsapp}`;
-                  if (label.includes('فيسبوك') || label.includes('Facebook')) return settings.facebook;
+                  if (label.includes('واتساب')   || label.includes('WhatsApp'))  return `https://wa.me/${settings.whatsapp}`;
+                  if (label.includes('فيسبوك')   || label.includes('Facebook'))  return settings.facebook;
                   if (label.includes('إنستجرام') || label.includes('Instagram')) return settings.instagram;
-                  if (label.includes('ثريد') || label.includes('Threads')) return settings.threads;
-                  if (label.includes('لينكدإن') || label.includes('LinkedIn')) return settings.linkedin;
-                  if (label.includes('الموقع') || label.includes('Location')) return settings.locationUrl || `https://maps.google.com/?q=${encodeURIComponent(settings.location)}`;
+                  if (label.includes('ثريد')     || label.includes('Threads'))   return settings.threads;
+                  if (label.includes('لينكدإن')  || label.includes('LinkedIn'))  return settings.linkedin;
+                  if (label.includes('الموقع')   || label.includes('Location'))  return settings.locationUrl || `https://maps.google.com/?q=${encodeURIComponent(settings.location)}`;
                   return '#';
                 };
-                const href = getHref(link.label);
                 return (
-                  <motion.a key={link.label} href={href} target="_blank" rel="noopener noreferrer" variants={fadeIn('up', i * 0.05)} whileHover={{ x: 4 }}
-                    className="flex items-center gap-4 p-4 rounded-2xl border border-blue-100 bg-white transition-all duration-300 hover:border-blue-300 hover:shadow-md group" aria-label={link.label}>
+                  <motion.a key={link.label} href={getHref(link.label)} target="_blank" rel="noopener noreferrer"
+                    variants={fadeIn('up', i * 0.05)} whileHover={{ x: 4 }}
+                    className="flex items-center gap-4 p-4 rounded-2xl border border-blue-100 bg-white transition-colors duration-300 hover:border-blue-300 hover:shadow-md group"
+                    aria-label={link.label}>
                     <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-saey-blue"><Icon size={18} /></div>
                     <div>
                       <p className="text-xs text-saey-muted font-medium">{link.label}</p>
@@ -107,56 +131,127 @@ export default function Contact() {
                   </div>
                   <h4 className="text-xl font-bold text-saey-navy mb-2">{t.contact.successTitle}</h4>
                   <p className="text-saey-muted">{t.contact.successSub}</p>
-                  <p className="text-xs text-saey-blue mt-3 font-medium">📧 تم إرسال رسالتك إلى saey.egyptian@gmail.com</p>
+                  <p className="text-xs text-saey-blue mt-3 font-medium">📧 تم إرسال رسالتك إلى {settings.email}</p>
+                  <button onClick={() => setSubmitted(false)} className="mt-6 text-sm text-saey-muted hover:text-saey-navy underline transition-colors">
+                    إرسال رسالة أخرى
+                  </button>
                 </motion.div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} noValidate className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-saey-navy">{t.contact.nameLabel} *</label>
-                      <input type="text" required placeholder={t.contact.namePlaceholder} value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy placeholder-saey-muted/50 focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm" />
+                    {/* Name */}
+                    <div className="space-y-1.5">
+                      <label htmlFor="contact-name" className="text-sm font-medium text-saey-navy">{t.contact.nameLabel} *</label>
+                      <input
+                        id="contact-name"
+                        type="text"
+                        required
+                        autoComplete="name"
+                        placeholder={t.contact.namePlaceholder}
+                        value={form.name}
+                        onChange={e => setField('name', e.target.value)}
+                        onBlur={() => touch('name')}
+                        aria-invalid={!!errors.name}
+                        aria-describedby={errors.name ? 'err-name' : undefined}
+                        className={`${INPUT_CLASS} ${errors.name ? INPUT_INVALID : INPUT_VALID}`}
+                      />
+                      {errors.name && <p id="err-name" className="text-xs text-rose-500">{errors.name}</p>}
                     </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-saey-navy">{t.contact.emailLabel}</label>
-                      <input type="email" placeholder={t.contact.emailPlaceholder} value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy placeholder-saey-muted/50 focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm" />
+
+                    {/* Email */}
+                    <div className="space-y-1.5">
+                      <label htmlFor="contact-email" className="text-sm font-medium text-saey-navy">{t.contact.emailLabel}</label>
+                      <input
+                        id="contact-email"
+                        type="email"
+                        autoComplete="email"
+                        placeholder={t.contact.emailPlaceholder}
+                        value={form.email}
+                        onChange={e => setField('email', e.target.value)}
+                        onBlur={() => touch('email')}
+                        aria-invalid={!!errors.email}
+                        aria-describedby={errors.email ? 'err-email' : undefined}
+                        className={`${INPUT_CLASS} ${errors.email ? INPUT_INVALID : INPUT_VALID}`}
+                      />
+                      {errors.email && <p id="err-email" className="text-xs text-rose-500">{errors.email}</p>}
                     </div>
                   </div>
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-saey-navy">رقم الهاتف / واتساب *</label>
-                      <input type="tel" required placeholder="01xxxxxxxxx" value={formState.phone} onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy placeholder-saey-muted/50 focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm" />
+                    {/* Phone */}
+                    <div className="space-y-1.5">
+                      <label htmlFor="contact-phone" className="text-sm font-medium text-saey-navy">{t.contact.phoneLabel} *</label>
+                      <input
+                        id="contact-phone"
+                        type="tel"
+                        required
+                        autoComplete="tel"
+                        placeholder={t.contact.phonePlaceholder}
+                        value={form.phone}
+                        onChange={e => setField('phone', e.target.value)}
+                        onBlur={() => touch('phone')}
+                        aria-invalid={!!errors.phone}
+                        aria-describedby={errors.phone ? 'err-phone' : undefined}
+                        className={`${INPUT_CLASS} ${errors.phone ? INPUT_INVALID : INPUT_VALID}`}
+                      />
+                      {errors.phone && <p id="err-phone" className="text-xs text-rose-500">{errors.phone}</p>}
                     </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-saey-navy">{t.contact.serviceLabel}</label>
-                      <select value={formState.service} onChange={(e) => setFormState({ ...formState, service: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm appearance-none">
+
+                    {/* Service */}
+                    <div className="space-y-1.5">
+                      <label htmlFor="contact-service" className="text-sm font-medium text-saey-navy">{t.contact.serviceLabel}</label>
+                      <select
+                        id="contact-service"
+                        value={form.service}
+                        onChange={e => setField('service', e.target.value)}
+                        className={`${INPUT_CLASS} ${INPUT_VALID} appearance-none`}
+                      >
                         <option value="">{t.contact.servicePlaceholder}</option>
-                        {t.contact.services.map((s) => <option key={s} value={s}>{s}</option>)}
+                        {t.contact.services.map(s => <option key={s} value={s}>{s}</option>)}
                       </select>
                     </div>
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-saey-navy">{t.contact.messageLabel} *</label>
-                    <textarea required rows={5} placeholder={t.contact.messagePlaceholder} value={formState.message} onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-saey-gray border border-blue-100 text-saey-navy placeholder-saey-muted/50 focus:outline-none focus:border-saey-blue focus:ring-2 focus:ring-blue-100 transition-all duration-200 text-sm resize-none" />
+
+                  {/* Message */}
+                  <div className="space-y-1.5">
+                    <div className="flex items-center justify-between">
+                      <label htmlFor="contact-message" className="text-sm font-medium text-saey-navy">{t.contact.messageLabel} *</label>
+                      <span className={`text-xs ${form.message.length > 900 ? 'text-rose-500' : 'text-saey-muted'}`}>
+                        {form.message.length}/1000
+                      </span>
+                    </div>
+                    <textarea
+                      id="contact-message"
+                      required
+                      rows={5}
+                      maxLength={1000}
+                      placeholder={t.contact.messagePlaceholder}
+                      value={form.message}
+                      onChange={e => setField('message', e.target.value)}
+                      onBlur={() => touch('message')}
+                      aria-invalid={!!errors.message}
+                      aria-describedby={errors.message ? 'err-message' : undefined}
+                      className={`${INPUT_CLASS} ${errors.message ? INPUT_INVALID : INPUT_VALID} resize-none`}
+                    />
+                    {errors.message && <p id="err-message" className="text-xs text-rose-500">{errors.message}</p>}
                   </div>
 
+                  {/* Server error */}
                   {error && (
-                    <div className="px-4 py-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-600 text-sm">
+                    <div role="alert" aria-live="assertive" className="px-4 py-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-600 text-sm">
                       {error}
                     </div>
                   )}
 
-                  <button type="submit" disabled={loading}
-                    className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-saey-blue text-white font-semibold text-lg hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-200 transition-all duration-300 hover:-translate-y-0.5 group disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0">
-                    {loading ? (
-                      <><Loader2 size={18} className="animate-spin" /> جاري الإرسال...</>
-                    ) : (
-                      <>{t.contact.submitBtn} <Send size={18} className="group-hover:translate-x-1 transition-transform" /></>
-                    )}
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-saey-blue text-white font-semibold text-lg hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-200 transition-all duration-300 hover:-translate-y-0.5 group disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+                  >
+                    {loading
+                      ? <><Loader2 size={18} className="animate-spin" /> جاري الإرسال...</>
+                      : <>{t.contact.submitBtn} <Send size={18} className="group-hover:translate-x-1 transition-transform" /></>
+                    }
                   </button>
                   <p className="text-center text-xs text-saey-muted mt-3">📧 سيصلك رد خلال 24 ساعة على بريدك الإلكتروني</p>
                 </form>

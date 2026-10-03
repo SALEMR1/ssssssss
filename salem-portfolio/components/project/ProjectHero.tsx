@@ -4,19 +4,11 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Calendar, Building2, Clock } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
-interface ProjectHeroProps {
-  project: {
-    title: string; title_ar?: string;
-    subtitle: string; subtitle_ar?: string;
-    industry: string; industry_ar?: string;
-    duration: string; duration_ar?: string;
-    year: string; color: string; tags: string[]; tags_ar?: string[];
-    results: { reach: string; impressions: string; roas: string; followers: string; };
-  };
-}
+interface Props { project: Project; }
 
-export default function ProjectHero({ project }: ProjectHeroProps) {
+export default function ProjectHero({ project }: Props) {
   const { t, lang, isRTL } = useI18n();
   const title = lang === 'ar' ? project.title_ar || project.title : project.title;
   const subtitle = lang === 'ar' ? project.subtitle_ar || project.subtitle : project.subtitle;
@@ -26,9 +18,9 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
 
   return (
     <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-[#0A0805] pt-32 pb-20">
-      {/* Amber atmospheric glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] rounded-full blur-[120px] opacity-25 pointer-events-none" style={{ backgroundColor: project.color }} />
-      <div className="absolute top-0 right-0 w-96 h-96 bg-orange-700/10 rounded-full blur-[100px] pointer-events-none" />
+      {/* Amber atmospheric glow — hidden on mobile for performance */}
+      <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] rounded-full blur-[120px] opacity-25 pointer-events-none" style={{ backgroundColor: project.color }} />
+      <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-orange-700/10 rounded-full blur-[100px] pointer-events-none" />
       {/* Subtle grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(245,158,11,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(245,158,11,0.03)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#080808] to-transparent pointer-events-none" />
@@ -71,10 +63,10 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
           </div>
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} className="grid grid-cols-2 gap-4">
             {[
-              { value: project.results.reach, label: t.project.resultMetrics.reach },
-              { value: project.results.impressions, label: t.project.resultMetrics.impressions },
-              { value: project.results.roas, label: t.project.resultMetrics.roas },
-              { value: project.results.followers, label: t.project.resultMetrics.followers },
+              { value: project.results?.reach ?? '—', label: t.project.resultMetrics.reach },
+              { value: project.results?.impressions ?? '—', label: t.project.resultMetrics.impressions },
+              { value: project.results?.roas ?? '—', label: t.project.resultMetrics.roas },
+              { value: project.results?.followers ?? '—', label: t.project.resultMetrics.followers },
             ].map((stat) => (
               <div key={stat.label} className="rounded-2xl bg-white/5 border border-amber-500/20 p-5 text-center backdrop-blur-sm hover:border-amber-500/40 transition-colors duration-300">
                 <div className="text-3xl font-black leading-none" style={{ color: project.color }}>{stat.value}</div>

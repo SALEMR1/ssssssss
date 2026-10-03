@@ -4,12 +4,13 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
 import { ArrowRight, TrendingDown, TrendingUp } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
+import type { Project } from '@/lib/types';
 
-interface BAItem { metric: string; metric_ar?: string; before: string; after: string; improvement: string; }
-interface Props { project: { beforeAfter: BAItem[]; color: string; }; }
+interface Props { project: Project; }
 
 export default function ProjectBeforeAfter({ project }: Props) {
   const { t, lang } = useI18n();
+  if (!project.beforeAfter?.length) return null;
   return (
     <section className="py-24 bg-[#080808]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -36,7 +37,7 @@ export default function ProjectBeforeAfter({ project }: Props) {
           </div>
         </div>
         <div className="space-y-4 max-w-3xl mx-auto">
-          {project.beforeAfter.map((item, i) => {
+          {project.beforeAfter!.map((item, i) => {
             const metric = lang === 'ar' ? item.metric_ar || item.metric : item.metric;
             return (
               <motion.div key={item.metric} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
